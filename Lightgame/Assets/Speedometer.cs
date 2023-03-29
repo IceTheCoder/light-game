@@ -1,4 +1,6 @@
+// https://youtu.be/tJfJOMIMglE
 using UnityEngine;
+// https://forum.unity.com/threads/the-type-or-namespace-name-ienumerator-could-not-be-found.1310867/
 using System.Collections;
 
 public class Speedometer : MonoBehaviour
