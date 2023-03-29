@@ -52,7 +52,7 @@ public class Speedometer : MonoBehaviour
 
     void FixedUpdate()
     {
-        light.intensity = speed / 5;
-        light.pointLightOuterRadius = speed / 5;
+        light.intensity = speed / 15;
+        light.pointLightOuterRadius = speed / 15;
     }
 }
