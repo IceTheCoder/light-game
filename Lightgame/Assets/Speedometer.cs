@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Speedometer : MonoBehaviour
 {
@@ -16,11 +17,11 @@ public class Speedometer : MonoBehaviour
 
         while (isPlaying) 
         {
-            Vector3 prevPos = transofrm.position;
+            Vector3 prevPos = transform.position;
 
             yield return new WaitForFixedUpdate();
 
-            speed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime
+            speed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
         }
     }
 }
