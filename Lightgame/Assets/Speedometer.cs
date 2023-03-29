@@ -5,6 +5,7 @@ using System.Collections;
 
 public class Speedometer : MonoBehaviour
 {
+    public UnityEngine.Rendering.Universal.Light2D light;
     public float speed;
 
     // Start is called before the first frame update
@@ -25,5 +26,12 @@ public class Speedometer : MonoBehaviour
 
             speed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
         }
+    }
+
+    void FixedUpdate()
+    {
+        // shadowIntensity
+        light.Intensity = speed;
+        // light.m_PointLightOuterRadius = speed;
     }
 }
