@@ -8,6 +8,7 @@ public class Speedometer : MonoBehaviour
 {
     private UnityEngine.Rendering.Universal.Light2D light;
     public float speed;
+    public float SpeedFactor = 0.07f;
 
     // Number of previous speed samples to include in the moving average
     public int numSamples = 10;
@@ -52,7 +53,7 @@ public class Speedometer : MonoBehaviour
 
     void FixedUpdate()
     {
-        light.intensity = speed / 15;
-        light.pointLightOuterRadius = speed / 15;
+        light.intensity = speed * SpeedFactor;
+        light.pointLightOuterRadius = speed * SpeedFactor;
     }
 }
