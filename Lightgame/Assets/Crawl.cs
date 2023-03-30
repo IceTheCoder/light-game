@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Crawl : MonoBehaviour
 {
-    // Update is called once per frame (Make this not be frame-fixed, use something like Time.Deltatime)
-    void FixedUpdate()
+    // Speed of movement
+    public float speed = 50f;
+    // Magnitude of movement
+    public float magnitude = 0.1f;
+
+    void Update()
     {
-        // Pick a random float between 0 and 0.1
-        // Pick another random float between 0 and 0.1
-        // Place them into a Vector2
-        // Change the x- and y-positions of the Transform component of the object by that Vector2
+        // Generate a random Vector2 with magnitude less than or equal to 0.5
+        Vector2 movement = Random.insideUnitCircle * magnitude;
+
+        // Move the object in the direction of the random Vector2
+        transform.position += new Vector3(movement.x, movement.y, 0) * speed * Time.deltaTime;
     }
 }
