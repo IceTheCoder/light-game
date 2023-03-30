@@ -3,8 +3,9 @@ using UnityEngine;
 // https://forum.unity.com/threads/the-type-or-namespace-name-ienumerator-could-not-be-found.1310867/
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
-public class Speedometer : MonoBehaviour
+public class LightCalculator : MonoBehaviour
 {
     private UnityEngine.Rendering.Universal.Light2D light;
     public float speed;
@@ -53,7 +54,9 @@ public class Speedometer : MonoBehaviour
 
     void FixedUpdate()
     {
-        light.intensity = speed * SpeedFactor;
-        light.pointLightOuterRadius = speed * SpeedFactor;
+        float[] intensityValues = {speed * SpeedFactor, 1f};
+        float[] radiusValues = {speed * SpeedFactor, 0.2f};
+        light.intensity = intensityValues.Max();
+        light.pointLightOuterRadius = radiusValues.Max();
     }
 }
