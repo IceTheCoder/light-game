@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Speedometer : MonoBehaviour
+public class LightCalculator : MonoBehaviour
 {
     private UnityEngine.Rendering.Universal.Light2D light;
     public float speed;
