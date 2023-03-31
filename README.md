@@ -1,7 +1,7 @@
 # Lightgame
 A light follows your cursor and gets larger and more intense the faster you move.
 
-There is a slightly-visible triangle crawling somewhere in the dark.
+There is a slightly-visible triangle vibrating somewhere in the dark.
 
 ## License
 This repository is licensed under the MIT license with an added attribution. Read LICENSE for more information.
