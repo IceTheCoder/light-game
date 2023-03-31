@@ -7,7 +7,7 @@ using System.Linq;
 
 public class LightCalculator : MonoBehaviour
 {
-    private UnityEngine.Rendering.Universal.Light2D light;
+    private UnityEngine.Rendering.Universal.Light2D theLight;
     public float speed;
     public float SpeedFactor = 0.07f;
 
@@ -20,7 +20,7 @@ public class LightCalculator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        light = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
+        theLight = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
         StartCoroutine(CalcSpeed());
     }
 
@@ -57,7 +57,7 @@ public class LightCalculator : MonoBehaviour
         // Force a minimum intensity of 1 and a minimum radius of 0.2 for the light.
         float[] intensityValues = {speed * SpeedFactor, 1f};
         float[] radiusValues = {speed * SpeedFactor, 0.2f};
-        light.intensity = intensityValues.Max();
-        light.pointLightOuterRadius = radiusValues.Max();
+        theLight.intensity = intensityValues.Max();
+        theLight.pointLightOuterRadius = radiusValues.Max();
     }
 }
