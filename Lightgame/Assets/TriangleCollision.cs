@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class TriangleCollision : MonoBehaviour
 {
+    public LightCalculator lightCalculator;
+
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Triangle")
         {
-            Debug.Log("Collision detected!");
+            lightCalculator.enabled = false;
         }
     }
 }
