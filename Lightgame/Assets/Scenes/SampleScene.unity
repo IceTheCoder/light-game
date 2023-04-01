@@ -510,6 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c960d12dfab7ad048839af35d32208bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightCalculator: {fileID: 803651387}
 --- !u!212 &803651391
 SpriteRenderer:
   m_ObjectHideFlags: 0
