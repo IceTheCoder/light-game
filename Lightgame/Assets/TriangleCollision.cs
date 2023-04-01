@@ -13,4 +13,9 @@ public class TriangleCollision : MonoBehaviour
             lightCalculator.enabled = false;
         }
     }
+    void OnCollisionExit2D(Collision2D collision) {
+        if (collision.gameObject.tag == "Triangle") {
+            lightCalculator.enabled = true;
+        }
+    }
 }
