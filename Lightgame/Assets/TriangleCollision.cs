@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TriangleCollision : MonoBehaviour
@@ -8,7 +9,7 @@ public class TriangleCollision : MonoBehaviour
     public float health; 
 
     void Start() {
-        health = 1;
+        health = 1f;
     }
 
     void OnCollisionStay2D(Collision2D collision)
@@ -16,6 +17,8 @@ public class TriangleCollision : MonoBehaviour
         if (collision.gameObject.tag == "Triangle")
         {
             lightCalculator.enabled = false;
+            float[] health0 = new float[] { health - 0.01f, 0f };
+            health = health0.Max();
         }
     }
     void OnCollisionExit2D(Collision2D collision) {
