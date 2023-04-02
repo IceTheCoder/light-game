@@ -10,6 +10,7 @@ public class LightCalculator : MonoBehaviour
     private UnityEngine.Rendering.Universal.Light2D theLight;
     public float speed;
     public float SpeedFactor = 0.07f;
+    public TriangleCollision collision;
 
     // Number of previous speed samples to include in the moving average
     public int numSamples = 10;
@@ -55,8 +56,8 @@ public class LightCalculator : MonoBehaviour
     void FixedUpdate()
     {
         // Force a minimum intensity of 1 and a minimum radius of 0.2 for the light.
-        float[] intensityValues = {speed * SpeedFactor, 0.34f};
-        float[] radiusValues = {speed * SpeedFactor, 0.2f};
+        float[] intensityValues = {speed * SpeedFactor * collision.health, 0.34f};
+        float[] radiusValues = {speed * SpeedFactor * collision.health, 0.2f};
         theLight.intensity = intensityValues.Max();
         theLight.pointLightOuterRadius = radiusValues.Max();
     }

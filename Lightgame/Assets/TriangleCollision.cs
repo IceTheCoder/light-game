@@ -7,6 +7,7 @@ public class TriangleCollision : MonoBehaviour
 {
     public LightCalculator lightCalculator;
     public float health; 
+    public float healthChange;
 
     void Start() {
         health = 1f;
@@ -16,8 +17,8 @@ public class TriangleCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Triangle")
         {
-            lightCalculator.enabled = false;
-            float[] health0 = new float[] { health - 0.01f, 0f };
+            // lightCalculator.enabled = false;
+            float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
         }
     }
