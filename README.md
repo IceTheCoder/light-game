@@ -9,3 +9,4 @@ This repository is licensed under the MIT license with an added attribution. Rea
 ## Acknowledgements
 - [This video](https://www.youtube.com/watch?v=ACyqpLh4jrs) by [The Game Dev Show](https://www.youtube.com/@thegamedevshow8449/videos) for helping me introduce light in my game.
 - [ChatGPT](https://chat.openai.com/chat) for providing me with unique solutions to certain problems.
+- [Comp-3 Interactive](https://youtu.be/W11uv7jf1e4) for explaining me how I can use custom fonts with TextMeshPro.
