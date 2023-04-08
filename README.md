@@ -1,7 +1,7 @@
 # light-game
 A light follows your cursor and gets larger and more intense the faster you move.
 
-There is a slightly-visible triangle vibrating somewhere in the dark. Something bad might happen if it sees you.
+There is a slightly visible triangle vibrating somewhere in the dark. Something bad might happen if it sees you.
 
 ## License
 This repository is licensed under the MIT license with an added attribution. Read LICENSE for more information.
