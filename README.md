@@ -1,4 +1,4 @@
-# Lightgame
+# light-game
 A light follows your cursor and gets larger and more intense the faster you move.
 
 There is a slightly-visible triangle vibrating somewhere in the dark. Something bad might happen if it sees you.
