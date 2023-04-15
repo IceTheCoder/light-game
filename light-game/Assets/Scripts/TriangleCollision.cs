@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class TriangleCollision : MonoBehaviour
@@ -10,9 +11,24 @@ public class TriangleCollision : MonoBehaviour
     public float health; 
     public float healthChange;
     public TextMeshProUGUI textMeshProUGUI;
+    bool dead;
+
 
     void Start() {
+        dead = false;
         health = 1f;
+    }
+
+    private void Update()
+    {
+        if (health == 0)
+        {
+            if (!dead)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            dead = true;
+        }
     }
 
     void OnCollisionStay2D(Collision2D collision)
