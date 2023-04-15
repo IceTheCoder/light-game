@@ -1047,7 +1047,7 @@ MonoBehaviour:
   speed: 0
   SpeedFactor: 0.07
   collision: {fileID: 803651390}
-  lightChangeDelay: 1
+  lightChangeDelay: 0.1
   numSamples: 10
 --- !u!114 &803651388
 MonoBehaviour:
