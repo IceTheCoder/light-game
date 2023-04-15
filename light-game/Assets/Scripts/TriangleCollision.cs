@@ -12,6 +12,7 @@ public class TriangleCollision : MonoBehaviour
     public float healthChange;
     public TextMeshProUGUI textMeshProUGUI;
     bool dead;
+    public GameObject gameOverPanel;
 
 
     void Start() {
@@ -25,7 +26,8 @@ public class TriangleCollision : MonoBehaviour
         {
             if (!dead)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                gameOverPanel.SetActive(true);
+                // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
             dead = true;
         }
