@@ -27,6 +27,7 @@ public class LightCalculator : MonoBehaviour
 
     IEnumerator CalcSpeed()
     {
+        yield return new WaitForSeconds(0.5f);
         bool isPlaying = true;
 
         while (isPlaying) 
