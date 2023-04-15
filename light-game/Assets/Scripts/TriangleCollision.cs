@@ -10,9 +10,25 @@ public class TriangleCollision : MonoBehaviour
     public float health; 
     public float healthChange;
     public TextMeshProUGUI textMeshProUGUI;
+    bool dead;
+    public GameObject gameOverPanel;
+
 
     void Start() {
+        dead = false;
         health = 1f;
+    }
+
+    private void Update()
+    {
+        if (health == 0)
+        {
+            if (!dead)
+            {
+                gameOverPanel.SetActive(true);
+            }
+            dead = true;
+        }
     }
 
     void OnCollisionStay2D(Collision2D collision)

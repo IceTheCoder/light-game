@@ -11,6 +11,7 @@ public class LightCalculator : MonoBehaviour
     public float speed;
     public float SpeedFactor = 0.07f;
     public TriangleCollision collision;
+    public float lightChangeDelay = 1f;
 
     // Number of previous speed samples to include in the moving average
     public int numSamples = 10;
@@ -22,11 +23,15 @@ public class LightCalculator : MonoBehaviour
     void Start()
     {
         theLight = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
+
         StartCoroutine(CalcSpeed());
     }
 
     IEnumerator CalcSpeed()
     {
+        yield return new WaitForSeconds(lightChangeDelay);
+
+        // yield return new WaitForSeconds(lightChangeDelay);
         bool isPlaying = true;
 
         while (isPlaying) 
