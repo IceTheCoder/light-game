@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
 
 public class TriangleCollision : MonoBehaviour
@@ -27,7 +26,6 @@ public class TriangleCollision : MonoBehaviour
             if (!dead)
             {
                 gameOverPanel.SetActive(true);
-                // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
             dead = true;
         }
