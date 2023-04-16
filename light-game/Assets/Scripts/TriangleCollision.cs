@@ -6,9 +6,9 @@ using TMPro;
 
 public class TriangleCollision : MonoBehaviour
 {
-    public LightCalculator lightCalculator;
     public float health; 
     public float healthChange;
+    public float collisionDelay = 0.67f;
     public TextMeshProUGUI textMeshProUGUI;
     bool dead;
     public GameObject gameOverPanel;
@@ -39,7 +39,7 @@ public class TriangleCollision : MonoBehaviour
 
     IEnumerator CollisionDelay()
     {
-        yield return new WaitForSeconds(0.67f);
+        yield return new WaitForSeconds(collisionDelay);
         canCollide = true;
     }
 
@@ -47,15 +47,9 @@ public class TriangleCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Triangle" && canCollide)
         {
-            // lightCalculator.enabled = false;
             float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
             textMeshProUGUI.text = "Health: " + (health * 100).ToString("0");
         }
     }
-    // void OnCollisionExit2D(Collision2D collision) {
-    //    if (collision.gameObject.tag == "Triangle") {
-    //        lightCalculator.enabled = true;
-    //    }
-    // }
 }

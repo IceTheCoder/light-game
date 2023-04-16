@@ -1154,7 +1154,7 @@ MonoBehaviour:
   speed: 0
   SpeedFactor: 0.07
   collision: {fileID: 803651390}
-  lightChangeDelay: 2
+  lightChangeDelay: 1.5
   numSamples: 10
 --- !u!114 &803651388
 MonoBehaviour:
@@ -1192,9 +1192,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c960d12dfab7ad048839af35d32208bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightCalculator: {fileID: 803651387}
   health: 0
   healthChange: 0.01
+  collisionDelay: 1.5
   textMeshProUGUI: {fileID: 2036765775}
   gameOverPanel: {fileID: 2005126334}
 --- !u!212 &803651391
