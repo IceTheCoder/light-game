@@ -12,11 +12,13 @@ public class TriangleCollision : MonoBehaviour
     public TextMeshProUGUI textMeshProUGUI;
     bool dead;
     public GameObject gameOverPanel;
+    bool canCollide = false;
 
 
     void Start() {
         dead = false;
         health = 1f;
+        StartCoroutine(CollisionDelay());
     }
 
     private void Update()
@@ -31,11 +33,16 @@ public class TriangleCollision : MonoBehaviour
         }
     }
 
+    IEnumerator CollisionDelay()
+    {
+        yield return new WaitForSeconds(0.67f);
+        canCollide = true;
+    }
+
     void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Triangle")
+        if (collision.gameObject.tag == "Triangle" && canCollide)
         {
-            // lightCalculator.enabled = false;
             float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
             textMeshProUGUI.text = "Health: " + (health * 100).ToString("0");
