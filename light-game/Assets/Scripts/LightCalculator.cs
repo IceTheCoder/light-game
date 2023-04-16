@@ -27,6 +27,11 @@ public class LightCalculator : MonoBehaviour
         StartCoroutine(CalcSpeed());
     }
 
+    private void Update()
+    {
+        Debug.Log(transform.position);
+    }
+
     IEnumerator CalcSpeed()
     {
         speed = 0.2f;
@@ -38,8 +43,8 @@ public class LightCalculator : MonoBehaviour
 
             yield return new WaitForFixedUpdate();
 
-            Debug.Log(transform.position);
-            Debug.Log(prevPos);
+            // Debug.Log(transform.position);
+            // Debug.Log(prevPos);
 
             // Only if the cursor actually moved.
             if (transform.position != prevPos)
