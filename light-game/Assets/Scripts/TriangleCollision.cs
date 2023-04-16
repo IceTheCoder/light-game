@@ -47,14 +47,15 @@ public class TriangleCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Triangle" && canCollide)
         {
+            // lightCalculator.enabled = false;
             float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
             textMeshProUGUI.text = "Health: " + (health * 100).ToString("0");
         }
     }
-    void OnCollisionExit2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Triangle") {
-            lightCalculator.enabled = true;
-        }
-    }
+    // void OnCollisionExit2D(Collision2D collision) {
+    //    if (collision.gameObject.tag == "Triangle") {
+    //        lightCalculator.enabled = true;
+    //    }
+    // }
 }
