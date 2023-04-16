@@ -31,6 +31,10 @@ public class TriangleCollision : MonoBehaviour
             }
             dead = true;
         }
+        if (health < 0.01f)
+        {
+            health = 0f;
+        }
     }
 
     IEnumerator CollisionDelay()
