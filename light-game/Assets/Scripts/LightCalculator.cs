@@ -31,7 +31,8 @@ public class LightCalculator : MonoBehaviour
 
     IEnumerator CalcSpeed()
     {
-        yield return new WaitForSeconds(lightChangeDelay);
+        // yield return new WaitForSeconds(lightChangeDelay);
+        speed = 0.2f;
 
         bool isPlaying = true;
 
@@ -41,21 +42,31 @@ public class LightCalculator : MonoBehaviour
 
             yield return new WaitForFixedUpdate();
 
-            // Calculate speed and add to list of speed samples
-            float currentSpeed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
-            speedSamples.Add(currentSpeed);
+            // Only if the cursor actually moved.
+            if (transform.position != prevPos)
+            {
+                // Calculate speed and add to list of speed samples
+                float currentSpeed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
+                speedSamples.Add(currentSpeed);
 
-            // If number of samples exceeds limit, remove oldest sample
-            if (speedSamples.Count > numSamples) {
-                speedSamples.RemoveAt(0);
+                // If number of samples exceeds limit, remove oldest sample
+                if (speedSamples.Count > numSamples)
+                {
+                    speedSamples.RemoveAt(0);
+                }
+
+                // Calculate average speed over previous samples
+                float totalSpeed = 0f;
+                foreach (float sample in speedSamples)
+                {
+                    totalSpeed += sample;
+                }
+                speed = totalSpeed / speedSamples.Count;
+            } else
+            {
+                speed = 0.2f;
             }
 
-            // Calculate average speed over previous samples
-            float totalSpeed = 0f;
-            foreach (float sample in speedSamples) {
-                totalSpeed += sample;
-            }
-            speed = totalSpeed / speedSamples.Count;
         }
     }
 
