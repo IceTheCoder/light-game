@@ -1194,7 +1194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   healthChange: 0.01
-  collisionDelay: 1.5
+  collisionDelay: 1
   textMeshProUGUI: {fileID: 2036765775}
   gameOverPanel: {fileID: 2005126334}
 --- !u!212 &803651391
