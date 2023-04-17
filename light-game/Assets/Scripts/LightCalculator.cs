@@ -9,7 +9,7 @@ public class LightCalculator : MonoBehaviour
 {
     private UnityEngine.Rendering.Universal.Light2D theLight;
     public float speed = 0.2f;
-    public float SpeedFactor = 0.07f;
+    public float speedFactor = 0.07f;
     public TriangleCollision collision;
     public float lightChangeDelay = 0.6f;
 
@@ -36,19 +36,22 @@ public class LightCalculator : MonoBehaviour
 
     IEnumerator CalcSpeed()
     {
-        yield return new WaitForSeconds(lightChangeDelay);
+        // yield return new WaitForSeconds(lightChangeDelay);
 
         speed = 0.2f;
 
         while (true)
         {
+            yield return new WaitForSeconds(0.02f);
+
             Vector3 prevPos = transform.position;
 
-            yield return new WaitForFixedUpdate();
 
             if (transform.position != prevPos)
             {
+                // Debug.Log("Cursor moved!");
                 float currentSpeed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
+                Debug.Log(Vector3.Distance(transform.position, prevPos));
                 speedSamples.Add(currentSpeed);
 
                 if (speedSamples.Count > numSamples)
@@ -68,7 +71,7 @@ public class LightCalculator : MonoBehaviour
                 speed = 0.2f;
             }
 
-            Debug.Log("Speed: " + speed + " Time: " + Time.time);
+            // Debug.Log("Speed: " + speed + " Time: " + Time.time);
         }
     }
 
@@ -76,11 +79,11 @@ public class LightCalculator : MonoBehaviour
     void FixedUpdate()
     {
         // Force a minimum intensity of 1 and a minimum radius of 0.2 for the light.
-        float[] intensityValues = { speed * SpeedFactor * collision.health, 0.34f };
-        float[] radiusValues = { speed * SpeedFactor * collision.health, 0.2f };
+        float[] intensityValues = { speed * speedFactor * collision.health, 0.34f };
+        float[] radiusValues = { speed * speedFactor * collision.health, 0.2f };
         theLight.intensity = intensityValues.Max();
         theLight.pointLightOuterRadius = radiusValues.Max();
 
-        Debug.Log(speed);
+        // Debug.Log(speed);
     }
 }
