@@ -9,6 +9,9 @@ public class Crawl : MonoBehaviour
     // Magnitude of movement
     public float magnitude = 0.1f;
 
+    /// <summary>
+    /// Called once per frame, this method
+    /// </summary>
     void Update()
     {
         // Generate a random Vector2 with magnitude less than or equal to 0.5

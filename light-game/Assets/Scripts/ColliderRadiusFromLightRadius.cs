@@ -8,7 +8,8 @@ public class ColliderRadiusFromLightRadius : MonoBehaviour
     UnityEngine.Rendering.Universal.Light2D theLight;
 
     /// <summary>
-    /// 
+    /// Called when the script is first loaded, this method gets the circle collider and light 2d components
+    /// of the players and placed them in 2 variabled.
     /// </summary>
     void Start()
     {
@@ -17,7 +18,10 @@ public class ColliderRadiusFromLightRadius : MonoBehaviour
     
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Called once per frame, this function sets the circle collider's radius to match the light's outer
+    /// radius.
+    /// </summary>
     void Update()
     {
         circleCollider.radius = theLight.pointLightOuterRadius;
