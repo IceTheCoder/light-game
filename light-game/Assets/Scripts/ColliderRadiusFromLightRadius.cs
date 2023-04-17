@@ -7,6 +7,9 @@ public class ColliderRadiusFromLightRadius : MonoBehaviour
     CircleCollider2D circleCollider;
     UnityEngine.Rendering.Universal.Light2D theLight;
 
+    /// <summary>
+    /// 
+    /// </summary>
     void Start()
     {
         circleCollider = GetComponent<CircleCollider2D>();
