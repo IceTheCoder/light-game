@@ -8,7 +8,7 @@ public class TriangleCollision : MonoBehaviour
 {
     public float health; 
     public float healthChange;
-    public float collisionDelay = 0.67f;
+    public float collisionDelay = 1f;
     public TextMeshProUGUI textMeshProUGUI;
     bool dead;
     public GameObject gameOverPanel;
