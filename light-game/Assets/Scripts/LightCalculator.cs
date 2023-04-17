@@ -33,6 +33,8 @@ public class LightCalculator : MonoBehaviour
     {
         speed = 0.2f;
 
+        yield return new WaitForSeconds(lightChangeDelay);
+
         while (true)
         {
 
