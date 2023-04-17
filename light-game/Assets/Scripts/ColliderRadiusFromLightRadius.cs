@@ -7,6 +7,9 @@ public class ColliderRadiusFromLightRadius : MonoBehaviour
     CircleCollider2D circleCollider;
     UnityEngine.Rendering.Universal.Light2D theLight;
 
+    /// <summary>
+    /// Get the circle collider and light 2D components when the script is loaded.
+    /// </summary>
     void Start()
     {
         circleCollider = GetComponent<CircleCollider2D>();
@@ -14,7 +17,9 @@ public class ColliderRadiusFromLightRadius : MonoBehaviour
     
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Update the circle collider's radius to match the light's outer radius once per frame.
+    /// </summary>
     void Update()
     {
         circleCollider.radius = theLight.pointLightOuterRadius;
