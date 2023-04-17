@@ -10,12 +10,12 @@ public class Crawl : MonoBehaviour
     public float magnitude = 0.1f;
 
     /// <summary>
-    /// Called once per frame, this method calculates a random Vector2 and uses it to change the position
-    /// of the triangle, giving it a 'crawling' effect.
+    /// Called once per frame, this method generates a random Vector2
+    /// The position of the game object is then updated by adding the random
+    /// Vector2 to the current position, resulting in a 'crawling' effect.
     /// </summary>
     void Update()
     {
-        // Generate a random Vector2 with magnitude less than or equal to 0.5
         Vector2 movement = Random.insideUnitCircle * magnitude;
 
         // Move the object in the direction of the random Vector2
