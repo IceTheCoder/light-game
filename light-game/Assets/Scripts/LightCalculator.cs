@@ -8,8 +8,8 @@ using System.Linq;
 public class LightCalculator : MonoBehaviour
 {
     private UnityEngine.Rendering.Universal.Light2D theLight;
-    public float speed;
-    public float SpeedFactor = 0.07f;
+    public float speed = 0.2f;
+    public float speedFactor = 0.07f;
     public TriangleCollision collision;
     public float lightChangeDelay = 1f;
 
@@ -22,6 +22,8 @@ public class LightCalculator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        speed = 0.2f;
+        
         theLight = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
 
         StartCoroutine(CalcSpeed());
@@ -29,41 +31,49 @@ public class LightCalculator : MonoBehaviour
 
     IEnumerator CalcSpeed()
     {
+        speed = 0.2f;
+
         yield return new WaitForSeconds(lightChangeDelay);
 
-        // yield return new WaitForSeconds(lightChangeDelay);
-        bool isPlaying = true;
-
-        while (isPlaying) 
+        while (true)
         {
+
             Vector3 prevPos = transform.position;
 
-            yield return new WaitForFixedUpdate();
+            yield return new WaitForSeconds(0.01f);
 
-            // Calculate speed and add to list of speed samples
             float currentSpeed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
+            Debug.Log(Vector3.Distance(transform.position, prevPos));
             speedSamples.Add(currentSpeed);
 
-            // If number of samples exceeds limit, remove oldest sample
-            if (speedSamples.Count > numSamples) {
+            if (speedSamples.Count > numSamples)
+            {
                 speedSamples.RemoveAt(0);
             }
 
-            // Calculate average speed over previous samples
             float totalSpeed = 0f;
-            foreach (float sample in speedSamples) {
+            foreach (float sample in speedSamples)
+            {
                 totalSpeed += sample;
             }
             speed = totalSpeed / speedSamples.Count;
+            
+            //if (transform.position == prevPos)
+            //{
+            //    speed = 0.2f;
+            //}
         }
     }
+
 
     void FixedUpdate()
     {
         // Force a minimum intensity of 1 and a minimum radius of 0.2 for the light.
-        float[] intensityValues = {speed * SpeedFactor * collision.health, 0.34f};
-        float[] radiusValues = {speed * SpeedFactor * collision.health, 0.2f};
+        float[] intensityValues = { speed * speedFactor * collision.health, 0.34f };
+        float[] radiusValues = { speed * speedFactor * collision.health, 0.2f };
         theLight.intensity = intensityValues.Max();
         theLight.pointLightOuterRadius = radiusValues.Max();
+
+        // Debug.Log(speed);
     }
 }
