@@ -11,7 +11,7 @@ public class LightCalculator : MonoBehaviour
     public float speed = 0.2f;
     public float speedFactor = 0.07f;
     public TriangleCollision collision;
-    public float lightChangeDelay = 0.6f;
+    public float lightChangeDelay = 1f;
 
     // Number of previous speed samples to include in the moving average
     public int numSamples = 10;
