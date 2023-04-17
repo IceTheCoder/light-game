@@ -19,7 +19,10 @@ public class LightCalculator : MonoBehaviour
     // List of previous speed samples
     private List<float> speedSamples = new List<float>();
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// Called when the Script is loaded, this method sets the speed to 0.2, gets the light 2D component,
+    /// and starts the CalcSpeed coroutine.
+    /// </summary>
     void Start()
     {
         speed = 0.2f;
@@ -29,10 +32,15 @@ public class LightCalculator : MonoBehaviour
         StartCoroutine(CalcSpeed());
     }
 
+    /// <summary>
+    /// Called when the script is first loaded, this coroutine waits for the lightChangeDelay to pass,
+    /// then continously calculates the distance between the current position and the position 0.01 seconds
+    /// ago, and divides this distance by fixedDeltaTime to get a speed, which it adds to a list of a
+    /// maximum of 10 samples, which are averaged to determine the smooth speed of the light.
+    /// </summary>
+    /// <returns>Absolutely nothing.</returns>
     IEnumerator CalcSpeed()
     {
-        speed = 0.2f;
-
         yield return new WaitForSeconds(lightChangeDelay);
 
         while (true)
@@ -57,15 +65,15 @@ public class LightCalculator : MonoBehaviour
                 totalSpeed += sample;
             }
             speed = totalSpeed / speedSamples.Count;
-            
-            //if (transform.position == prevPos)
-            //{
-            //    speed = 0.2f;
-            //}
         }
     }
 
-
+    /// <summary>
+    /// Called every fixed frame, this function sets the intensity of the light to 0.34 or the
+    /// speed multiplied by the speedFactor multiplied by health, whichever is bigger, and the
+    /// radius of it to 0.2 or the speed multiplied by the speedFactor multiplied by health,
+    /// whichever is bigger.
+    /// </summary>
     void FixedUpdate()
     {
         // Force a minimum intensity of 1 and a minimum radius of 0.2 for the light.
@@ -73,7 +81,5 @@ public class LightCalculator : MonoBehaviour
         float[] radiusValues = { speed * speedFactor * collision.health, 0.2f };
         theLight.intensity = intensityValues.Max();
         theLight.pointLightOuterRadius = radiusValues.Max();
-
-        // Debug.Log(speed);
     }
 }
