@@ -29,49 +29,37 @@ public class LightCalculator : MonoBehaviour
         StartCoroutine(CalcSpeed());
     }
 
-    private void Update()
-    {
-        // Debug.Log(transform.position);
-    }
-
     IEnumerator CalcSpeed()
     {
-        // yield return new WaitForSeconds(lightChangeDelay);
-
         speed = 0.2f;
 
         while (true)
         {
-            yield return new WaitForSeconds(0.02f);
 
             Vector3 prevPos = transform.position;
 
+            yield return new WaitForSeconds(0.01f);
 
-            if (transform.position != prevPos)
+            float currentSpeed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
+            Debug.Log(Vector3.Distance(transform.position, prevPos));
+            speedSamples.Add(currentSpeed);
+
+            if (speedSamples.Count > numSamples)
             {
-                // Debug.Log("Cursor moved!");
-                float currentSpeed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
-                Debug.Log(Vector3.Distance(transform.position, prevPos));
-                speedSamples.Add(currentSpeed);
-
-                if (speedSamples.Count > numSamples)
-                {
-                    speedSamples.RemoveAt(0);
-                }
-
-                float totalSpeed = 0f;
-                foreach (float sample in speedSamples)
-                {
-                    totalSpeed += sample;
-                }
-                speed = totalSpeed / speedSamples.Count;
-            }
-            else
-            {
-                speed = 0.2f;
+                speedSamples.RemoveAt(0);
             }
 
-            // Debug.Log("Speed: " + speed + " Time: " + Time.time);
+            float totalSpeed = 0f;
+            foreach (float sample in speedSamples)
+            {
+                totalSpeed += sample;
+            }
+            speed = totalSpeed / speedSamples.Count;
+            
+            //if (transform.position == prevPos)
+            //{
+            //    speed = 0.2f;
+            //}
         }
     }
 
