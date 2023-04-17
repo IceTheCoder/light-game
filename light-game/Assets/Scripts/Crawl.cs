@@ -10,7 +10,8 @@ public class Crawl : MonoBehaviour
     public float magnitude = 0.1f;
 
     /// <summary>
-    /// Called once per frame, this method
+    /// Called once per frame, this method calculates a random Vector2 and uses it to change the position
+    /// of the triangle, giving it a 'crawling' effect.
     /// </summary>
     void Update()
     {
