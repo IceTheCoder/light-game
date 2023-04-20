@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Crawl : MonoBehaviour
 {
-    // Speed of movement
     public float speed = 50f;
-    // Magnitude of movement
     public float magnitude = 0.1f;
 
     /// <summary>
