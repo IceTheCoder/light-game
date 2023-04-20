@@ -5,6 +5,12 @@ There are slightly visible triangles vibrating somewhere in the dark. Something 
 
 Blog: https://icethedev2.github.io/
 
+## Notices
+- If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
+- If the issue persists, adjust your graphics settings or check for driver updates for your graphics card or monitor.
+- If the issue still persists, post an issue on this GitHub repo with as much information as possible about the issue.
+
+
 ## License
 This repository is licensed under the MIT license with an added attribution. Read LICENSE for more information.
 
