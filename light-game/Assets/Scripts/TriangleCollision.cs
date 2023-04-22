@@ -62,11 +62,10 @@ public class TriangleCollision : MonoBehaviour
     /// and it can't go below 0) and updates the text box displaying the health value accordingly.
     /// </summary>
     /// <param name="collision"></param>
-    void OnTriggerStay2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Triangle" && canCollide)
         {
-            Debug.Log("collision");
             float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
             textMeshProUGUI.text = "Health: " + (health * 100).ToString("0");
