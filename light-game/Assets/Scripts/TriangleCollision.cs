@@ -66,6 +66,7 @@ public class TriangleCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Triangle" && canCollide)
         {
+            Debug.Log("collision");
             float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
             textMeshProUGUI.text = "Health: " + (health * 100).ToString("0");
