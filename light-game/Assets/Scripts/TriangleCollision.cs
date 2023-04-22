@@ -62,7 +62,7 @@ public class TriangleCollision : MonoBehaviour
     /// and it can't go below 0) and updates the text box displaying the health value accordingly.
     /// </summary>
     /// <param name="collision"></param>
-    void OnTriggerStay2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Triangle" && canCollide)
         {
