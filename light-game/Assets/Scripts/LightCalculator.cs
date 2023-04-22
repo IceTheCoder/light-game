@@ -51,7 +51,6 @@ public class LightCalculator : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
 
             float currentSpeed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
-            Debug.Log(Vector3.Distance(transform.position, prevPos));
             speedSamples.Add(currentSpeed);
 
             if (speedSamples.Count > numSamples)
