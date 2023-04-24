@@ -1193,7 +1193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  healthChange: 0.01
+  healthChange: 0
   collisionDelay: 1
   textMeshProUGUI: {fileID: 2036765775}
   gameOverPanel: {fileID: 2005126334}
@@ -1521,6 +1521,10 @@ PrefabInstance:
     - target: {fileID: 7033612964580559145, guid: f8fb27d94a58e164fa62ddbc6e7d260f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033612964580559146, guid: f8fb27d94a58e164fa62ddbc6e7d260f, type: 3}
+      propertyPath: speed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7033612964580559151, guid: f8fb27d94a58e164fa62ddbc6e7d260f, type: 3}
       propertyPath: m_Name

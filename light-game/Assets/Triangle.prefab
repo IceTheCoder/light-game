@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7033612964580559145}
   - component: {fileID: 7033612964580559144}
-  - component: {fileID: 7033612964580559146}
   - component: {fileID: 7033612964580559156}
   - component: {fileID: 7033612964580559147}
+  - component: {fileID: 7033612964580559146}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Triangle
@@ -88,20 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7033612964580559146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7033612964580559151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5c9a7c1005828849aeed739d3f7b324, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 100
-  magnitude: 0.1
 --- !u!50 &7033612964580559156
 Rigidbody2D:
   serializedVersion: 4
@@ -151,6 +137,20 @@ PolygonCollider2D:
     - - {x: 0, y: 0.5773587}
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
+--- !u!114 &7033612964580559146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7033612964580559151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c9a7c1005828849aeed739d3f7b324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  overlapRadius: 0.5
 --- !u!1 &7033612964960089536
 GameObject:
   m_ObjectHideFlags: 0

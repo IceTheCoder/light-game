@@ -1,22 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Crawl : MonoBehaviour
 {
-    public float speed = 50f;
-    public float magnitude = 0.1f;
+    public float speed = 2f;
+    public float overlapRadius = 0.5f;
 
-    /// <summary>
-    /// Called once per frame, this method generates a random Vector2
-    /// The position of the game object is then updated by adding the random
-    /// Vector2 to the current position, resulting in a 'crawling' effect.
-    /// </summary>
+    private Vector2 targetPosition;
+    private Collider2D[] colliders = new Collider2D[10];
+
+    void Start()
+    {
+        targetPosition = GetRandomTargetPosition();
+    }
+
     void Update()
     {
-        Vector2 movement = Random.insideUnitCircle * magnitude;
+        if (Physics2D.OverlapCircleNonAlloc(transform.position, overlapRadius, colliders) > 0)
+        {
+            targetPosition = GetRandomTargetPosition();
+        }
 
-        // Move the object in the direction of the random Vector2
-        transform.position += new Vector3(movement.x, movement.y, 0) * speed * Time.deltaTime;
+        transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+
+        if (Vector2.Distance(transform.position, targetPosition) < 0.1f)
+        {
+            targetPosition = GetRandomTargetPosition();
+        }
+    }
+
+    private Vector2 GetRandomTargetPosition()
+    {
+        Vector2 randomDirection = Random.insideUnitCircle.normalized;
+        float distance = Random.Range(1f, 3f);
+        return (Vector2)transform.position + (randomDirection * distance);
     }
 }
