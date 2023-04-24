@@ -1152,7 +1152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  speedFactor: 0.07
+  speedFactor: 0.14
   collision: {fileID: 803651390}
   lightChangeDelay: 1
   numSamples: 10
