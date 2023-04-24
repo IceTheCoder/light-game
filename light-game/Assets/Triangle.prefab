@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c9a7c1005828849aeed739d3f7b324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  overlapRadius: 0.5
+  speed: 2
+  magnitude: 8.36
 --- !u!1 &7033612964960089536
 GameObject:
   m_ObjectHideFlags: 0
