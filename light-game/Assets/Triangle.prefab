@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   magnitude: 8.36
+  overlapRadius: 0.1
 --- !u!1 &7033612964960089536
 GameObject:
   m_ObjectHideFlags: 0
