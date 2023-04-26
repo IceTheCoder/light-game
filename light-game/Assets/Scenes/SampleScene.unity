@@ -1472,6 +1472,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winGamePanel: {fileID: 1883467635}
   lightCalculator: {fileID: 803651387}
+  triangleCollision: {fileID: 803651390}
+  healthText: {fileID: 2036765773}
 --- !u!1001 &891230998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1817,7 +1819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0024414062, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0.0024414062, y: -0.00012207031}
   m_SizeDelta: {x: -0.005, y: 0.00012207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1883467637
