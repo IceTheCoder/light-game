@@ -12,7 +12,10 @@ public class Crawl : MonoBehaviour
     private Collider2D[] colliders = new Collider2D[0];
 
     /// <summary>
-    /// 
+    /// Called when the script firt runs,
+    /// this mehotd initializes variables for the starting (current of the object) position, 
+    /// target position (the position to slide towards), 
+    /// and a new array of colliders with a length of one.
     /// </summary>
     void Start()
     {
@@ -21,6 +24,14 @@ public class Crawl : MonoBehaviour
         colliders = new Collider2D[1];
     }
 
+    /// <summary>
+    /// Called once per frame,
+    /// this method first checks if the object is touching a triangles, 
+    /// and sets a new target position if it is,
+    /// then it moves the object towards the target position based on the speed float,
+    /// and if it gets close to the target position, it chooses a news one.
+    /// This method also limits the target poistion to the boundaries of the scene.
+    /// </summary>
     void Update()
     {
         if (Physics2D.OverlapCircleNonAlloc(targetPosition, overlapRadius, colliders) > 0)
@@ -47,7 +58,12 @@ public class Crawl : MonoBehaviour
         transform.position = newPosition;
     }
 
-
+    /// <summary>
+    /// Called once the object is near a collider or near the target position, 
+    /// this method generates a new target position for the object within a circle with the radius of the maginute float, 
+    /// until the position is not near a collider.
+    /// </summary>
+    /// <returns>Vector2 target position</returns>
     private Vector2 GetRandomTargetPosition()
     {
         Vector2 position = startPosition + Random.insideUnitCircle * magnitude;
