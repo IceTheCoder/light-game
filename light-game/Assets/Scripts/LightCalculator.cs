@@ -12,6 +12,8 @@ public class LightCalculator : MonoBehaviour
     public float speedFactor = 0.07f;
     public TriangleCollision collision;
     public float lightChangeDelay = 1f;
+    public bool won = false;
+    public FollowMouse followMouseScript;
 
     // Number of previous speed samples to include in the moving average
     public int numSamples = 10;
@@ -75,10 +77,18 @@ public class LightCalculator : MonoBehaviour
     /// </summary>
     void FixedUpdate()
     {
-        // Force a minimum intensity of 0.34 and a minimum radius of 0.2 for the light.
-        float[] intensityValues = { speed * speedFactor * collision.health, 0.34f };
-        float[] radiusValues = { speed * speedFactor * collision.health, 0.2f };
-        theLight.intensity = intensityValues.Max();
-        theLight.pointLightOuterRadius = radiusValues.Max();
+        if (won == false)
+        {
+            // Force a minimum intensity of 0.34 and a minimum radius of 0.2 for the light.
+            float[] intensityValues = { speed * speedFactor * collision.health, 0.34f };
+            float[] radiusValues = { speed * speedFactor * collision.health, 0.2f };
+            theLight.intensity = intensityValues.Max();
+            theLight.pointLightOuterRadius = radiusValues.Max();
+        } else
+        {
+            followMouseScript.enabled = false;
+            // theLight.intensity += 0.2f;
+            theLight.pointLightOuterRadius += 0.2f;
+        }
     }
 }
