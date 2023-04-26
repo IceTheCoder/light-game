@@ -68,7 +68,7 @@ public class TriangleCollision : MonoBehaviour
         {
             float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
-            textMeshProUGUI.text = "Health: " + (health * 100).ToString("0");
+            textMeshProUGUI.text = "Health: " + (health * 10).ToString("0");
         }
     }
 }

@@ -75,7 +75,7 @@ public class LightCalculator : MonoBehaviour
     /// </summary>
     void FixedUpdate()
     {
-        // Force a minimum intensity of 1 and a minimum radius of 0.2 for the light.
+        // Force a minimum intensity of 0.34 and a minimum radius of 0.2 for the light.
         float[] intensityValues = { speed * speedFactor * collision.health, 0.34f };
         float[] radiusValues = { speed * speedFactor * collision.health, 0.2f };
         theLight.intensity = intensityValues.Max();
