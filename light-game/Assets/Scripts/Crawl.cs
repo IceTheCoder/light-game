@@ -9,8 +9,6 @@ public class Crawl : MonoBehaviour
     private Vector2 startPosition;
     private Vector2 targetPosition;
 
-    private Collider2D[] colliders = new Collider2D[0];
-
     /// <summary>
     /// Called when the script firt runs,
     /// this mehotd initializes variables for the starting (current of the object) position, 
@@ -21,7 +19,6 @@ public class Crawl : MonoBehaviour
     {
         startPosition = transform.position;
         targetPosition = GetRandomTargetPosition();
-        colliders = new Collider2D[1];
     }
 
     /// <summary>
@@ -34,12 +31,6 @@ public class Crawl : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if (Physics2D.OverlapCircleNonAlloc(targetPosition, overlapRadius, colliders) > 0)
-        {
-            targetPosition = GetRandomTargetPosition();
-            return;
-        }
-
         Vector2 newPosition = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
         if (Vector2.Distance(newPosition, targetPosition) < 0.1f)
@@ -67,11 +58,6 @@ public class Crawl : MonoBehaviour
     private Vector2 GetRandomTargetPosition()
     {
         Vector2 position = startPosition + Random.insideUnitCircle * magnitude;
-
-        while (Physics2D.OverlapCircleNonAlloc(position, overlapRadius, colliders) > 0)
-        {
-            position = startPosition + Random.insideUnitCircle * magnitude;
-        }
 
         return position;
     }
