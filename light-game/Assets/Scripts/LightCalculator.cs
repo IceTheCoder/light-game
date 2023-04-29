@@ -54,7 +54,7 @@ public class LightCalculator : MonoBehaviour
 
             float currentSpeed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
             
-            if (currentSpeed < 1) {
+            if (currentSpeed < 50) {
                 speedSamples.Add(currentSpeed);
 
                 if (speedSamples.Count > numSamples)
