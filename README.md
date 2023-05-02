@@ -12,8 +12,11 @@ Blog: https://icethedev2.github.io/
 - If the issue persists, check for driver updates for your graphics card or monitor.
 - If the issue still persists, post an issue on this GitHub repo with as much information as possible about the issue.
 
+## How to run
+Open the 'light-game' folder as a project in Unity and hit the play button.
+
 ## License
-This repository is licensed under the MIT license with an added attribution. Read LICENSE for more information.
+This repository is licensed under the MIT license with an added attribution. In short, you must include the exact copy of this project's license in your end-user application and also mention the sections in which my code was used. Read LICENSE for more information.
 
 ## Contact
 Project Link: https://github.com/IceTheDev2/Passwordsy/  
@@ -25,6 +28,7 @@ Youtube: https://www.youtube.com/channel/UCBqVJU4gjeik1RavAsVR6Pg
 E-mail: icethedev2@gmail.com
 
 ## Acknowledgements
+- [Brackeys](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) for making such a great beginner's guide on getting into game development.
 - [This video](https://www.youtube.com/watch?v=ACyqpLh4jrs) by [The Game Dev Show](https://www.youtube.com/@thegamedevshow8449/videos) for helping me introduce light in my game.
 - [ChatGPT](https://chat.openai.com/chat) for providing me with unique solutions to certain problems.
 - [Comp-3 Interactive](https://youtu.be/W11uv7jf1e4) for explaining me how I can use custom fonts with TextMeshPro.
