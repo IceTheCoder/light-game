@@ -3,13 +3,14 @@ A light follows your cursor and gets larger and more intense the faster you move
 
 There are slightly visible triangles vibrating somewhere in the dark. Something bad might happen if one of them sees you.
 
+There is also a green square. Try to find it and see what happens👀
+
 Blog: https://icethedev2.github.io/
 
 ## Notices
 - If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
-- If the issue persists, adjust your graphics settings or check for driver updates for your graphics card or monitor.
+- If the issue persists, check for driver updates for your graphics card or monitor.
 - If the issue still persists, post an issue on this GitHub repo with as much information as possible about the issue.
-
 
 ## License
 This repository is licensed under the MIT license with an added attribution. Read LICENSE for more information.
