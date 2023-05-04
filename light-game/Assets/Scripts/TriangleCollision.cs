@@ -65,7 +65,7 @@ public class TriangleCollision : MonoBehaviour
     /// <param name="collision"></param>
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Triangle" && canCollide)
+        if (collision.CompareTag("Triangle") && canCollide)
         {
             float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
