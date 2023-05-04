@@ -11,7 +11,10 @@ public class RandomPosition : MonoBehaviour
     // The object to be moved
     private Transform objectToMove;
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// Called when the script first loads, this method gets the screen width and height 
+    /// and the object's transform component, and also calls the function to move the object to a random position.
+    /// </summary>
     void Start()
     {
         // Get the screen dimensions
@@ -25,7 +28,10 @@ public class RandomPosition : MonoBehaviour
         MoveObject();
     }
 
-    // Function to move the object to a random position within the screen view
+    /// <summary>
+    /// Called shortly after the script first loads, this metho gets a random position within the scene view,
+    /// and moves the object to that position.
+    /// </summary>
     void MoveObject()
     {
         // Set a random position within the screen view

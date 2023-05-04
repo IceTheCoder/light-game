@@ -28,7 +28,7 @@ public class TriangleCollision : MonoBehaviour
     /// <summary>
     /// Called once per frame, this method constantly checks if the health reached 0, and uses the
     /// dead bool to activate the gameOverPanel only once. It also sets the health to 0 if it's below
-    /// 0.01.
+    /// 0.1.
     /// </summary>
     private void Update()
     {
