@@ -7,13 +7,16 @@ using System.Linq;
 
 public class LightCalculator : MonoBehaviour
 {
-    private UnityEngine.Rendering.Universal.Light2D theLight;
     public float speed = 0.2f;
     public float speedFactor = 0.07f;
-    public TriangleCollision collision;
+    public float lightUpdateDelay = 0.01f;
+    public float minimumIntensity = 0.34f;
+    public float minimumRadius = 0.2f;
     public float lightChangeDelay = 1f;
     public bool won = false;
+    public TriangleCollision collision;
     public FollowMouse followMouseScript;
+    private UnityEngine.Rendering.Universal.Light2D theLight;
 
     // Number of previous speed samples to include in the moving average
     public int numSamples = 10;
@@ -50,7 +53,7 @@ public class LightCalculator : MonoBehaviour
 
             Vector3 prevPos = transform.position;
 
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(lightUpdateDelay);
 
             float currentSpeed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
             
@@ -83,8 +86,8 @@ public class LightCalculator : MonoBehaviour
         if (won == false)
         {
             // Force a minimum intensity of 0.34 and a minimum radius of 0.2 for the light.
-            float[] intensityValues = { speed * speedFactor * collision.health, 0.34f };
-            float[] radiusValues = { speed * speedFactor * collision.health, 0.2f };
+            float[] intensityValues = { speed * speedFactor * collision.health, minimumIntensity };
+            float[] radiusValues = { speed * speedFactor * collision.health, minimumRadius };
             theLight.intensity = intensityValues.Max();
             theLight.pointLightOuterRadius = radiusValues.Max();
         } else
