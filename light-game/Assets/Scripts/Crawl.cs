@@ -13,7 +13,6 @@ public class Crawl : MonoBehaviour
     /// Called when the script firt runs,
     /// this mehotd initializes variables for the starting (current of the object) position, 
     /// target position (the position to slide towards), 
-    /// and a new array of colliders with a length of one.
     /// </summary>
     void Start()
     {
