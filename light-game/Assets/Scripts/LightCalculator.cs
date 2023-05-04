@@ -39,9 +39,12 @@ public class LightCalculator : MonoBehaviour
 
     /// <summary>
     /// Called when the script is first loaded, this coroutine waits for the lightChangeDelay to pass,
-    /// then continously calculates the distance between the current position and the position 0.01 seconds
-    /// ago, and divides this distance by fixedDeltaTime to get a speed, which it adds to a list of a
+    /// then continously calculates the distance between the current position 
+    /// and the position 0.01 seconds (lightUpdateDelay) ago, 
+    /// and divides this distance by fixedDeltaTime to get a speed, which it adds to a list of a
     /// maximum of 10 samples, which are averaged to determine the smooth speed of the light.
+    /// It does this if the currentSpeed is below 50 to avoid updating the light's size and intensity
+    /// if the movement was abrupt, such as focusing in and out of the game.
     /// </summary>
     /// <returns>Absolutely nothing.</returns>
     IEnumerator CalcSpeed()
@@ -52,7 +55,7 @@ public class LightCalculator : MonoBehaviour
         {
 
             Vector3 prevPos = transform.position;
-
+            
             yield return new WaitForSeconds(lightUpdateDelay);
 
             float currentSpeed = Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime;
@@ -80,6 +83,7 @@ public class LightCalculator : MonoBehaviour
     /// speed multiplied by the speedFactor multiplied by health, whichever is bigger, and the
     /// radius of it to 0.2 or the speed multiplied by the speedFactor multiplied by health,
     /// whichever is bigger.
+    /// If the game is won, it disabled the FollowMouse script and gradually increases the light's radius.
     /// </summary>
     void FixedUpdate()
     {
