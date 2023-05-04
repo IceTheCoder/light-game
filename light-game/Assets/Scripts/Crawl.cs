@@ -22,10 +22,8 @@ public class Crawl : MonoBehaviour
 
     /// <summary>
     /// Called once per frame,
-    /// this method first checks if the object is touching a triangles, 
-    /// and sets a new target position if it is,
-    /// then it moves the object towards the target position based on the speed float,
-    /// and if it gets close to the target position, it chooses a news one.
+    /// This method defines a new position (a gradual position between the current and target position).
+    /// Then, it checks if the object is close to the target position and gets a new target position if so
     /// This method also limits the target poistion to the boundaries of the scene.
     /// </summary>
     void Update()
@@ -49,10 +47,8 @@ public class Crawl : MonoBehaviour
     }
 
     /// <summary>
-    /// Called once the object is near a collider or near the target position, 
-    /// this method generates a new target position for the object within a circle with the radius of the maginute float, 
-    /// until the position is not near a collider.
-    /// </summary>
+    /// Called once the object is near the target position, 
+    /// this method generates a new target position for the object within a circle with the radius of the magnitude float.    /// </summary>
     /// <returns>Vector2 target position</returns>
     private Vector2 GetRandomTargetPosition()
     {
