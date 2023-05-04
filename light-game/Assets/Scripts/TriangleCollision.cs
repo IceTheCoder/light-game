@@ -12,7 +12,7 @@ public class TriangleCollision : MonoBehaviour
     public float minHealth = 0.1f;
     bool dead;
     bool canCollide = false;
-    public TextMeshProUGUI textMeshProUGUI;
+    public TextMeshProUGUI textBox;
     public GameObject gameOverPanel;
 
     /// <summary>
@@ -58,7 +58,8 @@ public class TriangleCollision : MonoBehaviour
     }
 
     /// <summary>
-    /// Called once per frame if touching the triangle and canCollide is true, this method changes the
+    /// Called once per frame, this method checks if the object
+    /// is touching the triangle and canCollide, and changes the
     /// health to 0 or to health - healthChange (so the health decreases when colliding with a triangle
     /// and it can't go below 0) and updates the text box displaying the health value accordingly.
     /// </summary>
@@ -69,7 +70,7 @@ public class TriangleCollision : MonoBehaviour
         {
             float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
-            textMeshProUGUI.text = "Health: " + (health * 10).ToString("0");
+            textBox.text = "Health: " + (health * 10).ToString("0");
         }
     }
 }
