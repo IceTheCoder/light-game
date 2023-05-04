@@ -9,10 +9,11 @@ public class TriangleCollision : MonoBehaviour
     public float health; 
     public float healthChange;
     public float collisionDelay = 1f;
-    public TextMeshProUGUI textMeshProUGUI;
+    public float minHealth = 0.1f;
     bool dead;
-    public GameObject gameOverPanel;
     bool canCollide = false;
+    public TextMeshProUGUI textMeshProUGUI;
+    public GameObject gameOverPanel;
 
     /// <summary>
     /// Called when the script first runs, this method sets dead to false, health to 1 and starts
@@ -39,7 +40,7 @@ public class TriangleCollision : MonoBehaviour
             }
             dead = true;
         }
-        if (health < 0.01f)
+        if (health < minHealth)
         {
             health = 0f;
         }
