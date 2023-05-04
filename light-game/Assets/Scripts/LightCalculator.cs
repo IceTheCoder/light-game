@@ -25,7 +25,7 @@ public class LightCalculator : MonoBehaviour
     private List<float> speedSamples = new List<float>();
 
     /// <summary>
-    /// Called when the Script is loaded, this method sets the speed to 0.2, gets the light 2D component,
+    /// Called when the script is loaded, this method sets the speed to 0.2, gets the light 2D component,
     /// and starts the CalcSpeed coroutine.
     /// </summary>
     void Start()
