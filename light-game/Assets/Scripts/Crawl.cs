@@ -33,7 +33,7 @@ public class Crawl : MonoBehaviour
     {
         Vector2 newPosition = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
-        if (Vector2.Distance(newPosition, targetPosition) < 0.1f)
+        if (Vector2.Distance(newPosition, targetPosition) < overlapRadius)
         {
             targetPosition = GetRandomTargetPosition();
         }
