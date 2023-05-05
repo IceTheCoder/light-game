@@ -1,0 +1,28 @@
+name: Build and Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Unity
+      uses: game-ci/unity-actions@v1
+      with:
+        unityVersion: 2020.3.1f1
+        components: "unity standard assets"
+        serial: ${{ secrets.UNITY_SERIAL }}
+        username: ${{ secrets.UNITY_USERNAME }}
+        password: ${{ secrets.UNITY_PASSWORD }}
+
+    - name: Build Project
+      run: |
+        mkdir build
+        Unity.exe -batchmode -nographics -logFile build.log -projectPath ./ -executeMethod BuildScript.PerformBuild
+
+    - name: Test Project
+      run: |
+        Unity.exe -batchmode -nographics -logFile test.log -projectPath ./ -executeMethod TestScript.RunTests
