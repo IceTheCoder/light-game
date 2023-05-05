@@ -1346,7 +1346,7 @@ MonoBehaviour:
   won: 0
   collision: {fileID: 803651390}
   followMouseScript: {fileID: 803651388}
-  numSamples: 10
+  numSamples: 20
 --- !u!114 &803651388
 MonoBehaviour:
   m_ObjectHideFlags: 0
