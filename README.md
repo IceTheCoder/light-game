@@ -10,7 +10,7 @@ Blog: https://icethedev2.github.io/
 ## Notices
 - If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
 - If the issue persists, check for driver updates for your graphics card or monitor.
-- If the issue still persists, post an issue on this GitHub repo with as much information as possible about the issue.
+- If the issue still persists, post an issue on this GitHub repo with as much information as possible.
 
 ## How to run
 Open the 'light-game' folder as a project in Unity and hit the play button.
