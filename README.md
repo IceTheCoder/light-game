@@ -29,7 +29,7 @@ Reddit: https://www.reddit.com/user/AnEntirePeach
 
 Youtube: https://www.youtube.com/channel/UCBqVJU4gjeik1RavAsVR6Pg
 
-E-mail: icethedev2@gmail.com
+E-mail: icethedev2@gmail.com 
 
 ## Acknowledgements
 - [Brackeys](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) for making such a great beginner's guide on getting into game development.
