@@ -4,24 +4,28 @@ about: Create a report to help us improve
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Description
+Please provide a clear and concise description of the bug.
 
-**To Reproduce**
-Steps to reproduce the behavior
+## Steps to Reproduce
+Please provide steps to reproduce the issue. Include any relevant code snippets, error messages, or screenshots.
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Expected behavior
+Please describe what you expected to happen.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## Actual behavior
+Please describe what actually happened.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
+## Screenshots
+Post screenshots if applicable.
 
-**Additional context**
+## Reproducible Demo
+Please provide a link to a reproducible demo (e.g. a code repository or a live demo) that demonstrates the issue.
+
+## Environment
+Please provide information about your environment, such as your operating system, browser version, or any other relevant information.
+
+## Additional context
 Add any other context about the problem here.
