@@ -51,7 +51,8 @@ public class Crawl : MonoBehaviour
 
     /// <summary>
     /// Called once the object is near the target position, 
-    /// this method generates a new target position for the object within a circle with the radius of the magnitude float.    /// </summary>
+    /// this method generates a new target position for the object within a circle with the radius of the magnitude float.    
+    /// </summary>
     /// <returns>Vector2 target position</returns>
     private Vector2 GetRandomTargetPosition()
     {

@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 5593
+  controlID: 2489
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
-  m_TargetSize: {x: 1920, y: 1200}
+  m_TargetSize: {x: 1920, y: 1080}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -78,11 +78,11 @@ MonoBehaviour:
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
     pluginStates:
     - '{}'
-    scale: 40
+    scale: 41
     fitToScreenEnabled: 1
     rotationDegree: 90
     highlightSafeAreaEnabled: 0
-    friendlyName: Nvidia Shield Tablet
+    friendlyName: Google Pixel 2
     networkReachability: 1
     systemLanguage: 10
 --- !u!114 &3
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 5594
+  controlID: 2490
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 5595
+  controlID: 2491
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -194,9 +194,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 58faffff
-      m_LastClickedID: -1448
-      m_ExpandedIDs: fcfaffffec6a0000
+      m_SelectedIDs: 8efafffffafaffffe8faffffc4faffffb2faffffa0faffff7cfaffff6afaffff
+      m_LastClickedID: -1430
+      m_ExpandedIDs: fcfaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -530,7 +530,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0.4241339, y: 0.42164212, z: -0.14397578}
     speed: 2
-    m_Value: {x: 0.4241339, y: 0.42164212, z: -0.14397578}
+    m_Value: {x: -1.6995565, y: 0.30053076, z: -0.21657178}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -583,7 +583,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 8.005436
     speed: 2
-    m_Value: 8.005436
+    m_Value: 12.192788
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -799,9 +799,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: dc6d0000
-    m_LastClickedID: 28124
-    m_ExpandedIDs: 00000000dc6d0000de6d000000ca9a3b
+    m_SelectedIDs: da6d0000
+    m_LastClickedID: 28122
+    m_ExpandedIDs: 00000000da6d0000dc6d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -829,7 +829,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc6d0000de6d000000ca9a3b
+    m_ExpandedIDs: 00000000da6d0000dc6d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -854,8 +854,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 58faffff
-    m_LastClickedInstanceID: -1448
+    m_SelectedInstanceIDs: 8efafffffafaffffe8faffffc4faffffb2faffffa0faffff7cfaffff6afaffff
+    m_LastClickedInstanceID: -1394
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000012e1000000000000
     m_RenameOverlay:
@@ -945,7 +945,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 43152
+  m_LastSelectedObjectID: 39690
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
