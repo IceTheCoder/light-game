@@ -4,7 +4,10 @@ public class Crawl : MonoBehaviour
 {
     public float speed = 2.5f;
     public float magnitude = 0.2f;
-    public float overlapRadius = 0.1f;
+    public float destinationOverlapRadius = 0.1f;
+    public float squareOverlapRadius = 1.0f;
+
+    public Transform square;
 
     private Vector2 startPosition;
     private Vector2 targetPosition;
@@ -30,7 +33,7 @@ public class Crawl : MonoBehaviour
     {
         Vector2 newPosition = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
-        if (Vector2.Distance(newPosition, targetPosition) < overlapRadius)
+        if (Vector2.Distance(newPosition, targetPosition) < destinationOverlapRadius || Vector2.Distance(newPosition, square.position) < squareOverlapRadius)
         {
             targetPosition = GetRandomTargetPosition();
         }
