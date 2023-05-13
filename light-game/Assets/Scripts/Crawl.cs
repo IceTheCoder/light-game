@@ -4,7 +4,10 @@ public class Crawl : MonoBehaviour
 {
     public float speed = 2.5f;
     public float magnitude = 0.2f;
-    public float overlapRadius = 0.1f;
+    public float destinationOverlapRadius = 0.1f;
+    public float squareOverlapRadius = 1.0f;
+
+    public Transform square;
 
     private Vector2 startPosition;
     private Vector2 targetPosition;
@@ -30,7 +33,7 @@ public class Crawl : MonoBehaviour
     {
         Vector2 newPosition = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
-        if (Vector2.Distance(newPosition, targetPosition) < overlapRadius)
+        if (Vector2.Distance(newPosition, targetPosition) < destinationOverlapRadius)
         {
             targetPosition = GetRandomTargetPosition();
         }
@@ -48,11 +51,16 @@ public class Crawl : MonoBehaviour
 
     /// <summary>
     /// Called once the object is near the target position, 
-    /// this method generates a new target position for the object within a circle with the radius of the magnitude float.    /// </summary>
+    /// this method generates a new target position for the object within a circle with the radius of the magnitude float.    
+    /// </summary>
     /// <returns>Vector2 target position</returns>
     private Vector2 GetRandomTargetPosition()
     {
-        Vector2 position = startPosition + Random.insideUnitCircle * magnitude;
+        Vector2 position;
+        do
+        {
+            position = startPosition + Random.insideUnitCircle * magnitude;
+        } while (Vector2.Distance(position, square.position) < squareOverlapRadius);
 
         return position;
     }
