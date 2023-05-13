@@ -152,7 +152,7 @@ MonoBehaviour:
   speed: 2
   magnitude: 8
   destinationOverlapRadius: 0.1
-  squareOverlapRadius: 10
+  squareOverlapRadius: 2
   square: {fileID: 5810375601852111627, guid: 4080208fcbcd89b40bca86a3b0fc53b0, type: 3}
 --- !u!1 &7033612964960089536
 GameObject:
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.05
+  m_Intensity: 0.1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
