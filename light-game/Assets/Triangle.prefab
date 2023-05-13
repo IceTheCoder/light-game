@@ -152,7 +152,7 @@ MonoBehaviour:
   speed: 2
   magnitude: 8
   destinationOverlapRadius: 0.1
-  squareOverlapRadius: 2
+  squareOverlapRadius: 10
   square: {fileID: 5810375601852111627, guid: 4080208fcbcd89b40bca86a3b0fc53b0, type: 3}
 --- !u!1 &7033612964960089536
 GameObject:

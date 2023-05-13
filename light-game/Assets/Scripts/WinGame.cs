@@ -49,7 +49,7 @@ public class WinGame : MonoBehaviour
                 triangleCollision.enabled = false;
             }
             healthText.SetActive(false);
-            // winGamePanel.SetActive(true);
+            winGamePanel.SetActive(true);
             if (lightCalculator != null)
             {
                 lightCalculator.won = true;
