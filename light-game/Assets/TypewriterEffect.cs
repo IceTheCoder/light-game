@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using System.Text;
+using UnityEngine.SceneManagement;
 
 public class TypewriterEffect : MonoBehaviour
 {
@@ -61,6 +62,14 @@ public class TypewriterEffect : MonoBehaviour
         if (textIndex < texts.Length)
         {
             typingCoroutine = StartCoroutine(TypeText());
+        }
+        else
+        {
+            if (texts.Length == 1)
+            {
+                yield return new WaitForSeconds(0.5f);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
     }
 

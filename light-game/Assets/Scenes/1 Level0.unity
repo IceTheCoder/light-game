@@ -146,6 +146,10 @@ PrefabInstance:
       propertyPath: typewriterEffect
       value: 
       objectReference: {fileID: 1667276627}
+    - target: {fileID: 3275313659899705764, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
+      propertyPath: voiceTextMeshPro
+      value: 
+      objectReference: {fileID: 1667276625}
     - target: {fileID: 3275313659899705810, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
       propertyPath: m_Name
       value: Light
@@ -365,7 +369,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 67108863
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -890,7 +894,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
