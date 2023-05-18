@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 11266
+  controlID: 11578
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 11267
+  controlID: 11579
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 11268
+  controlID: 11580
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -194,9 +194,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 8c8c0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 88d7ffff18dbffffbedcffff06e2ffff4ef1ffff04f2fffffcfaffff468d0000f88d0000428e0000e48e0000ec8e0000
+      m_ExpandedIDs: b44fffff5457ffffea59ffff625bffffca5cffff605effff665fffff0061ffff6c62ffffe663ffff9e64ffff1c66ffffd466ffff8867ffffc469ffff3e6bfffff66bffff726dffff446effffee6fffff8872ffff88d7ffff18dbffffbedcffff06e2ffff4ef1ffff04f2fffffcfaffff468d0000f88d0000428e0000e48e0000ec8e00006e9e00008a9e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -528,9 +528,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1146.6489, y: 839.8032, z: 8.8601265}
+    m_Target: {x: 610.4942, y: 485.05414, z: 5.2077827}
     speed: 2
-    m_Value: {x: 1146.6489, y: 839.8032, z: 8.8601265}
+    m_Value: {x: 610.4942, y: 485.05414, z: 5.2077827}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -803,21 +803,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Cristi\Documents\GitHub\light-game\light-game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ee6d0000
-    m_LastClickedID: 28142
+    m_SelectedIDs: 066e0000
+    m_LastClickedID: 28166
     m_ExpandedIDs: 00000000ee6d0000f06d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -871,8 +871,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 8c8c0000
+    m_LastClickedInstanceID: 35980
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000012e1000000000000
     m_RenameOverlay:
