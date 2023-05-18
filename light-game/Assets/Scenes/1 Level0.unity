@@ -1182,8 +1182,10 @@ GameObject:
   - component: {fileID: 1667276624}
   - component: {fileID: 1667276626}
   - component: {fileID: 1667276625}
+  - component: {fileID: 1667276628}
+  - component: {fileID: 1667276627}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Voice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1207,7 +1209,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 240}
-  m_SizeDelta: {x: 1200, y: 120}
+  m_SizeDelta: {x: 800, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667276625
 MonoBehaviour:
@@ -1229,8 +1231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You have been cursed to one of the simplest of forms: you have become
-    light.'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 39ada422a4992eb4198491f2de6f4b21, type: 2}
   m_sharedMaterial: {fileID: 3438526055618605300, guid: 39ada422a4992eb4198491f2de6f4b21, type: 2}
@@ -1307,6 +1308,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667276623}
   m_CullTransparentMesh: 1
+--- !u!114 &1667276627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667276623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f58daab5bb812347ac08c84fc6d9c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typingSpeed: 0.05
+  deletionSpeed: 0.01
+  delayBeforeDeletion: 1
+  texts:
+  - 'You have been cursed to one of the simplest of forms: you have become light.'
+  - Try to move around a bit.
+  - You might find something.
+--- !u!95 &1667276628
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667276623}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80ba783b5fdd144468e9816d3a873b86, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1883467635
 GameObject:
   m_ObjectHideFlags: 0

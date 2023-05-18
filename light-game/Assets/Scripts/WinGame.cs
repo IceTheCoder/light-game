@@ -48,7 +48,10 @@ public class WinGame : MonoBehaviour
             {
                 triangleCollision.enabled = false;
             }
-            healthText.SetActive(false);
+            if (healthText != null)
+            {
+                healthText.SetActive(false);
+            }
             winGamePanel.SetActive(true);
             if (lightCalculator != null)
             {
