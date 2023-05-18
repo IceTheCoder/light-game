@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class WinGame : MonoBehaviour
@@ -11,6 +12,9 @@ public class WinGame : MonoBehaviour
     public GameObject healthText;
     private float winDelay = 2f;
     private bool canCollide = false;
+    public GameObject voiceObject;
+    private TypewriterEffect typewriterEffect;
+    public string winVoiceText;
 
     /// <summary>
     /// Called when the script first loads, this function sets canCollide to false
@@ -20,6 +24,10 @@ public class WinGame : MonoBehaviour
     {
         canCollide = false;
         StartCoroutine(WinDelay());
+        if (voiceObject != null)
+        {
+            typewriterEffect = voiceObject.GetComponent<TypewriterEffect>();
+        }
     }
 
     /// <summary>
@@ -52,10 +60,19 @@ public class WinGame : MonoBehaviour
             {
                 healthText.SetActive(false);
             }
-            winGamePanel.SetActive(true);
+            if (winGamePanel != null) 
+            {
+                winGamePanel.SetActive(true);
+            }
             if (lightCalculator != null)
             {
                 lightCalculator.won = true;
+            }
+            if (typewriterEffect != null && voiceObject != null)
+            {
+                voiceObject.SetActive(false);
+                typewriterEffect.texts = new string[] { winVoiceText };
+                voiceObject.SetActive(true);
             }
         }
     }

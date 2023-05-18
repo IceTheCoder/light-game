@@ -16,7 +16,7 @@ public class TypewriterEffect : MonoBehaviour
     private Coroutine deletionCoroutine;
     private int textIndex = 0;
 
-    private void Start()
+    private void OnEnable()
     {
         textMeshPro = GetComponent<TextMeshProUGUI>();
         currentText = new StringBuilder();
