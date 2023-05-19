@@ -81,4 +81,13 @@ public class TypewriterEffect : MonoBehaviour
         if (deletionCoroutine != null)
             StopCoroutine(deletionCoroutine);
     }
+    private void OnDisable()
+    {
+        if (typingCoroutine != null)
+            StopCoroutine(typingCoroutine);
+
+        if (deletionCoroutine != null)
+            StopCoroutine(deletionCoroutine);
+    }
+
 }
