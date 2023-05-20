@@ -568,8 +568,8 @@ GameObject:
   - component: {fileID: 1337844215}
   - component: {fileID: 1337844214}
   - component: {fileID: 1337844213}
-  - component: {fileID: 1337844217}
-  - component: {fileID: 1337844218}
+  - component: {fileID: 1337844219}
+  - component: {fileID: 1337844220}
   m_Layer: 5
   m_Name: Level1
   m_TagString: Untagged
@@ -657,9 +657,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1337844218}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LoadNextScene, Assembly-CSharp
-        m_MethodName: LoadTheNextScene
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -707,7 +707,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337844211}
   m_CullTransparentMesh: 1
---- !u!95 &1337844217
+--- !u!95 &1337844219
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -717,7 +717,7 @@ Animator:
   m_GameObject: {fileID: 1337844211}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 38f81df42bd21f541b8b7ac3ebec9788, type: 2}
+  m_Controller: {fileID: 9100000, guid: bf7e4aaf46ae1ca498a59f0d298c00b6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -728,7 +728,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1337844218
+--- !u!114 &1337844220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -737,7 +737,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1337844211}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfac73bb31489d842a79ba73d757463d, type: 3}
+  m_Script: {fileID: 11500000, guid: 850ba041f71c8304eb79a1c9d66fbe54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1384197193
@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 1509849201}
   - component: {fileID: 1509849200}
   m_Layer: 5
-  m_Name: 1
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 39ada422a4992eb4198491f2de6f4b21, type: 2}
   m_sharedMaterial: {fileID: 3438526055618605300, guid: 39ada422a4992eb4198491f2de6f4b21, type: 2}
