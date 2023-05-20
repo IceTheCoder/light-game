@@ -37,3 +37,4 @@ E-mail: icethedev2@gmail.com
 - [ChatGPT](https://chat.openai.com/chat) for providing me with unique solutions to certain problems.
 - [Comp-3 Interactive](https://youtu.be/W11uv7jf1e4) for explaining me how I can use custom fonts with TextMeshPro.
 - [This Submain blog post](https://blog.submain.com/c-documentation-start-finish-guide/) for explaining how to document C# code.
+- https://youtu.be/2vfTe3wizZ0.
