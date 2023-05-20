@@ -3,19 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro.Examples;
+using TMPro;
 
 public class LoadSceneBasedOnText : MonoBehaviour
 {
-    private Button button;
+    public TextMeshProUGUI buttonTextObject;
     private string buttonText;
 
-    void Start() {
-        button = GetComponent<Button>();
-        buttonText = button.GetComponentInChildren<Text>().text;
+    private void Start()
+    {
+        buttonText = buttonTextObject.text;
     }
 
     public void LoadCorrectScene()
     {
-        SceneManager.LoadScene(Convert.ToInt32(buttonText))
+        int sceneIndex;
+        if (int.TryParse(buttonText, out sceneIndex))
+        {
+            SceneManager.LoadScene(sceneIndex + 2);
+        }
+        else
+        {
+            Debug.LogError("Invalid scene index: " + buttonText);
+        }
     }
 }
