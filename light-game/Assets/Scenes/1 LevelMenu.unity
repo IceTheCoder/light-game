@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 1337844217}
   - component: {fileID: 1337844218}
   m_Layer: 5
-  m_Name: PlayButton
+  m_Name: Level1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 1509849201}
   - component: {fileID: 1509849200}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
