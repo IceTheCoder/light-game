@@ -1150,5 +1150,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8174204393126789685, guid: 23adf1d4bb5da6b488393531a3d19ffe, type: 3}
+      propertyPath: lightCalculator
+      value: 
+      objectReference: {fileID: 630644003}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23adf1d4bb5da6b488393531a3d19ffe, type: 3}

@@ -925,6 +925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Health
       objectReference: {fileID: 0}
+    - target: {fileID: 4497580048321225804, guid: 9679916696fb4494fad230dd6d908aae, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4497580048321225806, guid: 9679916696fb4494fad230dd6d908aae, type: 3}
       propertyPath: m_fontSize
       value: 96

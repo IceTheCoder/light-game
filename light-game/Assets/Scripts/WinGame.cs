@@ -57,7 +57,10 @@ public class WinGame : MonoBehaviour
     {
         if (collision.CompareTag("WinCondition") && canCollide)
         {
-            voiceTextMeshPro.color = Color.black;
+            if (voiceTextMeshPro != null)
+            {
+                voiceTextMeshPro.color = Color.black;
+            }
             if (voice2TextMeshPro != null)
             {
                 voice2TextMeshPro.color = Color.black;
