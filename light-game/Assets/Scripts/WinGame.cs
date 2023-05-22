@@ -74,7 +74,6 @@ public class WinGame : MonoBehaviour
             }
             if (typewriterEffect != null && voiceObject != null && voiceObject2 != null && voice2TextMeshPro != null)
             {
-                Debug.Log("wON.");
                 voiceObject.SetActive(false);
                 voiceObject2.SetActive(true);
                 voice2TextMeshPro.color = Color.black;
