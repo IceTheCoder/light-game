@@ -82,7 +82,7 @@ public class WinGame : MonoBehaviour
             {
                 lightCalculator.won = true;
             }
-            if (disableFirstVoiceAfterWinning == true)
+            if (disableFirstVoiceAfterWinning == true && voiceObject != null && voiceObject2 != null)
             {
                 voiceObject.SetActive(false);
                 voiceObject2.SetActive(true);
