@@ -215,6 +215,12 @@ MonoBehaviour:
   lightCalculator: {fileID: 3275313659899705822}
   triangleCollision: {fileID: 3275313659899705819}
   healthText: {fileID: 0}
+  voiceObject: {fileID: 0}
+  voiceObject2: {fileID: 0}
+  voice2TextMeshPro: {fileID: 0}
+  voiceTextMeshPro: {fileID: 0}
+  winVoiceText: 
+  disableFirstVoiceAfterWinning: 1
 --- !u!212 &3275313659899705818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -253,8 +259,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -358759269
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

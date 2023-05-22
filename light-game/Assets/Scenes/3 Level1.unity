@@ -248,11 +248,12 @@ PrefabInstance:
       objectReference: {fileID: 3139001}
     - target: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
       propertyPath: texts.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
       propertyPath: texts.Array.data[0]
-      value: Look very carefully, there might be something lurking in the dark.
+      value: Triangles crawl around the screen. If they crawl near a light, they
+        will start destroying it.
       objectReference: {fileID: 0}
     - target: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
       propertyPath: texts.Array.data[1]
@@ -527,8 +528,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
-  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
