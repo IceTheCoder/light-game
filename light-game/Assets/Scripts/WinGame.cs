@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinGame : MonoBehaviour
 {
@@ -15,7 +16,6 @@ public class WinGame : MonoBehaviour
     private TypewriterEffect typewriterEffect;
     public TextMeshProUGUI voice2TextMeshPro;
     public TextMeshProUGUI voiceTextMeshPro;
-    public string winVoiceText;
     public bool disableFirstVoiceAfterWinning = true;
 
     /// <summary>
@@ -42,6 +42,17 @@ public class WinGame : MonoBehaviour
     {
         yield return new WaitForSeconds(winDelay);
         canCollide = true;
+    }
+
+    /// <summary>
+    /// Called when the user finds the win condition if the voice is done with the information,
+    /// this method waits for half-a-second before loading the next scene.
+    /// </summary>
+    /// <returns>Nothing.</returns>
+    IEnumerator NextLevelAfterDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     /// <summary>
@@ -81,6 +92,10 @@ public class WinGame : MonoBehaviour
             if (lightCalculator != null)
             {
                 lightCalculator.won = true;
+                if (typewriterEffect.voiceIsDone == true)
+                {
+                    StartCoroutine(WinGame());
+                }
             }
             if (disableFirstVoiceAfterWinning == true && voiceObject != null && voiceObject2 != null)
             {
