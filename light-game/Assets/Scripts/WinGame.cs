@@ -11,10 +11,17 @@ public class WinGame : MonoBehaviour
     private float winDelay = 2f;
     private bool canCollide = false;
     public GameObject voiceObject;
+    public GameObject voiceObject2;
     private TypewriterEffect typewriterEffect;
     public TextMeshProUGUI voiceTextMeshPro;
     public string winVoiceText;
 
+    /// <summary>
+    /// Called when the script first loads,
+    /// this fucntions sets canCollide to false,
+    /// waits for the WinDelay to pass,
+    /// and gets the TypewriterEffect script.
+    /// </summary>
     private void Start()
     {
         canCollide = false;
@@ -25,12 +32,25 @@ public class WinGame : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// This coroutine waits for the winDelay amount of seconds to pass before setting canCollide to true.
+    /// </summary>
+    /// <returns>Nothing.</returns>
     private IEnumerator WinDelay()
     {
         yield return new WaitForSeconds(winDelay);
         canCollide = true;
     }
 
+    /// <summary>
+    /// Called when the object collides with another trigger object,
+    /// this method checks if the object is a WinCondition and then
+    /// disables triangle collision (if necessary), health, activates the WinGame panel (if necessary),
+    /// sets the won variable of lightCalculator to true (to make the light slowly increase in radius),
+    /// and deactivates the first voice and activates the 2nd one (to tell the user to watch out for enemies),
+    /// and sets the text to black.
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("WinCondition") && canCollide)
@@ -52,11 +72,10 @@ public class WinGame : MonoBehaviour
             {
                 lightCalculator.won = true;
             }
-            if (typewriterEffect != null && voiceObject != null && voiceTextMeshPro != null)
+            if (typewriterEffect != null && voiceObject != null && voiceObject2 != null && voiceTextMeshPro != null)
             {
                 voiceObject.SetActive(false);
-                typewriterEffect.texts = new string[] { winVoiceText };
-                voiceObject.SetActive(true);
+                voiceObject2.SetActive(true);
                 voiceTextMeshPro.color = Color.black;
             }
         }
