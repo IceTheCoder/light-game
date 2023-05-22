@@ -92,7 +92,7 @@ public class WinGame : MonoBehaviour
             if (lightCalculator != null)
             {
                 lightCalculator.won = true;
-                if (typewriterEffect.voiceIsDone == true)
+                if (typewriterEffect != null && typewriterEffect.voiceIsDone == true)
                 {
                     StartCoroutine(NextLevelAfterDelay());
                 }
