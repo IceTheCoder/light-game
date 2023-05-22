@@ -10,6 +10,8 @@ public class TypewriterEffect : MonoBehaviour
     public float deletionSpeed = 0.05f;  // Delay between each letter during deletion
     public float delayBeforeDeletion = 2f;  // Delay before text starts disappearing
     public string[] texts;
+    public LightCalculator lightCalculator;
+    public bool voiceIsDone = false;
 
     private TextMeshProUGUI textMeshPro;
     private StringBuilder currentText;
@@ -19,6 +21,7 @@ public class TypewriterEffect : MonoBehaviour
 
     private void OnEnable()
     {
+        voiceIsDone = false;
         textMeshPro = GetComponent<TextMeshProUGUI>();
         currentText = new StringBuilder();
 
@@ -65,7 +68,8 @@ public class TypewriterEffect : MonoBehaviour
         }
         else
         {
-            if (texts.Length == 1)
+            voiceIsDone = true;
+            if (lightCalculator.won == true)
             {
                 yield return new WaitForSeconds(0.5f);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

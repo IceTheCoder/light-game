@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinGame : MonoBehaviour
 {
@@ -12,9 +13,10 @@ public class WinGame : MonoBehaviour
     private bool canCollide = false;
     public GameObject voiceObject;
     public GameObject voiceObject2;
-    private TypewriterEffect typewriterEffect;
+    public TypewriterEffect typewriterEffect;
     public TextMeshProUGUI voice2TextMeshPro;
-    public string winVoiceText;
+    public TextMeshProUGUI voiceTextMeshPro;
+    public bool disableFirstVoiceAfterWinning = true;
 
     /// <summary>
     /// Called when the script first loads,
@@ -43,6 +45,17 @@ public class WinGame : MonoBehaviour
     }
 
     /// <summary>
+    /// Called when the user finds the win condition if the voice is done with the information,
+    /// this method waits for half-a-second before loading the next scene.
+    /// </summary>
+    /// <returns>Nothing.</returns>
+    public IEnumerator NextLevelAfterDelay()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    /// <summary>
     /// Called when the object collides with another trigger object,
     /// this method checks if the object is a WinCondition and then
     /// disables triangle collision (if necessary), health, activates the WinGame panel (if necessary),
@@ -55,6 +68,14 @@ public class WinGame : MonoBehaviour
     {
         if (collision.CompareTag("WinCondition") && canCollide)
         {
+            if (voiceTextMeshPro != null)
+            {
+                voiceTextMeshPro.color = Color.black;
+            }
+            if (voice2TextMeshPro != null)
+            {
+                voice2TextMeshPro.color = Color.black;
+            }
             canCollide = false;
             if (triangleCollision != null)
             {
@@ -71,13 +92,15 @@ public class WinGame : MonoBehaviour
             if (lightCalculator != null)
             {
                 lightCalculator.won = true;
+                if (typewriterEffect != null && typewriterEffect.voiceIsDone == true)
+                {
+                    StartCoroutine(NextLevelAfterDelay());
+                }
             }
-            if (typewriterEffect != null && voiceObject != null && voiceObject2 != null && voice2TextMeshPro != null)
+            if (disableFirstVoiceAfterWinning == true && voiceObject != null && voiceObject2 != null)
             {
-                Debug.Log("wON.");
                 voiceObject.SetActive(false);
                 voiceObject2.SetActive(true);
-                voice2TextMeshPro.color = Color.black;
             }
         }
     }
