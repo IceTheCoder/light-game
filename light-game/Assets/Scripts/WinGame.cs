@@ -51,7 +51,7 @@ public class WinGame : MonoBehaviour
     /// <returns>Nothing.</returns>
     public IEnumerator NextLevelAfterDelay()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
