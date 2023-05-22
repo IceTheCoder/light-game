@@ -139,6 +139,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1667276623}
     - target: {fileID: 3275313659899705764, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
+      propertyPath: voiceObject2
+      value: 
+      objectReference: {fileID: 1873909195}
+    - target: {fileID: 3275313659899705764, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
       propertyPath: winVoiceText
       value: Beware, there might be enemies. Good luck.
       objectReference: {fileID: 0}
@@ -150,6 +154,10 @@ PrefabInstance:
       propertyPath: voiceTextMeshPro
       value: 
       objectReference: {fileID: 1667276625}
+    - target: {fileID: 3275313659899705764, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
+      propertyPath: voice2TextMeshPro
+      value: 
+      objectReference: {fileID: 1873909199}
     - target: {fileID: 3275313659899705810, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
       propertyPath: m_Name
       value: Light
@@ -1021,7 +1029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1873909196
 RectTransform:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class WinGame : MonoBehaviour
     public GameObject voiceObject;
     public GameObject voiceObject2;
     private TypewriterEffect typewriterEffect;
-    public TextMeshProUGUI voiceTextMeshPro;
+    public TextMeshProUGUI voice2TextMeshPro;
     public string winVoiceText;
 
     /// <summary>
@@ -72,11 +72,12 @@ public class WinGame : MonoBehaviour
             {
                 lightCalculator.won = true;
             }
-            if (typewriterEffect != null && voiceObject != null && voiceObject2 != null && voiceTextMeshPro != null)
+            if (typewriterEffect != null && voiceObject != null && voiceObject2 != null && voice2TextMeshPro != null)
             {
+                Debug.Log("wON.");
                 voiceObject.SetActive(false);
                 voiceObject2.SetActive(true);
-                voiceTextMeshPro.color = Color.black;
+                voice2TextMeshPro.color = Color.black;
             }
         }
     }
