@@ -1287,6 +1287,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOver Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 3028133986525897093, guid: 9c37eaaeafe79ec40ab977793718d60c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028133987127831417, guid: 9c37eaaeafe79ec40ab977793718d60c, type: 3}
+      propertyPath: m_fontSize
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028133987127831417, guid: 9c37eaaeafe79ec40ab977793718d60c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028133987127831418, guid: 9c37eaaeafe79ec40ab977793718d60c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028133987127831418, guid: 9c37eaaeafe79ec40ab977793718d60c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 620
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c37eaaeafe79ec40ab977793718d60c, type: 3}
 --- !u!224 &1541441482 stripped
