@@ -153,7 +153,7 @@ PrefabInstance:
     - target: {fileID: 3275313659899705764, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
       propertyPath: typewriterEffect
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1516870975}
     - target: {fileID: 3275313659899705764, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
       propertyPath: voiceTextMeshPro
       value: 
@@ -1181,6 +1181,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8fb27d94a58e164fa62ddbc6e7d260f, type: 3}
+--- !u!114 &1516870975 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
+  m_PrefabInstance: {fileID: 41742770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f58daab5bb812347ac08c84fc6d9c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1541441481
 PrefabInstance:
   m_ObjectHideFlags: 0

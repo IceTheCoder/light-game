@@ -13,7 +13,7 @@ public class WinGame : MonoBehaviour
     private bool canCollide = false;
     public GameObject voiceObject;
     public GameObject voiceObject2;
-    private TypewriterEffect typewriterEffect;
+    public TypewriterEffect typewriterEffect;
     public TextMeshProUGUI voice2TextMeshPro;
     public TextMeshProUGUI voiceTextMeshPro;
     public bool disableFirstVoiceAfterWinning = true;
@@ -49,9 +49,9 @@ public class WinGame : MonoBehaviour
     /// this method waits for half-a-second before loading the next scene.
     /// </summary>
     /// <returns>Nothing.</returns>
-    IEnumerator NextLevelAfterDelay()
+    public IEnumerator NextLevelAfterDelay()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -94,7 +94,7 @@ public class WinGame : MonoBehaviour
                 lightCalculator.won = true;
                 if (typewriterEffect.voiceIsDone == true)
                 {
-                    StartCoroutine(WinGame());
+                    StartCoroutine(NextLevelAfterDelay());
                 }
             }
             if (disableFirstVoiceAfterWinning == true && voiceObject != null && voiceObject2 != null)
