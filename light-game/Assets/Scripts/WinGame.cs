@@ -14,7 +14,9 @@ public class WinGame : MonoBehaviour
     public GameObject voiceObject2;
     private TypewriterEffect typewriterEffect;
     public TextMeshProUGUI voice2TextMeshPro;
+    public TextMeshProUGUI voiceTextMeshPro;
     public string winVoiceText;
+    public bool disableFirstVoiceAfterWinning = true;
 
     /// <summary>
     /// Called when the script first loads,
@@ -55,6 +57,11 @@ public class WinGame : MonoBehaviour
     {
         if (collision.CompareTag("WinCondition") && canCollide)
         {
+            voiceTextMeshPro.color = Color.black;
+            if (voice2TextMeshPro != null)
+            {
+                voice2TextMeshPro.color = Color.black;
+            }
             canCollide = false;
             if (triangleCollision != null)
             {
@@ -72,11 +79,10 @@ public class WinGame : MonoBehaviour
             {
                 lightCalculator.won = true;
             }
-            if (typewriterEffect != null && voiceObject != null && voiceObject2 != null && voice2TextMeshPro != null)
+            if (disableFirstVoiceAfterWinning == true)
             {
                 voiceObject.SetActive(false);
                 voiceObject2.SetActive(true);
-                voice2TextMeshPro.color = Color.black;
             }
         }
     }
