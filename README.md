@@ -7,6 +7,8 @@ There is also a green square. Try to find it and see what happens👀
 
 Blog: https://icethedev2.github.io/
 
+itch.io: https://icethedev2.itch.io/light-game
+
 ## Notices
 - If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
 - If the issue persists, check for driver updates for your graphics card or monitor.
