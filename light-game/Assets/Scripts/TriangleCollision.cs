@@ -43,6 +43,7 @@ public class TriangleCollision : MonoBehaviour
         if (health < minHealth)
         {
             health = 0f;
+            Debug.Log("Health set to 0.");
         }
     }
 
@@ -69,8 +70,10 @@ public class TriangleCollision : MonoBehaviour
         if (collision.CompareTag("Triangle") && canCollide)
         {
             float[] health0 = new float[] {health - healthChange, 0f};
+            Debug.Log("Health changed.");
             health = health0.Max();
-            textBox.text = "Health: " + (health * 10).ToString("0");
+            textBox.text = "Health: " + (health * 10f).ToString("0");
+            Debug.Log("Text updated.");
         }
     }
 }
