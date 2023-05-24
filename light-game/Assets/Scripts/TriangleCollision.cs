@@ -40,10 +40,6 @@ public class TriangleCollision : MonoBehaviour
             }
             dead = true;
         }
-        if (health < minHealth)
-        {
-            health = 0f;
-        }
     }
 
     /// <summary>
@@ -70,7 +66,12 @@ public class TriangleCollision : MonoBehaviour
         {
             float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
-            textBox.text = "Health: " + (health * 10).ToString("0");
+            UpdateText();
         }
+    }
+
+    private void UpdateText()
+    {
+        textBox.text = "Health: " + (health * 10f).ToString("0");
     }
 }
