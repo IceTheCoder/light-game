@@ -1,9 +1,9 @@
 # light-game
-A light follows your cursor and gets larger and more intense the faster you move.
+You have been cursed to one of the simplest forms: light. The faster you move, the larger you get.
 
-There are slightly visible triangles vibrating somewhere in the dark. Something bad might happen if one of them sees you.
+Avoid triangles. They are your enemies.
 
-There is also a green square. Try to find it and see what happens👀
+Find the green square to win.
 
 Blog: https://icethedev2.github.io/
 
