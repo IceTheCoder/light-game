@@ -9,6 +9,8 @@ Blog: https://icethedev2.github.io/
 
 itch.io: https://icethedev2.itch.io/light-game
 
+(Updates will be released to GitHub first and then to itch.io)
+
 ## Notices
 - If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
 - If the issue persists, check for driver updates for your graphics card or monitor.
