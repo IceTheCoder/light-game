@@ -52,7 +52,11 @@ public class WinGame : MonoBehaviour
     public IEnumerator NextLevelAfterDelay()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int nextBuildIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextBuildIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextBuildIndex);
+        }
     }
 
     /// <summary>
@@ -93,6 +97,10 @@ public class WinGame : MonoBehaviour
             {
                 lightCalculator.won = true;
                 if (typewriterEffect != null && typewriterEffect.voiceIsDone == true)
+                {
+                    StartCoroutine(NextLevelAfterDelay());
+                }
+                if (typewriterEffect == null)
                 {
                     StartCoroutine(NextLevelAfterDelay());
                 }
