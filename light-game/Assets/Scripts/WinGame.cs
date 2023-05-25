@@ -46,7 +46,8 @@ public class WinGame : MonoBehaviour
 
     /// <summary>
     /// Called when the user finds the win condition if the voice is done with the information,
-    /// this method waits for half-a-second before loading the next scene.
+    /// this method waits for half-a-second before loading the next scene.,
+    /// or reloading the current scene if it's the last.
     /// </summary>
     /// <returns>Nothing.</returns>
     public IEnumerator NextLevelAfterDelay()
