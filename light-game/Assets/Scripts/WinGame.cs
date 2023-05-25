@@ -57,6 +57,10 @@ public class WinGame : MonoBehaviour
         {
             SceneManager.LoadScene(nextBuildIndex);
         }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     /// <summary>
