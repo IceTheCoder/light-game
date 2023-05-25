@@ -46,13 +46,22 @@ public class WinGame : MonoBehaviour
 
     /// <summary>
     /// Called when the user finds the win condition if the voice is done with the information,
-    /// this method waits for half-a-second before loading the next scene.
+    /// this method waits for half-a-second before loading the next scene.,
+    /// or reloading the current scene if it's the last.
     /// </summary>
     /// <returns>Nothing.</returns>
     public IEnumerator NextLevelAfterDelay()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int nextBuildIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextBuildIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextBuildIndex);
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     /// <summary>
@@ -93,6 +102,10 @@ public class WinGame : MonoBehaviour
             {
                 lightCalculator.won = true;
                 if (typewriterEffect != null && typewriterEffect.voiceIsDone == true)
+                {
+                    StartCoroutine(NextLevelAfterDelay());
+                }
+                if (typewriterEffect == null)
                 {
                     StartCoroutine(NextLevelAfterDelay());
                 }
