@@ -47,19 +47,20 @@ public class WinGame : MonoBehaviour
     /// <summary>
     /// Called when the user finds the win condition if the voice is done with the information,
     /// this method waits for half-a-second before loading the next scene.,
-    /// or reloading the current scene if it's the last.
+    /// or reloading the current scene if it's the last or an infinite level.
     /// </summary>
     /// <returns>Nothing.</returns>
     public IEnumerator NextLevelAfterDelay()
     {
         yield return new WaitForSeconds(2f);
         int nextBuildIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        if (nextBuildIndex < SceneManager.sceneCountInBuildSettings)
+        if (nextBuildIndex < SceneManager.sceneCountInBuildSettings && !EnemySpawner.Instance)
         {
             SceneManager.LoadScene(nextBuildIndex);
         }
         else
         {
+            if (EnemySpawner.Instance) EnemySpawner.Instance.currentDifficulty++;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

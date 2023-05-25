@@ -9,8 +9,18 @@ public class Crawl : MonoBehaviour
 
     public Transform square;
 
+    /// <summary>
+    /// Difficulty multiplier, the number to multiply by for each difficulty.
+    /// </summary>
+    [SerializeField] private float difficultyMultiplier = 1.05f;
     private Vector2 startPosition;
     private Vector2 targetPosition;
+    private float defaultSpeed;
+
+    private void Awake()
+    {
+        defaultSpeed = speed;
+    }
 
     /// <summary>
     /// Called when the script firt runs,
@@ -63,5 +73,22 @@ public class Crawl : MonoBehaviour
         } while (Vector2.Distance(position, square.position) < squareOverlapRadius);
 
         return position;
+    }
+
+    /// <summary>
+    /// Calling this will change the difficulty of the enemy.
+    /// </summary>
+    /// <param name="difficulty">difficulty should be a non-negative and non-zero number</param>
+    public void SetDifficulty(int difficulty)
+    {
+        if (difficulty <= 0)
+        {
+            Debug.LogError("Cannot set difficulty to " + difficulty);
+            return;
+        }
+
+        if (difficulty == 1) { speed = defaultSpeed; return; }
+
+        speed = defaultSpeed * (difficulty - 1) * difficultyMultiplier;
     }
 }
