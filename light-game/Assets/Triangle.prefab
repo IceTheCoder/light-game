@@ -153,3 +153,4 @@ MonoBehaviour:
   destinationOverlapRadius: 0.1
   squareOverlapRadius: 7.5
   square: {fileID: 5810375601852111627, guid: 4080208fcbcd89b40bca86a3b0fc53b0, type: 3}
+  difficultyMultiplier: 1.05

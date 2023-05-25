@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/6 Original.unity
     guid: 5d3e047155406bd4ba8d1a47139489ca
+  - enabled: 1
+    path: Assets/Scenes/6 InfiniteLevel.unity
+    guid: e2c8b98abbf754118b502335fae14ff5
   m_configObjects: {}

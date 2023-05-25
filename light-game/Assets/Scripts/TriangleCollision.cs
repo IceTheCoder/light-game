@@ -37,6 +37,14 @@ public class TriangleCollision : MonoBehaviour
             if (!dead)
             {
                 gameOverPanel.SetActive(true);
+                if (EnemySpawner.Instance)
+                {
+                    if (EnemySpawner.Instance.currentDifficulty > 1)
+                    {
+                        EnemySpawner.Instance.currentDifficulty--;
+                    }
+                    EnemySpawner.Instance.currentEnemyCount--;
+                }
             }
             dead = true;
         }

@@ -28,4 +28,9 @@ public class LoadSceneBasedOnText : MonoBehaviour
             Debug.LogError("Invalid scene index: " + buttonText);
         }
     }
+
+    public void LoadSceneByString(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
 }
