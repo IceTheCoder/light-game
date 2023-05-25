@@ -153,11 +153,11 @@ PrefabInstance:
     - target: {fileID: 3275313659899705764, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
       propertyPath: typewriterEffect
       value: 
-      objectReference: {fileID: 1516870975}
+      objectReference: {fileID: 0}
     - target: {fileID: 3275313659899705764, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
       propertyPath: voiceTextMeshPro
       value: 
-      objectReference: {fileID: 800034786}
+      objectReference: {fileID: 0}
     - target: {fileID: 3275313659899705764, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
       propertyPath: voice2TextMeshPro
       value: 
@@ -224,137 +224,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
---- !u!114 &3139001 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3275313659899705822, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
-  m_PrefabInstance: {fileID: 3139000}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc1f85a0744f3d478c350666221d29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1001 &41742770
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 118853925}
-    m_Modifications:
-    - target: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: lightCalculator
-      value: 
-      objectReference: {fileID: 3139001}
-    - target: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: texts.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: texts.Array.data[0]
-      value: Triangles crawl around the screen. If they crawl near a light, they
-        will start destroying it.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: texts.Array.data[1]
-      value: Triangles crawl around the screen. If they crawl near a light, they
-        will start destroying it.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1800
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -60
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857604945609703412, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-      propertyPath: m_Name
-      value: Voice
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
---- !u!224 &41742771 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-  m_PrefabInstance: {fileID: 41742770}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &118853921
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +319,6 @@ RectTransform:
   - {fileID: 471196182}
   - {fileID: 542951493}
   - {fileID: 1541441482}
-  - {fileID: 41742771}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1113,17 +981,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &800034786 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1857604945609703402, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-  m_PrefabInstance: {fileID: 41742770}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1391045562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1181,17 +1038,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8fb27d94a58e164fa62ddbc6e7d260f, type: 3}
---- !u!114 &1516870975 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
-  m_PrefabInstance: {fileID: 41742770}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f58daab5bb812347ac08c84fc6d9c10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1541441481
 PrefabInstance:
   m_ObjectHideFlags: 0
