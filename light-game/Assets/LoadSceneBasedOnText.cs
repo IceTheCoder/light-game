@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro.Examples;
 using TMPro;
+using UnityEngine.Rendering;
 
 public class LoadSceneBasedOnText : MonoBehaviour
 {
@@ -28,7 +29,6 @@ public class LoadSceneBasedOnText : MonoBehaviour
             Debug.LogError("Invalid scene index: " + buttonText);
         }
     }
-
     public void LoadSceneByString(string scene)
     {
         SceneManager.LoadScene(scene);
