@@ -432,6 +432,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTextObject: {fileID: 96930559}
+  button: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &400952973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,7 +495,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 400952971}
         m_TargetAssemblyTypeName: LoadSceneBasedOnText, Assembly-CSharp
-        m_MethodName: LoadCorrectScene
+        m_MethodName: OnLevelButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -855,6 +857,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTextObject: {fileID: 1750322267}
+  button: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &986805649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,7 +920,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 986805648}
         m_TargetAssemblyTypeName: LoadSceneBasedOnText, Assembly-CSharp
-        m_MethodName: LoadCorrectScene
+        m_MethodName: OnLevelButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1020,6 +1024,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTextObject: {fileID: 1441328322}
+  button: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!95 &1167580168
 Animator:
   serializedVersion: 5
@@ -1102,7 +1108,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1167580167}
         m_TargetAssemblyTypeName: LoadSceneBasedOnText, Assembly-CSharp
-        m_MethodName: LoadCorrectScene
+        m_MethodName: OnLevelButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1352,7 +1358,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1337844215}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1337844220}
+        m_TargetAssemblyTypeName: LoadSceneBasedOnText, Assembly-CSharp
+        m_MethodName: OnLevelButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1337844215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1425,6 +1443,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTextObject: {fileID: 1509849200}
+  button: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &1384197193
 GameObject:
   m_ObjectHideFlags: 0
