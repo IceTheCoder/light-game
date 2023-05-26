@@ -408,6 +408,7 @@ RectTransform:
   m_Children:
   - {fileID: 569491604}
   - {fileID: 1337844212}
+  - {fileID: 1579368232}
   m_Father: {fileID: 1298438754}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -547,7 +548,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 614713272}
-  - {fileID: 1579368232}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -627,7 +627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: -1
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -660,7 +660,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1337844218}
         m_TargetAssemblyTypeName: LoadNextScene, Assembly-CSharp
-        m_MethodName: LoadTheNextScene
+        m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -741,6 +741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfac73bb31489d842a79ba73d757463d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &1384197193
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,8 +981,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1713797890}
-  m_Father: {fileID: 1298438754}
-  m_RootOrder: 1
+  m_Father: {fileID: 614713272}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -1000,6 +1002,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTextObject: {fileID: 1713797891}
+  button: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &1579368235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,7 +1065,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1579368234}
         m_TargetAssemblyTypeName: LoadSceneBasedOnText, Assembly-CSharp
-        m_MethodName: LoadSceneByString
+        m_MethodName: OnInfiniteButtonClick
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
