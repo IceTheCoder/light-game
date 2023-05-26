@@ -74,7 +74,7 @@ public class WinGame : MonoBehaviour
     /// and sets the text to black.
     /// </summary>
     /// <param name="collision"></param>
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("WinCondition") && canCollide)
         {
