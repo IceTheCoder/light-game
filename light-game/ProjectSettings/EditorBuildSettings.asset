@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/5 Level3.unity
     guid: 5a878a37bb14bdd41b965ffc19b9156a
   - enabled: 1
-    path: Assets/Scenes/6 Original.unity
+    path: Assets/Scenes/7 Original.unity
     guid: 5d3e047155406bd4ba8d1a47139489ca
   - enabled: 1
     path: Assets/Scenes/6 InfiniteLevel.unity
