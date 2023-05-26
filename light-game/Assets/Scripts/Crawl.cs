@@ -5,9 +5,6 @@ public class Crawl : MonoBehaviour
     public float speed = 2.5f;
     public float magnitude = 0.2f;
     public float destinationOverlapRadius = 0.1f;
-    public float squareOverlapRadius = 1.0f;
-
-    public Transform square;
 
     /// <summary>
     /// Difficulty multiplier, the number to multiply by for each difficulty.
@@ -66,13 +63,7 @@ public class Crawl : MonoBehaviour
     /// <returns>Vector2 target position</returns>
     private Vector2 GetRandomTargetPosition()
     {
-        Vector2 position;
-        do
-        {
-            position = startPosition + Random.insideUnitCircle * magnitude;
-        } while (Vector2.Distance(position, square.position) < squareOverlapRadius);
-
-        return position;
+        return startPosition + Random.insideUnitCircle * magnitude;
     }
 
     /// <summary>
