@@ -37,9 +37,10 @@ E-mail: icethedev2@gmail.com
 
 ## Acknowledgements
 - [Kevin Tran](https://github.com/kevintr303) for taking the time to code such a great infinite level, 'where you are trying to survive as long as possible'. 
+- [ChatGPT](https://chat.openai.com/chat) for providing me with unique solutions to certain problems.
 - [Brackeys](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) for making such a great beginner's guide on getting into game development.
 - [This video](https://www.youtube.com/watch?v=ACyqpLh4jrs) by [The Game Dev Show](https://www.youtube.com/@thegamedevshow8449/videos) for helping me introduce light in my game.
-- [ChatGPT](https://chat.openai.com/chat) for providing me with unique solutions to certain problems.
 - [Comp-3 Interactive](https://youtu.be/W11uv7jf1e4) for explaining me how I can use custom fonts with TextMeshPro.
 - [This Submain blog post](https://blog.submain.com/c-documentation-start-finish-guide/) for explaining how to document C# code.
 - https://youtu.be/2vfTe3wizZ0.
+- These 2 Linux on VirtualBox tutorial from Pawan Dai and TechJunkie: https://youtu.be/6rxMqu-6vIM, https://youtu.be/SHErR5NBqsc.
