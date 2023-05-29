@@ -1419,6 +1419,7 @@ GameObject:
   - component: {fileID: 1952960344}
   - component: {fileID: 1952960343}
   - component: {fileID: 1952960342}
+  - component: {fileID: 1952960341}
   m_Layer: 5
   m_Name: LicenseButton
   m_TagString: Untagged
@@ -1447,6 +1448,20 @@ RectTransform:
   m_AnchoredPosition: {x: -300, y: -100}
   m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1952960341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952960339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfac73bb31489d842a79ba73d757463d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!95 &1952960342
 Animator:
   serializedVersion: 5
@@ -1527,7 +1542,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1952960341}
         m_TargetAssemblyTypeName: LoadNextScene, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
