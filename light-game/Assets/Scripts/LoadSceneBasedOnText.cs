@@ -20,7 +20,7 @@ public class LoadSceneBasedOnText : MonoBehaviour
         animator = GetComponent<Animator>();
         button = GetComponent<Button>();
     }
-    public void OnInfiniteButtonClick(string scene)
+    public void OnSpecialButtonClick(string scene)
     {
         StartCoroutine(LoadSceneByString(scene));
     }
