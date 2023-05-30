@@ -37,7 +37,7 @@ I'd love to hear your suggestions on how I can improve my first game!
 You can fork the project to play around with it and create a pull request to submit your suggestions. You can also open an issue to tell me about any problems my code might have (or new ideas for features you have).
 
 ## Contact
-Project Link: https://github.com/IceTheDev2/Passwordsy/  
+Project Link: https://github.com/IceTheDev2/light-game/
 
 Reddit: https://www.reddit.com/user/AnEntirePeach
 
