@@ -41,12 +41,12 @@ public class TriangleCollision : MonoBehaviour
                 {
                     if (EnemySpawner.Instance.currentDifficulty > 1)
                     {
-                        EnemySpawner.Instance.currentDifficulty--;
+                        EnemySpawner.Instance.currentDifficulty = 1;
                     }
-                    EnemySpawner.Instance.currentEnemyCount--;
+                    EnemySpawner.Instance.currentEnemyCount = 0;
                 }
+                dead = true;
             }
-            dead = true;
         }
     }
 
