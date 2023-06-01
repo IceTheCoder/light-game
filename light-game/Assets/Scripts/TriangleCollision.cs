@@ -45,6 +45,7 @@ public class TriangleCollision : MonoBehaviour
                     }
                     EnemySpawner.Instance.currentEnemyCount = 0;
                 }
+                gameObject.SetActive(false);
                 dead = true;
             }
         }
