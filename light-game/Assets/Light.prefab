@@ -217,9 +217,9 @@ MonoBehaviour:
   healthText: {fileID: 0}
   voiceObject: {fileID: 0}
   voiceObject2: {fileID: 0}
+  typewriterEffect: {fileID: 0}
   voice2TextMeshPro: {fileID: 0}
   voiceTextMeshPro: {fileID: 0}
-  winVoiceText: 
   disableFirstVoiceAfterWinning: 1
 --- !u!212 &3275313659899705818
 SpriteRenderer:
@@ -292,5 +292,5 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0

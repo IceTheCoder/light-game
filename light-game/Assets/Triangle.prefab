@@ -106,7 +106,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!60 &7033612964580559147
 PolygonCollider2D:
@@ -151,6 +151,4 @@ MonoBehaviour:
   speed: 2
   magnitude: 8
   destinationOverlapRadius: 0.1
-  squareOverlapRadius: 7.5
-  square: {fileID: 5810375601852111627, guid: 4080208fcbcd89b40bca86a3b0fc53b0, type: 3}
   difficultyMultiplier: 1.05
