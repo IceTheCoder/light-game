@@ -1323,11 +1323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660029136773146600, guid: edc1c382220684e0194d894faf410832, type: 3}
       propertyPath: maxEnemies
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4660029136773146600, guid: edc1c382220684e0194d894faf410832, type: 3}
       propertyPath: maxDifficulty
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4660029136773146600, guid: edc1c382220684e0194d894faf410832, type: 3}
       propertyPath: resetEnemyCountOnWin
