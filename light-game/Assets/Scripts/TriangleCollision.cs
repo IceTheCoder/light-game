@@ -14,6 +14,7 @@ public class TriangleCollision : MonoBehaviour
     bool canCollide = false;
     public TextMeshProUGUI textBox;
     public GameObject gameOverPanel;
+    private UnityEngine.Rendering.Universal.Light2D theLight;
 
     /// <summary>
     /// Called when the script first runs, this method sets dead to false, health to 1 and starts
@@ -23,6 +24,7 @@ public class TriangleCollision : MonoBehaviour
         dead = false;
         health = 1f;
         StartCoroutine(CollisionDelay());
+        theLight = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
     }
 
     /// <summary>
@@ -45,7 +47,8 @@ public class TriangleCollision : MonoBehaviour
                     }
                     EnemySpawner.Instance.currentEnemyCount = 0;
                 }
-                gameObject.SetActive(false);
+                theLight.pointLightOuterRadius = 0f;
+                theLight.intensity = 0f;
                 dead = true;
             }
         }
