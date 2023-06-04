@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "com.github.superunitybuild.buildtool": {
-      "version": "file:buildtool",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "com.unity.2d.animation": {
       "version": "7.0.10",
       "depth": 1,
