@@ -36,6 +36,9 @@ public class TriangleCollision : MonoBehaviour
     {
         if (health == 0)
         {
+            theLight.pointLightOuterRadius = 0f;
+            theLight.intensity = 0f;
+
             if (!dead)
             {
                 gameOverPanel.SetActive(true);
@@ -47,8 +50,6 @@ public class TriangleCollision : MonoBehaviour
                     }
                     EnemySpawner.Instance.currentEnemyCount = 0;
                 }
-                theLight.pointLightOuterRadius = 0f;
-                theLight.intensity = 0f;
                 dead = true;
             }
         }
