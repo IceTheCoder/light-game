@@ -173,10 +173,10 @@ MonoBehaviour:
     openFolderPostBuild: 1
   _productParameters:
     buildCounter: 0
-    buildVersion: 1.0.0.1
-    versionTemplate: beta-2.8.4.1
+    buildVersion: beta-2.8.5.2
+    versionTemplate: beta-2.8.5.2
     autoGenerate: 0
-    syncWithPlayerSettings: 0
+    syncWithPlayerSettings: 1
   _releaseTypeList:
     releaseTypes:
     - typeName: light-game

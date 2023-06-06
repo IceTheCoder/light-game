@@ -31,7 +31,7 @@ public static class BuildConstants
         None,
     }
 
-    public static readonly DateTime buildDate = new DateTime(638214793946050023);
+    public static readonly DateTime buildDate = new DateTime(638216503346140373);
     public const string version = "1.0.0.1";
     public const ReleaseType releaseType = ReleaseType.light_game;
     public const Platform platform = Platform.Linux;
