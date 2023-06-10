@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class HealthPowerUp : MonoBehaviour
 {
+    public TriangleCollision triangleCollision;
+
     void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Light"))
         {
-            Debug.Log("Hey! Health!");
+            triangleCollision.health = 1f;
+            triangleCollision.UpdateText();
         }
     }
 

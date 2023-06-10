@@ -88,7 +88,7 @@ public class TriangleCollision : MonoBehaviour
     /// this method updates the health text to display from 1 to 10 (if the health is 0.1, it'll be displayed as 1,
     /// if it's 1, it'll be displayed as 10).
     /// </summary>
-    private void UpdateText()
+    public void UpdateText()
     {
         textBox.text = "Health: " + (health * 10f).ToString("0");
     }
