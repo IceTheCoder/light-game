@@ -31,11 +31,11 @@ public static class BuildConstants
         None,
     }
 
-    public static readonly DateTime buildDate = new DateTime(638219945978711924);
+    public static readonly DateTime buildDate = new DateTime(638219945147452241);
     public const string version = "beta-2.9.1.1";
     public const ReleaseType releaseType = ReleaseType.light_game;
-    public const Platform platform = Platform.Android;
-    public const Architecture architecture = Architecture.Android;
+    public const Platform platform = Platform.Linux;
+    public const Architecture architecture = Architecture.Linux_x64;
     public const Distribution distribution = Distribution.None;
 }
 
