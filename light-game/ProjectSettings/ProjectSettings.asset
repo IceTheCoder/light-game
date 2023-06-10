@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: beta-2.9.1
+  bundleVersion: beta-2.9.1.1
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -156,7 +156,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.IceTheDev2.lightgame
-    Standalone: com.IceTheDev2.lightgame
+    Standalone: com.DefaultCompany.2DProject
   buildNumber:
     Standalone: 1
     iPhone: 1
@@ -683,7 +683,7 @@ PlayerSettings:
     PS4: UNITY_POST_PROCESSING_STACK_V2
     PS5: UNITY_POST_PROCESSING_STACK_V2
     Stadia: UNITY_POST_PROCESSING_STACK_V2
-    Standalone: BUILD_TYPE_LIGHT_GAME;BUILD_PLATFORM_LINUX;BUILD_ARCH_LINUXX64;BUILD_BACKEND_MONO;UNITY_POST_PROCESSING_STACK_V2
+    Standalone: UNITY_POST_PROCESSING_STACK_V2
     WebGL: UNITY_POST_PROCESSING_STACK_V2
     Windows Store Apps: UNITY_POST_PROCESSING_STACK_V2
     XboxOne: UNITY_POST_PROCESSING_STACK_V2
