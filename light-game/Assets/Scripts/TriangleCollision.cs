@@ -93,7 +93,13 @@ public class TriangleCollision : MonoBehaviour
         textBox.text = "Health: " + (health * 10f).ToString("0");
         StartCoroutine(ColorChange(heal));
     }
-
+    
+    /// <summary>
+    /// Called when the health increases or decrease, this coroutine changes its color to
+    /// blue or red, respectively, for 1 second.
+    /// </summary>
+    /// <param name="heal">Whether or not the health change comes from a health power-up.</param>
+    /// <returns></returns>
     IEnumerator ColorChange(bool heal) {
         if (heal == true)
         {
