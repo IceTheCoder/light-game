@@ -13,6 +13,7 @@ public class HealthPowerUp : MonoBehaviour
         {
             triangleCollision.health = 1f;
             triangleCollision.UpdateText(true);
+            Destroy(gameObject, 1f);
         }
     }
 
