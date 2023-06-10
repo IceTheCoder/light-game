@@ -15,6 +15,7 @@ public class TriangleCollision : MonoBehaviour
     public TextMeshProUGUI textBox;
     public GameObject gameOverPanel;
     private UnityEngine.Rendering.Universal.Light2D theLight;
+    public float colourLength = 1f;
 
     /// <summary>
     /// Called when the script first runs, this method sets dead to false, health to 1 and starts
@@ -108,7 +109,7 @@ public class TriangleCollision : MonoBehaviour
         {
             textBox.color = Color.red;
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(colourLength);
         textBox.color = Color.white;
     }
 }

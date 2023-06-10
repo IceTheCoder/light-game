@@ -6,6 +6,7 @@ using UnityEngine;
 public class HealthPowerUp : MonoBehaviour
 {
     public TriangleCollision triangleCollision;
+    public float destroyDelay = 1f;
 
     /// <summary>
     /// Called when the health power-up collides with the light,
@@ -19,7 +20,7 @@ public class HealthPowerUp : MonoBehaviour
         {
             triangleCollision.health = 1f;
             triangleCollision.UpdateText(true);
-            Destroy(gameObject, 1f);
+            Destroy(gameObject, destroyDelay);
         }
     }
 
