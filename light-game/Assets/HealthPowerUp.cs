@@ -12,7 +12,7 @@ public class HealthPowerUp : MonoBehaviour
         if (collision.CompareTag("Light"))
         {
             triangleCollision.health = 1f;
-            triangleCollision.UpdateText();
+            triangleCollision.UpdateText(true);
         }
     }
 

@@ -79,7 +79,7 @@ public class TriangleCollision : MonoBehaviour
         {
             float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
-            UpdateText();
+            UpdateText(false);
         }
     }
 
@@ -88,9 +88,21 @@ public class TriangleCollision : MonoBehaviour
     /// this method updates the health text to display from 1 to 10 (if the health is 0.1, it'll be displayed as 1,
     /// if it's 1, it'll be displayed as 10).
     /// </summary>
-    public void UpdateText()
+    public void UpdateText(bool heal)
     {
         textBox.text = "Health: " + (health * 10f).ToString("0");
-        textBox.color = Color.red;
+        StartCoroutine(ColorChange(heal));
+    }
+
+    IEnumerator ColorChange(bool heal) {
+        if (heal == true)
+        {
+            textBox.color = Color.blue;
+        } else
+        {
+            textBox.color = Color.red;
+        }
+        yield return new WaitForSeconds(1f);
+        textBox.color = Color.white;
     }
 }
