@@ -15,6 +15,7 @@ public class TriangleCollision : MonoBehaviour
     public TextMeshProUGUI textBox;
     public GameObject gameOverPanel;
     private UnityEngine.Rendering.Universal.Light2D theLight;
+    public float colourLength = 1f;
 
     /// <summary>
     /// Called when the script first runs, this method sets dead to false, health to 1 and starts
@@ -79,7 +80,7 @@ public class TriangleCollision : MonoBehaviour
         {
             float[] health0 = new float[] {health - healthChange, 0f};
             health = health0.Max();
-            UpdateText();
+            UpdateText(false);
         }
     }
 
@@ -88,8 +89,27 @@ public class TriangleCollision : MonoBehaviour
     /// this method updates the health text to display from 1 to 10 (if the health is 0.1, it'll be displayed as 1,
     /// if it's 1, it'll be displayed as 10).
     /// </summary>
-    private void UpdateText()
+    public void UpdateText(bool heal)
     {
         textBox.text = "Health: " + (health * 10f).ToString("0");
+        StartCoroutine(ColorChange(heal));
+    }
+    
+    /// <summary>
+    /// Called when the health increases or decrease, this coroutine changes its color to
+    /// blue or red, respectively, for 1 second.
+    /// </summary>
+    /// <param name="heal">Whether or not the health change comes from a health power-up.</param>
+    /// <returns></returns>
+    IEnumerator ColorChange(bool heal) {
+        if (heal == true)
+        {
+            textBox.color = Color.blue;
+        } else
+        {
+            textBox.color = Color.red;
+        }
+        yield return new WaitForSeconds(colourLength);
+        textBox.color = Color.white;
     }
 }
