@@ -1,6 +1,47 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7987703214007402439
+--- !u!114 &-6638881657022508570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2786f6b2301a94f4288672ff5305244c, type: 3}
+  m_Name: PC
+  m_EditorClassIdentifier: 
+  enabled: 1
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 5
+    name: Windows x86
+    enabled: 1
+    binaryNameFormat: '{0}.exe'
+  - target: 19
+    name: Windows x64
+    enabled: 0
+    binaryNameFormat: '{0}.exe'
+  variants:
+  - variantName: Build Output
+    selectedIndex: 0
+    values:
+    - App
+    - Visual Studio Solution
+    isFlag: 0
+  scriptingBackends:
+  - scriptingImplementation: 0
+    name: Mono
+    enabled: 1
+  - scriptingImplementation: 1
+    name: IL2CPP
+    enabled: 0
+  platformName: PC
+  dataDirNameFormat: '{0}_Data'
+  targetGroup: 1
+--- !u!114 &-4983082623724288684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22,7 +63,7 @@ MonoBehaviour:
     binaryNameFormat: '{0}.apk'
   variants:
   - variantName: Device Type
-    selectedIndex: 0
+    selectedIndex: -1
     values:
     - ARMv7
     - ARM64
@@ -114,47 +155,6 @@ MonoBehaviour:
   platformName: Android
   dataDirNameFormat: '{0}_Data'
   targetGroup: 7
---- !u!114 &-6638881657022508570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2786f6b2301a94f4288672ff5305244c, type: 3}
-  m_Name: PC
-  m_EditorClassIdentifier: 
-  enabled: 1
-  distributionList:
-    distributions: []
-  architectures:
-  - target: 5
-    name: Windows x86
-    enabled: 1
-    binaryNameFormat: '{0}.exe'
-  - target: 19
-    name: Windows x64
-    enabled: 0
-    binaryNameFormat: '{0}.exe'
-  variants:
-  - variantName: Build Output
-    selectedIndex: 0
-    values:
-    - App
-    - Visual Studio Solution
-    isFlag: 0
-  scriptingBackends:
-  - scriptingImplementation: 0
-    name: Mono
-    enabled: 1
-  - scriptingImplementation: 1
-    name: IL2CPP
-    enabled: 0
-  platformName: PC
-  dataDirNameFormat: '{0}_Data'
-  targetGroup: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,11 +201,11 @@ MonoBehaviour:
     platforms:
     - {fileID: -6638881657022508570}
     - {fileID: 7744377809208851296}
-    - {fileID: -7987703214007402439}
+    - {fileID: -4983082623724288684}
   _projectConfigurations:
     configSet:
-      _Buckets: ffffffffffffffff0400000008000000ffffffff050000000600000007000000ffffffffffffffff01000000ffffffff0200000009000000ffffffffffffffffffffffff
-      _HashCodes: 0bd5b82c8b5eac510d6e7c149302dd446ba49d65564b5e0526be1c164f166c1399bbd054110fe44c00000000000000000000000000000000000000000000000000000000
+      _Buckets: ffffffffffffffff0400000008000000ffffffff05000000ffffffffffffffffffffffffffffffff01000000070000000200000009000000ffffffffffffffff06000000
+      _HashCodes: 0bd5b82c8b5eac510d6e7c149302dd446ba49d65564b5e05d9e28149e246381099bbd054110fe44c00000000000000000000000000000000000000000000000000000000
       _Next: ffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff0300000000000000000000000000000000000000000000000000000000000000
       _Count: 10
       _Version: 10
@@ -218,8 +218,10 @@ MonoBehaviour:
       - light-game/Linux/Linux x64/Mono
       - light-game/Linux/Linux x64
       - light-game/Linux
-      - light-game/Android/Android (,Generic,App,APK,Single Binary,Auto,Auto,Disabled)/IL2CPP
-      - light-game/Android/Android (,Generic,App,APK,Single Binary,Auto,Auto,Disabled)
+      - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)/IL2CPP
+      - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)
       - light-game/Android
       - light-game
       - 
@@ -250,10 +252,12 @@ MonoBehaviour:
         childKeys: []
       - enabled: 1
         childKeys:
-        - light-game/Android/Android (,Generic,App,APK,Single Binary,Auto,Auto,Disabled)/IL2CPP
+        - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+          Binary,Auto,Auto,Disabled)/IL2CPP
       - enabled: 1
         childKeys:
-        - light-game/Android/Android (,Generic,App,APK,Single Binary,Auto,Auto,Disabled)
+        - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+          Binary,Auto,Auto,Disabled)
       - enabled: 1
         childKeys:
         - light-game/PC
@@ -278,7 +282,8 @@ MonoBehaviour:
     showBuildInfo: 0
     hideDisabled: 0
     treeView: 0
-    selectedKeyChain: 
+    selectedKeyChain: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+      Binary,Auto,Auto,Disabled)/IL2CPP
   _preBuildActions:
     buildActions: []
   _postBuildActions:
