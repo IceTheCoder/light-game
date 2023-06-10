@@ -981,7 +981,7 @@ GameObject:
   - component: {fileID: 719432140}
   - component: {fileID: 719432139}
   m_Layer: 5
-  m_Name: 3
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1181,8 +1181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTextObject: {fileID: 1750322267}
-  button: {fileID: 0}
-  animator: {fileID: 0}
+  button: {fileID: 986805650}
+  animator: {fileID: 986805647}
 --- !u!114 &986805649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1348,8 +1348,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTextObject: {fileID: 1441328322}
-  button: {fileID: 0}
-  animator: {fileID: 0}
+  button: {fileID: 1167580170}
+  animator: {fileID: 1167580168}
 --- !u!95 &1167580168
 Animator:
   serializedVersion: 5
@@ -1767,8 +1767,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTextObject: {fileID: 1509849200}
-  button: {fileID: 0}
-  animator: {fileID: 0}
+  button: {fileID: 1337844214}
+  animator: {fileID: 1337844219}
 --- !u!1 &1384197193
 GameObject:
   m_ObjectHideFlags: 0
