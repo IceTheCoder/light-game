@@ -91,5 +91,6 @@ public class TriangleCollision : MonoBehaviour
     public void UpdateText()
     {
         textBox.text = "Health: " + (health * 10f).ToString("0");
+        textBox.color = Color.red;
     }
 }
