@@ -1000,6 +1000,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3296990597806685345, guid: b18b0ebed75f6b549a8a65fba424df38, type: 3}
+      propertyPath: lightCalculator
+      value: 
+      objectReference: {fileID: 3139001}
+    - target: {fileID: 3296990597806685345, guid: b18b0ebed75f6b549a8a65fba424df38, type: 3}
       propertyPath: triangleCollision
       value: 
       objectReference: {fileID: 1820296530}
