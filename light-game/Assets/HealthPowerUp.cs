@@ -6,6 +6,7 @@ using UnityEngine;
 public class HealthPowerUp : MonoBehaviour
 {
     public TriangleCollision triangleCollision;
+    public LightCalculator lightCalculator;
     public float destroyDelay = 1f;
 
     /// <summary>
@@ -16,7 +17,7 @@ public class HealthPowerUp : MonoBehaviour
     /// <param name="collision"></param>
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Light"))
+        if (collision.CompareTag("Light") && lightCalculator.won == false)
         {
             triangleCollision.health = 1f;
             triangleCollision.UpdateText(true);
