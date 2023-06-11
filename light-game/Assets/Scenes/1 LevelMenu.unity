@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 525428810}
   - component: {fileID: 525428809}
   - component: {fileID: 525428808}
-  - component: {fileID: 525428807}
+  - component: {fileID: 525428813}
   m_Layer: 5
   m_Name: Level5
   m_TagString: Untagged
@@ -795,27 +795,6 @@ RectTransform:
   m_AnchoredPosition: {x: 120, y: -135}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &525428807
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525428805}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 37936cefd4e18974db702aa5e3f1fa6b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &525428808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -830,7 +809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonTextObject: {fileID: 636762300}
   button: {fileID: 525428810}
-  animator: {fileID: 525428807}
+  animator: {fileID: 525428813}
 --- !u!114 &525428809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,6 +919,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525428805}
   m_CullTransparentMesh: 1
+--- !u!95 &525428813
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525428805}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6db05cc0c06f0714796da2200fbd635b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &569491603
 GameObject:
   m_ObjectHideFlags: 0
