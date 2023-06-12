@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DetectPlayerCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
+        if (collision.CompareTag("Light"))
+        {
+            Debug.Log("You got the sword!");
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
