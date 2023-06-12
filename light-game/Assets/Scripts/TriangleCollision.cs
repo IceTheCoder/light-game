@@ -82,6 +82,11 @@ public class TriangleCollision : MonoBehaviour
             health = health0.Max();
             UpdateText(false);
         }
+        if (collision.CompareTag("StrongerTriangle") && canCollide)
+        {
+            health = 0f;
+            UpdateText(false);
+        }
     }
 
     /// <summary>
