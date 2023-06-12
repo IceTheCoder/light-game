@@ -6,7 +6,7 @@ public class EnableObject : MonoBehaviour
 {
     public GameObject obj;
 
-    public void Disable()
+    public void Enable()
     {
         obj.SetActive(true);
     }

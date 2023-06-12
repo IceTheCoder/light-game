@@ -308,3 +308,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19baa4dae6171cb489eb35477cf39876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableObject: {fileID: 1289188050822197082}
+  disableObject: {fileID: 1289188050822197083}

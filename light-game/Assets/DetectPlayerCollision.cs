@@ -5,11 +5,15 @@ using UnityEngine;
 
 public class DetectPlayerCollision : MonoBehaviour
 {
+    public EnableObject enableObject;
+    public DisableObject disableObject;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Light"))
         {
-            Debug.Log("You got the sword!");
+            enableObject.Enable();
+            disableObject.Disable();
         }
 
     }
