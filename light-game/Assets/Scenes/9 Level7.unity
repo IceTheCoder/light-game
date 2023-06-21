@@ -423,11 +423,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.827
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.085
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -467,7 +467,7 @@ PrefabInstance:
       objectReference: {fileID: 1434056462}
     - target: {fileID: 1289188050822197085, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
       propertyPath: m_Name
-      value: Sword
+      value: SwordItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
@@ -2110,7 +2110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1087458814
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2128,8 +2128,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 480}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: 450}
+  m_SizeDelta: {x: 410, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1087458815
 MonoBehaviour:
@@ -2178,8 +2178,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 84
+  m_fontSizeBase: 84
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
