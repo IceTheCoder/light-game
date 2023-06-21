@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1289188050822197083}
   - component: {fileID: 1289188050822197078}
   m_Layer: 0
-  m_Name: Sword
+  m_Name: SwordiTEM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,3 +310,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableObject: {fileID: 1289188050822197082}
   disableObject: {fileID: 1289188050822197083}
+  showTextFor1Sec: {fileID: 0}

@@ -7,6 +7,7 @@ public class DetectPlayerCollision : MonoBehaviour
 {
     public EnableObject enableObject;
     public DisableObject disableObject;
+    public ShowTextFor1Sec showTextFor1Sec;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
