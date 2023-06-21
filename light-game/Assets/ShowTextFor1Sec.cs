@@ -11,6 +11,7 @@ public class ShowTextFor1Sec : MonoBehaviour
 
     public void Show()
     {
+        Debug.Log("Showing text...");
         text.enabled = true;
         StartCoroutine(Disable());
     }
@@ -18,6 +19,6 @@ public class ShowTextFor1Sec : MonoBehaviour
     IEnumerator Disable()
     {
         yield return new WaitForSeconds(seconds);
-        text.enabled = false;
+        // text.enabled = false;
     }
 }

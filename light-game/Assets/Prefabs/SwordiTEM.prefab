@@ -16,8 +16,9 @@ GameObject:
   - component: {fileID: 1289188050822197082}
   - component: {fileID: 1289188050822197083}
   - component: {fileID: 1289188050822197078}
+  - component: {fileID: -3162793360792989140}
   m_Layer: 0
-  m_Name: SwordiTEM
+  m_Name: SwordItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,4 +311,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableObject: {fileID: 1289188050822197082}
   disableObject: {fileID: 1289188050822197083}
-  showTextFor1Sec: {fileID: 0}
+  showTextFor1Sec: {fileID: -3162793360792989140}
+--- !u!114 &-3162793360792989140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289188050822197085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3995e6bda4f0d214182c2007d28d4097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  seconds: 1
