@@ -9,6 +9,7 @@ public class ShowTextFor1Sec : MonoBehaviour
     public TextMeshProUGUI text;
     public float seconds = 1f;
 
+
     public void Show()
     {
         Debug.Log("Showing text...");
@@ -19,6 +20,6 @@ public class ShowTextFor1Sec : MonoBehaviour
     IEnumerator Disable()
     {
         yield return new WaitForSeconds(seconds);
-        // text.enabled = false;
+        text.enabled = false;
     }
 }

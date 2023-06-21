@@ -310,7 +310,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableObject: {fileID: 1289188050822197082}
-  disableObject: {fileID: 1289188050822197083}
   showTextFor1Sec: {fileID: -3162793360792989140}
 --- !u!114 &-3162793360792989140
 MonoBehaviour:
@@ -326,3 +325,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   seconds: 1
+  disableObject: {fileID: 1289188050822197083}
