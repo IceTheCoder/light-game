@@ -9,7 +9,6 @@ public class ShowTextFor1Sec : MonoBehaviour
     public TextMeshProUGUI text;
     public float seconds = 1f;
 
-
     public void Show()
     {
         Debug.Log("Showing text...");
