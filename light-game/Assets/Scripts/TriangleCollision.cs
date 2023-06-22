@@ -10,13 +10,16 @@ public class TriangleCollision : MonoBehaviour
     public float healthChange;
     public float collisionDelay = 1f;
     public float minHealth = 0.1f;
+    public float healthChangeColourLength = 1f;
+    public float secondsUntilSwordDelayStarts = 0.5f;
+
+    public GameObject gameOverPanel;
+    public GameObject equippedSword;
+    public TextMeshProUGUI textBox;
+
     bool dead;
     bool canCollide = false;
-    public TextMeshProUGUI textBox;
-    public GameObject gameOverPanel;
     private UnityEngine.Rendering.Universal.Light2D theLight;
-    public float healthChangeColourLength = 1f;
-    public GameObject equippedSword;
 
     /// <summary>
     /// Called when the script first runs, this method sets dead to false, health to 1 and starts
@@ -74,6 +77,9 @@ public class TriangleCollision : MonoBehaviour
     /// is touching the triangle and canCollide, and changes the
     /// health to 0 or to health - healthChange (so the health decreases when colliding with a triangle
     /// and it can't go below 0) and updates the text box displaying the health value accordingly.
+    /// If the triangle is stronger, the health is set to 0, unless the player has a sword equipped,
+    /// in which case hitSrtongerTriangle in the Crawl scripts of the StrongerTriangles is set to true,
+    /// making them start to crawl.
     /// </summary>
     /// <param name="collision"></param>
     void OnTriggerStay2D(Collider2D collision)
@@ -98,8 +104,14 @@ public class TriangleCollision : MonoBehaviour
                 {
                     script.hitStrongerTriangle = true;
                 }
+                StartCoroutine(WaitBeforeSwordDelay());
             }
 
+    }
+
+    IEnumerator WaitBeforeSwordDelay()
+    {
+        yield return new WaitForSeconds(secondsUntilSwordDelayStarts);
     }
 
     /// <summary>
