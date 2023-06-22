@@ -4,14 +4,13 @@ using TMPro;
 
 public class ShowTextFor1Sec : MonoBehaviour
 {
-    public TextMeshProUGUI textMeshProUGUI;
     public float seconds = 1f;
     public float y = 1000f;
     private RectTransform rectTransform;
 
     private void Start()
     {
-        rectTransform = textMeshProUGUI.GetComponent<RectTransform>();
+        rectTransform = GetComponent<RectTransform>();
     }
 
     public void Show()
