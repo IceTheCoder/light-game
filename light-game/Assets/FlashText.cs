@@ -8,6 +8,7 @@ public class FlashText : MonoBehaviour
     private RectTransform rectTransform;
     public float flashInterval = 0.05f; // Time the flash is not shown
     private float timeSinceLastFlash = 0f;
+    public TriangleCollision triangleCollision;
 
     private void Start()
     {
@@ -16,11 +17,14 @@ public class FlashText : MonoBehaviour
 
     void Update()
     {
-        timeSinceLastFlash += Time.deltaTime;
-        if (timeSinceLastFlash >= flashInterval)
+        if (triangleCollision.swordCooldown == true)
         {
-            StartCoroutine(Flash());
-            timeSinceLastFlash = 0f;
+            timeSinceLastFlash += Time.deltaTime;
+            if (timeSinceLastFlash >= flashInterval)
+            {
+                StartCoroutine(Flash());
+                timeSinceLastFlash = 0f;
+            }
         }
     }
 
