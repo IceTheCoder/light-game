@@ -16,7 +16,6 @@ public class ShowTextFor1Sec : MonoBehaviour
 
     public void Show()
     {
-        Debug.Log("Showing text...");
         rectTransform.anchoredPosition = new Vector2(0, 450f);
         StartCoroutine(UpdatePositionAfterDelay());
     }
@@ -24,7 +23,6 @@ public class ShowTextFor1Sec : MonoBehaviour
     IEnumerator UpdatePositionAfterDelay()
     {
         yield return new WaitForSeconds(0.5f);
-        Debug.Log("I hope I'll see this.");
         rectTransform.anchoredPosition = new Vector2(0, 1000f);
     }
 }
