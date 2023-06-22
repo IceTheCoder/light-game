@@ -15,15 +15,15 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private SpawnType spawnType;
 
     [Tooltip("This is only used if Spawn Type is set to DELAY or BOTH.")]
-    [SerializeField] private float spawnDelay = 5f;
+    [SerializeField] private float spawnDelay = 10f;
 
     [Tooltip("How many enemies to spawn at once.")]
     [SerializeField] private int spawnCount = 1;
 
     [Tooltip("Should the number of enemies reset on win?")]
-    [SerializeField] private bool resetEnemyCountOnWin = true;
+    [SerializeField] private bool resetEnemyCountOnWin = false;
 
-    public int maxDifficulty = 7;
+    public int maxDifficulty = 10;
     public int maxEnemies = 10;
     public int currentDifficulty = 1;
     public int currentEnemyCount = 0;
