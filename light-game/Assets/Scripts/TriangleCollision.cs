@@ -17,6 +17,7 @@ public class TriangleCollision : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject equippedSword;
     public TextMeshProUGUI textBox;
+    public ShowText showText;
 
     bool dead;
     bool canCollide = false;
@@ -106,6 +107,7 @@ public class TriangleCollision : MonoBehaviour
                 {
                     script.hitStrongerTriangle = true;
                 }
+                showText.Show();
                 StartCoroutine(WaitBeforeSwordCooldown());
             }
 
@@ -122,6 +124,7 @@ public class TriangleCollision : MonoBehaviour
         swordCooldown = true;
         yield return new WaitForSeconds(secondsOfSwordCooldown);
         swordCooldown = false;
+        showText.Hide();
     }
 
     /// <summary>

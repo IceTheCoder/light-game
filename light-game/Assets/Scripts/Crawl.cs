@@ -15,6 +15,7 @@ public class Crawl : MonoBehaviour
     private Vector2 targetPosition;
     private float defaultSpeed;
     [SerializeField] public bool hitStrongerTriangle = false;
+    public bool crawling = false;
 
     private void Awake()
     {

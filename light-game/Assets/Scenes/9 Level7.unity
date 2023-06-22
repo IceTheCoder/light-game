@@ -175,6 +175,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 542951495}
     - target: {fileID: 3275313659899705819, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
+      propertyPath: showText
+      value: 
+      objectReference: {fileID: 544932429}
+    - target: {fileID: 3275313659899705819, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
+      propertyPath: flashText
+      value: 
+      objectReference: {fileID: 544932429}
+    - target: {fileID: 3275313659899705819, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 1541441483}
@@ -1575,8 +1583,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cadac5751a2f4d4eac101133e233c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashInterval: 0.5
-  triangleCollision: {fileID: 1774395530}
 --- !u!1001 &606894470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2982,17 +2988,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8fb27d94a58e164fa62ddbc6e7d260f, type: 3}
---- !u!114 &1774395530 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3275313659899705819, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
-  m_PrefabInstance: {fileID: 3139000}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c960d12dfab7ad048839af35d32208bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1925491469
 PrefabInstance:
   m_ObjectHideFlags: 0
