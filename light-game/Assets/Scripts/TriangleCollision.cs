@@ -6,7 +6,7 @@ using TMPro;
 
 public class TriangleCollision : MonoBehaviour
 {
-    public float health; 
+    public float health;
     public float healthChange;
     public float collisionDelay = 1f;
     public float minHealth = 0.1f;
@@ -22,7 +22,8 @@ public class TriangleCollision : MonoBehaviour
     /// Called when the script first runs, this method sets dead to false, health to 1 and starts
     /// the CollisionDelay coroutine.
     /// </summary>
-    void Start() {
+    void Start()
+    {
         dead = false;
         health = 1f;
         StartCoroutine(CollisionDelay());
@@ -90,7 +91,15 @@ public class TriangleCollision : MonoBehaviour
                 health = 0f;
                 UpdateText(false);
             }
-        }
+        } else if (collision.CompareTag("StrongerTriangle") && canCollide)
+            {
+                Crawl[] crawl = FindObjectsOfType<Crawl>();
+                foreach (Crawl script in crawl)
+                {
+                    script.hitStrongerTriangle = true;
+                }
+            }
+
     }
 
     /// <summary>
@@ -103,18 +112,20 @@ public class TriangleCollision : MonoBehaviour
         textBox.text = "Health: " + (health * 10f).ToString("0");
         StartCoroutine(ColorChange(heal));
     }
-    
+
     /// <summary>
     /// Called when the health increases or decrease, this coroutine changes its color to
     /// blue or red, respectively, for 1 second.
     /// </summary>
     /// <param name="heal">Whether or not the health change comes from a health power-up.</param>
     /// <returns></returns>
-    IEnumerator ColorChange(bool heal) {
+    IEnumerator ColorChange(bool heal)
+    {
         if (heal == true)
         {
             textBox.color = Color.blue;
-        } else
+        }
+        else
         {
             textBox.color = Color.red;
         }

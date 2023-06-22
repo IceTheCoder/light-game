@@ -14,6 +14,7 @@ public class Crawl : MonoBehaviour
     private Vector2 startPosition;
     private Vector2 targetPosition;
     private float defaultSpeed;
+    [SerializeField] public bool hitStrongerTriangle = false;
 
     private void Awake()
     {
@@ -37,7 +38,7 @@ public class Crawl : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        if (gameObject.CompareTag("Triangle"))
+        if (gameObject.CompareTag("Triangle") || (gameObject.CompareTag("StrongerTriangle") && hitStrongerTriangle))
         {
             TriangleCrawl();
         }
