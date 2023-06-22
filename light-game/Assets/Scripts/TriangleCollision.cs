@@ -20,7 +20,7 @@ public class TriangleCollision : MonoBehaviour
 
     bool dead;
     bool canCollide = false;
-    bool swordCooldown = false;
+    public bool swordCooldown = false;
     private UnityEngine.Rendering.Universal.Light2D theLight;
 
     /// <summary>
@@ -86,17 +86,8 @@ public class TriangleCollision : MonoBehaviour
     /// <param name="collision"></param>
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (equippedSword.activeSelf == true && swordCooldown == false)
+        if (equippedSword.activeSelf == false || (equippedSword.activeSelf && swordCooldown == true))
         {
-            Crawl[] crawl = FindObjectsOfType<Crawl>();
-            foreach (Crawl script in crawl)
-            {
-                script.hitStrongerTriangle = true;
-            }
-            StartCoroutine(WaitBeforeSwordCooldown());
-
-        } else
-            {
             if (collision.CompareTag("Triangle") && canCollide)
             {
                 float[] health0 = new float[] { health - healthChange, 0f };
@@ -108,7 +99,15 @@ public class TriangleCollision : MonoBehaviour
                 health = 0f;
                 UpdateText(false);
             }
-        }
+        } else if (collision.CompareTag("StrongerTriangle") && canCollide && swordCooldown == false)
+            {
+                Crawl[] crawl = FindObjectsOfType<Crawl>();
+                foreach (Crawl script in crawl)
+                {
+                    script.hitStrongerTriangle = true;
+                }
+                StartCoroutine(WaitBeforeSwordCooldown());
+            }
 
     }
 
