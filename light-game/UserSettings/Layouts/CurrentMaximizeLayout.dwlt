@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 34314
+  controlID: 37549
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 34315
+  controlID: 37550
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 34316
+  controlID: 37551
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -229,23 +229,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 8a8a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 409dfeffa69efeff50a0feffb6e6feffb8e6feff1efcfeff14d6fffff6fafffff8faffff986b00000094000046c500005ac500006ac50000d4cd000092d90000a4db0000b4dd0000
+      m_ExpandedIDs: 140bfdff409dfeffa69efeff50a0feffb6e6feffb8e6feff1efcfeff14d6fffff6fafffff8faffff986b00000094000046c500005ac500006ac50000d4cd000092d90000a4db0000b4dd0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Main Camera
-        m_OriginalName: Main Camera
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 52720
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -829,7 +829,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -838,15 +838,15 @@ MonoBehaviour:
     y: 1000
     width: 1955
     height: 307
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 1
-  m_LastSelected: 2
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -889,21 +889,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Cristi\Documents\GitHub\light-game\light-game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 486f0000
-    m_LastClickedID: 28488
+    m_SelectedIDs: e6740000
+    m_LastClickedID: 29926
     m_ExpandedIDs: 00000000486f00004a6f00004c6f00004e6f0000506f0000526f0000546f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -957,8 +957,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: b6e6feff
-    m_LastClickedInstanceID: -72010
+    m_SelectedInstanceIDs: 8a8a0000
+    m_LastClickedInstanceID: 35466
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300008e700000
     m_RenameOverlay:
@@ -1048,7 +1048,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 52782
+  m_LastSelectedObjectID: -72010
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
