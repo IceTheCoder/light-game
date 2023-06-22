@@ -7,8 +7,8 @@ using System.Linq;
 
 public class LightCalculator : MonoBehaviour
 {
-    public float speed = 0.2f;
-    public float speedFactor = 0.07f;
+    public float speed = 0f;
+    public float speedFactor = 0.14f;
     public float lightUpdateDelay = 0.01f;
     public float minimumIntensity = 0.34f;
     public float minimumRadius = 0.2f;
@@ -19,7 +19,7 @@ public class LightCalculator : MonoBehaviour
     private UnityEngine.Rendering.Universal.Light2D theLight;
 
     // Number of previous speed samples to include in the moving average
-    public int numSamples = 10;
+    public int numSamples = 20;
 
     // List of previous speed samples
     private List<float> speedSamples = new List<float>();
