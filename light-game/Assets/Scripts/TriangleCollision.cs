@@ -6,12 +6,12 @@ using TMPro;
 
 public class TriangleCollision : MonoBehaviour
 {
-    public float health;
-    public float healthChange;
+    public float health = 0f;
+    public float healthChange = 0.1f;
     public float collisionDelay = 1f;
     public float minHealth = 0.1f;
     public float healthChangeColourLength = 1f;
-    public float secondsUntilSwordCooldownStarts = 0.5f;
+    public float secondsUntilSwordCooldownStarts = 0.25f;
     public float secondsOfSwordCooldown = 1f;
 
     public GameObject gameOverPanel;
