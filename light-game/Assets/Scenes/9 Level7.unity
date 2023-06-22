@@ -1433,80 +1433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &590655953
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1920361584}
-    m_Modifications:
-    - target: {fileID: 1289188050822197074, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197082, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: obj
-      value: 
-      objectReference: {fileID: 1434056462}
-    - target: {fileID: 1289188050822197085, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_Name
-      value: EquippedSword
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289188050822197085, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 1289188050822197082, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-    - {fileID: 1289188050822197083, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-    - {fileID: 1289188050822197078, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
 --- !u!1001 &606894470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2406,8 +2332,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: f8fb27d94a58e164fa62ddbc6e7d260f, type: 3}
 --- !u!1 &1434056462 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1289188050822197085, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-  m_PrefabInstance: {fileID: 590655953}
+  m_CorrespondingSourceObject: {fileID: 7320576637351078401, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
+  m_PrefabInstance: {fileID: 3139000}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1535724674
 PrefabInstance:
@@ -2925,11 +2851,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7033612964580559146, guid: f8fb27d94a58e164fa62ddbc6e7d260f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f8fb27d94a58e164fa62ddbc6e7d260f, type: 3}
---- !u!4 &1920361584 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3275313659899705821, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
-  m_PrefabInstance: {fileID: 3139000}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1925491469
 PrefabInstance:
   m_ObjectHideFlags: 0

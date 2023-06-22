@@ -77,16 +77,19 @@ public class TriangleCollision : MonoBehaviour
     /// <param name="collision"></param>
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Triangle") && canCollide)
+        if (equippedSword.activeSelf == false)
         {
-            float[] health0 = new float[] {health - healthChange, 0f};
-            health = health0.Max();
-            UpdateText(false);
-        }
-        if (collision.CompareTag("StrongerTriangle") && canCollide)
-        {
-            health = 0f;
-            UpdateText(false);
+            if (collision.CompareTag("Triangle") && canCollide)
+            {
+                float[] health0 = new float[] { health - healthChange, 0f };
+                health = health0.Max();
+                UpdateText(false);
+            }
+            if (collision.CompareTag("StrongerTriangle") && canCollide)
+            {
+                health = 0f;
+                UpdateText(false);
+            }
         }
     }
 
