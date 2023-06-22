@@ -101,15 +101,28 @@ public class TriangleCollision : MonoBehaviour
                 UpdateText(false);
             }
         } else if (collision.CompareTag("StrongerTriangle") && canCollide && swordCooldown == false)
+        {
+            Crawl[] crawl = FindObjectsOfType<Crawl>();
+            foreach (Crawl script in crawl)
             {
-                Crawl[] crawl = FindObjectsOfType<Crawl>();
-                foreach (Crawl script in crawl)
-                {
-                    script.hitStrongerTriangle = true;
-                }
-                showText.Show();
-                StartCoroutine(WaitBeforeSwordCooldown());
+                script.hitStrongerTriangle = true;
             }
+            showText.Show();
+
+            // Find the only child game object of the object that the script sits on
+            GameObject otherObject = transform.GetChild(0).gameObject;
+
+            // Calculate the angle between the otherObject and the triangle
+            Vector3 direction = collision.transform.position - otherObject.transform.position;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            angle += 180;
+
+            // Rotate only the Z-axis of the otherObject towards the triangle
+            otherObject.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+            StartCoroutine(WaitBeforeSwordCooldown());
+        }
 
     }
 

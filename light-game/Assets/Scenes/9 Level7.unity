@@ -183,6 +183,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 544932429}
     - target: {fileID: 3275313659899705819, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
+      propertyPath: healthChange
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275313659899705819, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 1541441483}
