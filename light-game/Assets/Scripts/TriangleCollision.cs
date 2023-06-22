@@ -11,7 +11,8 @@ public class TriangleCollision : MonoBehaviour
     public float collisionDelay = 1f;
     public float minHealth = 0.1f;
     public float healthChangeColourLength = 1f;
-    public float secondsUntilSwordDelayStarts = 0.5f;
+    public float secondsUntilSwordCooldownStarts = 0.5f;
+    public float secondsOfSwordCooldown = 1f;
 
     public GameObject gameOverPanel;
     public GameObject equippedSword;
@@ -19,6 +20,7 @@ public class TriangleCollision : MonoBehaviour
 
     bool dead;
     bool canCollide = false;
+    bool swordCooldown = false;
     private UnityEngine.Rendering.Universal.Light2D theLight;
 
     /// <summary>
@@ -84,8 +86,17 @@ public class TriangleCollision : MonoBehaviour
     /// <param name="collision"></param>
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (equippedSword.activeSelf == false)
+        if (equippedSword.activeSelf == true && swordCooldown == false)
         {
+            Crawl[] crawl = FindObjectsOfType<Crawl>();
+            foreach (Crawl script in crawl)
+            {
+                script.hitStrongerTriangle = true;
+            }
+            StartCoroutine(WaitBeforeSwordCooldown());
+
+        } else
+            {
             if (collision.CompareTag("Triangle") && canCollide)
             {
                 float[] health0 = new float[] { health - healthChange, 0f };
@@ -97,21 +108,21 @@ public class TriangleCollision : MonoBehaviour
                 health = 0f;
                 UpdateText(false);
             }
-        } else if (collision.CompareTag("StrongerTriangle") && canCollide)
-            {
-                Crawl[] crawl = FindObjectsOfType<Crawl>();
-                foreach (Crawl script in crawl)
-                {
-                    script.hitStrongerTriangle = true;
-                }
-                StartCoroutine(WaitBeforeSwordDelay());
-            }
+        }
 
     }
 
-    IEnumerator WaitBeforeSwordDelay()
+    IEnumerator WaitBeforeSwordCooldown()
     {
-        yield return new WaitForSeconds(secondsUntilSwordDelayStarts);
+        yield return new WaitForSeconds(secondsUntilSwordCooldownStarts);
+        StartCoroutine(SwordCooldown());
+    }
+
+    IEnumerator SwordCooldown()
+    {
+        swordCooldown = true;
+        yield return new WaitForSeconds(secondsOfSwordCooldown);
+        swordCooldown = false;
     }
 
     /// <summary>
