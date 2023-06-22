@@ -56,4 +56,5 @@ E-mail: icethedev2@gmail.com
 - [This Submain blog post](https://blog.submain.com/c-documentation-start-finish-guide/) for explaining how to document C# code.
 - https://youtu.be/2vfTe3wizZ0.
 - These 2 Linux on VirtualBox tutorial from Pawan Dai and TechJunkie: https://youtu.be/6rxMqu-6vIM, https://youtu.be/SHErR5NBqsc.
-- https://youtu.be/tMSDz0Bzwwc
+- https://youtu.be/tMSDz0Bzwwc.
+- [Sword Normal](https://opengameart.org/content/sword-normal) by [Skycore](https://opengameart.org/users/skycore) is licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).

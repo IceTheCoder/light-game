@@ -29,19 +29,27 @@ public class Crawl : MonoBehaviour
     {
         startPosition = transform.position;
         targetPosition = GetRandomTargetPosition();
+    }
+
+    /// <summary>
+    /// Called once per frame, this method runs the TriangleCrawl() method only if
+    /// it's on a normal triangle.
+    /// </summary>
+    private void Update()
+    {
         if (gameObject.CompareTag("Triangle"))
         {
-            StartCoroutine(TriangleCrawl());
+            TriangleCrawl();
         }
     }
 
     /// <summary>
-    /// Called once per frame,
+    /// Called once per frame by the Update() method if on a normal triangle,
     /// This method defines a new position (a gradual position between the current and target position).
     /// Then, it checks if the object is close to the target position and gets a new target position if so
     /// This method also limits the target poistion to the boundaries of the scene.
     /// </summary>
-    IEnumerator TriangleCrawl()
+    public void TriangleCrawl()
     {
         Vector2 newPosition = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
@@ -59,7 +67,6 @@ public class Crawl : MonoBehaviour
         targetPosition.y = Mathf.Clamp(targetPosition.y, minY, maxY);
 
         transform.position = newPosition;
-        yield return new WaitForEndOfFrame();
     }
 
     /// <summary>
