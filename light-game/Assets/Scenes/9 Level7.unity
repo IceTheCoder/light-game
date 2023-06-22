@@ -178,10 +178,6 @@ PrefabInstance:
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 1541441483}
-    - target: {fileID: 3275313659899705819, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
-      propertyPath: secondsUntilSwordCooldownStarts
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 3275313659899705821, guid: f09fdf1b6f5433146b987cc1edbae03b, type: 3}
       propertyPath: m_RootOrder
       value: 0
