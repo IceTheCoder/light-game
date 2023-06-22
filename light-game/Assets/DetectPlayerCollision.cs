@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using TMPro;
 
 public class DetectPlayerCollision : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class DetectPlayerCollision : MonoBehaviour
         if (collision.CompareTag("Light"))
         {
             enableObject.Enable();
-            // showTextFor1Sec.Show();
+            showTextFor1Sec.Show();
             disableObject.Disable();
         }
 

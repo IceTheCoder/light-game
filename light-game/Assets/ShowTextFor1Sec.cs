@@ -1,24 +1,30 @@
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using TMPro.Examples;
 using UnityEngine;
+using TMPro;
 
 public class ShowTextFor1Sec : MonoBehaviour
 {
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI textMeshProUGUI;
     public float seconds = 1f;
+    public float y = 1000f;
+    private RectTransform rectTransform;
+
+    private void Start()
+    {
+        rectTransform = textMeshProUGUI.GetComponent<RectTransform>();
+    }
 
     public void Show()
     {
         Debug.Log("Showing text...");
-        text.enabled = true;
-        StartCoroutine(Disable());
+        rectTransform.anchoredPosition = new Vector2(0, 450f);
+        StartCoroutine(UpdatePositionAfterDelay());
     }
 
-    IEnumerator Disable()
+    IEnumerator UpdatePositionAfterDelay()
     {
-        yield return new WaitForSeconds(seconds);
-        text.enabled = false;
+        yield return new WaitForSeconds(0.5f);
+        Debug.Log("I hope I'll see this.");
+        rectTransform.anchoredPosition = new Vector2(0, 1000f);
     }
 }
