@@ -173,8 +173,8 @@ MonoBehaviour:
     openFolderPostBuild: 1
   _productParameters:
     buildCounter: 0
-    buildVersion: beta-2.9.2
-    versionTemplate: beta-2.9.2
+    buildVersion: beta-3.0
+    versionTemplate: beta-3.0
     autoGenerate: 0
     syncWithPlayerSettings: 1
   _releaseTypeList:
@@ -194,6 +194,9 @@ MonoBehaviour:
         - fileGUID: 0a6c1975f01488346b3b785a640bea36
         - fileGUID: 5a878a37bb14bdd41b965ffc19b9156a
         - fileGUID: 9be53de2b711bb544ab4bad8f7ed037c
+        - fileGUID: 032e83e37e9805b4184f4664a5c8ef5d
+        - fileGUID: 0669a9d8d019de343bf9a7ebd9cfd21b
+        - fileGUID: 677feb94b983c2a4ea8d2badcf594f4a
         - fileGUID: e2c8b98abbf754118b502335fae14ff5
         - fileGUID: aba9148db6d560340b88a9fc2636f4b3
         - fileGUID: 5d3e047155406bd4ba8d1a47139489ca
