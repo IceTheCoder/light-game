@@ -8,6 +8,7 @@ TagManager:
   - Triangle
   - WinCondition
   - Health
+  - StrongerTriangle
   layers:
   - Default
   - TransparentFX

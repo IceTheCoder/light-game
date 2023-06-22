@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Crawl : MonoBehaviour
@@ -13,6 +14,8 @@ public class Crawl : MonoBehaviour
     private Vector2 startPosition;
     private Vector2 targetPosition;
     private float defaultSpeed;
+    [SerializeField] public bool hitStrongerTriangle = false;
+    public bool crawling = false;
 
     private void Awake()
     {
@@ -31,12 +34,24 @@ public class Crawl : MonoBehaviour
     }
 
     /// <summary>
-    /// Called once per frame,
+    /// Called once per frame, this method runs the TriangleCrawl() method only if
+    /// it's on a normal triangle.
+    /// </summary>
+    private void Update()
+    {
+        if (gameObject.CompareTag("Triangle") || (gameObject.CompareTag("StrongerTriangle") && hitStrongerTriangle))
+        {
+            TriangleCrawl();
+        }
+    }
+
+    /// <summary>
+    /// Called once per frame by the Update() method if on a normal triangle,
     /// This method defines a new position (a gradual position between the current and target position).
     /// Then, it checks if the object is close to the target position and gets a new target position if so
     /// This method also limits the target poistion to the boundaries of the scene.
     /// </summary>
-    void Update()
+    public void TriangleCrawl()
     {
         Vector2 newPosition = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 

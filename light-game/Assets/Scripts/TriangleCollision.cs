@@ -6,22 +6,30 @@ using TMPro;
 
 public class TriangleCollision : MonoBehaviour
 {
-    public float health; 
+    public float health;
     public float healthChange;
     public float collisionDelay = 1f;
     public float minHealth = 0.1f;
+    public float healthChangeColourLength = 1f;
+    public float secondsUntilSwordCooldownStarts = 0.5f;
+    public float secondsOfSwordCooldown = 1f;
+
+    public GameObject gameOverPanel;
+    public GameObject equippedSword;
+    public TextMeshProUGUI textBox;
+    public ShowText showText;
+
     bool dead;
     bool canCollide = false;
-    public TextMeshProUGUI textBox;
-    public GameObject gameOverPanel;
+    public bool swordCooldown = false;
     private UnityEngine.Rendering.Universal.Light2D theLight;
-    public float colourLength = 1f;
 
     /// <summary>
     /// Called when the script first runs, this method sets dead to false, health to 1 and starts
     /// the CollisionDelay coroutine.
     /// </summary>
-    void Start() {
+    void Start()
+    {
         dead = false;
         health = 1f;
         StartCoroutine(CollisionDelay());
@@ -72,16 +80,64 @@ public class TriangleCollision : MonoBehaviour
     /// is touching the triangle and canCollide, and changes the
     /// health to 0 or to health - healthChange (so the health decreases when colliding with a triangle
     /// and it can't go below 0) and updates the text box displaying the health value accordingly.
+    /// If the triangle is stronger, the health is set to 0, unless the player has a sword equipped,
+    /// in which case hitSrtongerTriangle in the Crawl scripts of the StrongerTriangles is set to true,
+    /// making them start to crawl.
     /// </summary>
     /// <param name="collision"></param>
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Triangle") && canCollide)
+        if (equippedSword.activeSelf == false || (equippedSword.activeSelf && swordCooldown == true))
         {
-            float[] health0 = new float[] {health - healthChange, 0f};
-            health = health0.Max();
-            UpdateText(false);
+            if (collision.CompareTag("Triangle") && canCollide)
+            {
+                float[] health0 = new float[] { health - healthChange, 0f };
+                health = health0.Max();
+                UpdateText(false);
+            }
+            if (collision.CompareTag("StrongerTriangle") && canCollide)
+            {
+                health = 0f;
+                UpdateText(false);
+            }
+        } else if (collision.CompareTag("StrongerTriangle") && canCollide && swordCooldown == false)
+        {
+            Crawl[] crawl = FindObjectsOfType<Crawl>();
+            foreach (Crawl script in crawl)
+            {
+                script.hitStrongerTriangle = true;
+            }
+            showText.Show();
+
+            // Find the only child game object of the object that the script sits on
+            GameObject otherObject = transform.GetChild(0).gameObject;
+
+            // Calculate the angle between the otherObject and the triangle
+            Vector3 direction = collision.transform.position - otherObject.transform.position;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            angle += 180;
+
+            // Rotate only the Z-axis of the otherObject towards the triangle
+            otherObject.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+            StartCoroutine(WaitBeforeSwordCooldown());
         }
+
+    }
+
+    IEnumerator WaitBeforeSwordCooldown()
+    {
+        yield return new WaitForSeconds(secondsUntilSwordCooldownStarts);
+        StartCoroutine(SwordCooldown());
+    }
+
+    IEnumerator SwordCooldown()
+    {
+        swordCooldown = true;
+        yield return new WaitForSeconds(secondsOfSwordCooldown);
+        swordCooldown = false;
+        showText.Hide();
     }
 
     /// <summary>
@@ -94,22 +150,24 @@ public class TriangleCollision : MonoBehaviour
         textBox.text = "Health: " + (health * 10f).ToString("0");
         StartCoroutine(ColorChange(heal));
     }
-    
+
     /// <summary>
     /// Called when the health increases or decrease, this coroutine changes its color to
     /// blue or red, respectively, for 1 second.
     /// </summary>
     /// <param name="heal">Whether or not the health change comes from a health power-up.</param>
     /// <returns></returns>
-    IEnumerator ColorChange(bool heal) {
+    IEnumerator ColorChange(bool heal)
+    {
         if (heal == true)
         {
             textBox.color = Color.blue;
-        } else
+        }
+        else
         {
             textBox.color = Color.red;
         }
-        yield return new WaitForSeconds(colourLength);
+        yield return new WaitForSeconds(healthChangeColourLength);
         textBox.color = Color.white;
     }
 }
