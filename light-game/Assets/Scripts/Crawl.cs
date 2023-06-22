@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Crawl : MonoBehaviour
@@ -28,6 +29,10 @@ public class Crawl : MonoBehaviour
     {
         startPosition = transform.position;
         targetPosition = GetRandomTargetPosition();
+        if (gameObject.CompareTag("Triangle"))
+        {
+            StartCoroutine(TriangleCrawl());
+        }
     }
 
     /// <summary>
@@ -36,7 +41,7 @@ public class Crawl : MonoBehaviour
     /// Then, it checks if the object is close to the target position and gets a new target position if so
     /// This method also limits the target poistion to the boundaries of the scene.
     /// </summary>
-    void Update()
+    IEnumerator TriangleCrawl()
     {
         Vector2 newPosition = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
@@ -54,6 +59,7 @@ public class Crawl : MonoBehaviour
         targetPosition.y = Mathf.Clamp(targetPosition.y, minY, maxY);
 
         transform.position = newPosition;
+        yield return new WaitForEndOfFrame();
     }
 
     /// <summary>
