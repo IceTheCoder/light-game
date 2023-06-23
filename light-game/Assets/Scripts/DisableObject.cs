@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class DisableObject : MonoBehaviour
 {
-    /// <summary>
-    /// This should be sword item that should be disabled after picked up.
-    /// </summary>
+    // This should be sword item that should be disabled after picked up.
     public GameObject obj;
 
     /// <summary>
