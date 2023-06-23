@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 5315
+  controlID: 6248
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 5316
+  controlID: 6249
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 5317
+  controlID: 6250
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -229,9 +229,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4898ffff
-      m_LastClickedID: -26552
-      m_ExpandedIDs: 7298ffff66a7fffff8faffff9c6b00003c950000
+      m_SelectedIDs: c47cffff
+      m_LastClickedID: -33596
+      m_ExpandedIDs: 047dfffff083ffff7298ffff66a7fffff8faffff9c6b00003c950000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -889,21 +889,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Cristi\Documents\GitHub\light-game\light-game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8c6f0000
-    m_LastClickedID: 28556
+    m_SelectedIDs: 8a6f0000
+    m_LastClickedID: 28554
     m_ExpandedIDs: 000000005e6f0000606f0000626f0000646f0000666f0000686f00006a6f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -957,8 +957,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 4898ffff
-    m_LastClickedInstanceID: -26552
+    m_SelectedInstanceIDs: c47cffff
+    m_LastClickedInstanceID: -33596
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300008e700000
     m_RenameOverlay:
