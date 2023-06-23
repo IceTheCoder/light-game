@@ -8,7 +8,7 @@ public class RandomPosition : MonoBehaviour
     private float screenWidth;
     private float screenHeight;
 
-    // The object to be moved
+    // The object('s transform) to be moved
     private Transform objectToMove;
 
     /// <summary>
