@@ -19,9 +19,7 @@ public class WinGame : MonoBehaviour
     public bool disableFirstVoiceAfterWinning = true;
 
     /// <summary>
-    /// Called when the script first loads,
-    /// this fucntions sets canCollide to false,
-    /// waits for the WinDelay to pass,
+    /// Called when the script first loads, this fucntions sets canCollide to false, waits for the WinDelay to pass,
     /// and gets the TypewriterEffect script.
     /// </summary>
     private void Start()
@@ -45,9 +43,8 @@ public class WinGame : MonoBehaviour
     }
 
     /// <summary>
-    /// Called when the user finds the win condition if the voice is done with the information,
-    /// this method waits for half-a-second before loading the next scene.,
-    /// or reloading the current scene if it's the last or an infinite level.
+    /// Called when the user finds the win condition if the voice is done with the information, this method waits for 2 seconds before loading the next scene,
+    /// or reloading the current scene if it's an infinite level.
     /// </summary>
     /// <returns>Nothing.</returns>
     public IEnumerator NextLevelAfterDelay()
@@ -66,11 +63,10 @@ public class WinGame : MonoBehaviour
     }
 
     /// <summary>
-    /// Called when the object collides with another trigger object,
-    /// this method checks if the object is a WinCondition and then
+    /// Called when the object collides with another trigger object, this method checks if the object is a WinCondition and then
     /// disables triangle collision (if necessary), health, activates the WinGame panel (if necessary),
     /// sets the won variable of lightCalculator to true (to make the light slowly increase in radius),
-    /// and deactivates the first voice and activates the 2nd one (to tell the user to watch out for enemies),
+    /// deactivates the first voice and activates the 2nd one (to tell the user to watch out for enemies) if the 2nd voice exists,
     /// and sets the text to black.
     /// </summary>
     /// <param name="collision"></param>
