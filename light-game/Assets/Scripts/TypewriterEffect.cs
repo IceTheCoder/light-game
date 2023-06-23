@@ -18,7 +18,11 @@ public class TypewriterEffect : MonoBehaviour
     private Coroutine typingCoroutine;
     private Coroutine deletionCoroutine;
     private int textIndex = 0;
-
+    
+    /// <summary>
+    /// Called when the object is neabled, this method sets voiceIsDone to false, gets the textMeshPro component, 
+    /// and starts the TypeText() coroutine.
+    /// </summary>
     private void OnEnable()
     {
         voiceIsDone = false;
@@ -28,6 +32,11 @@ public class TypewriterEffect : MonoBehaviour
         typingCoroutine = StartCoroutine(TypeText());
     }
 
+    /// <summary>
+    /// Called after the object is enabled by the OnEnable() method, this coroutine starts typing the text if it's not fully typed at the typingSpeed,
+    /// or calls the DeleteText() coroutine if it's fully typed.
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator TypeText()
     {
         yield return new WaitForSeconds(delayBeforeDeletion);
@@ -48,6 +57,11 @@ public class TypewriterEffect : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Called when the text needs to be deleted by the TypeText() coroutine, this coroutine waits delayBeforeDeletion seconds before starting to delete the text at the deletionSpeed.
+    /// If there's another phrase to be said, it also calls the TypeText() coroutine to type it, else it sets voiceIsDone to true.
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator DeleteText()
     {
         yield return new WaitForSeconds(delayBeforeDeletion);
@@ -77,6 +91,9 @@ public class TypewriterEffect : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Called when the object is destroyed, this method stops the typing and deletion coroutines.
+    /// </summary>
     private void OnDestroy()
     {
         if (typingCoroutine != null)
@@ -85,6 +102,10 @@ public class TypewriterEffect : MonoBehaviour
         if (deletionCoroutine != null)
             StopCoroutine(deletionCoroutine);
     }
+
+    /// <summary>
+    /// Called when the object is disabled, this method stops the typing and deletion coroutines.
+    /// </summary>
     private void OnDisable()
     {
         if (typingCoroutine != null)
