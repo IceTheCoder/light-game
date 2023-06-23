@@ -8,7 +8,7 @@ public class RandomPosition : MonoBehaviour
     private float screenWidth;
     private float screenHeight;
 
-    // The object to be moved
+    // The object('s transform) to be moved
     private Transform objectToMove;
 
     /// <summary>
@@ -29,7 +29,7 @@ public class RandomPosition : MonoBehaviour
     }
 
     /// <summary>
-    /// Called shortly after the script first loads, this metho gets a random position within the scene view,
+    /// Called shortly after the script first loads, this method gets a random position within the scene view,
     /// and moves the object to that position.
     /// </summary>
     void MoveObject()

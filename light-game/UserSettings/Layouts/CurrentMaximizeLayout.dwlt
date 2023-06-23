@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 47574
+  controlID: 5315
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 47575
+  controlID: 5316
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 47576
+  controlID: 5317
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -229,9 +229,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: feecfcff140bfdff409dfeffa69efeff50a0feffb6e6feffb8e6feff1efcfeff14d6fffff6fafffff8faffff986b00000094000046c500005ac500006ac50000d4cd000092d90000a4db0000b4dd000034b10100
+      m_SelectedIDs: 4898ffff
+      m_LastClickedID: -26552
+      m_ExpandedIDs: 7298ffff66a7fffff8faffff9c6b00003c950000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -889,22 +889,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Cristi\Documents\GitHub\light-game\light-game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e6740000
-    m_LastClickedID: 29926
-    m_ExpandedIDs: 00000000486f00004a6f00004c6f00004e6f0000506f0000526f0000546f000000ca9a3b
+    m_SelectedIDs: 8c6f0000
+    m_LastClickedID: 28556
+    m_ExpandedIDs: 000000005e6f0000606f0000626f0000646f0000666f0000686f00006a6f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -920,7 +920,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 11}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -932,7 +932,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000486f00004a6f00004c6f00004e6f0000506f0000526f0000546f000000ca9a3b
+    m_ExpandedIDs: 000000005e6f0000606f0000626f0000646f0000666f0000686f00006a6f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -957,9 +957,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 4898ffff
+    m_LastClickedInstanceID: -26552
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300008e700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1048,7 +1048,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -72010
+  m_LastSelectedObjectID: 27634
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52

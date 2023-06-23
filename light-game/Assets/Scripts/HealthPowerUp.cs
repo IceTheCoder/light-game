@@ -11,8 +11,8 @@ public class HealthPowerUp : MonoBehaviour
 
     /// <summary>
     /// Called when the health power-up collides with the light,
-    /// this function sets the health to 1, calls the UpdateText method
-    /// of TriangleCollision, and destroys the power-up after 1 second.
+    /// this function sets the health to 1, calls the UpdateText method of TriangleCollision
+    /// (to make the health text blue for 1 second), and destroys the power-up after 1 second.
     /// </summary>
     /// <param name="collision"></param>
     void OnTriggerStay2D(Collider2D collision)

@@ -31,7 +31,7 @@ public class EnemySpawner : MonoBehaviour
     private float spawnDelayTimer = 0;
 
     /// <summary>
-    /// Initialize EnemySpawner Singleton
+    /// Called whenever the script object is initialised, this method initialises the EnemySpawner Singleton.
     /// </summary>
     private void Awake()
     {
@@ -47,6 +47,9 @@ public class EnemySpawner : MonoBehaviour
         SceneManager.sceneLoaded += InitializeLevel;
     }
 
+    /// <summary>
+    /// Called once per frame, this method spawns enemies every spawnDelay seconds if the Spawn Type is DELAY or BOTH.
+    /// </summary>
     private void Update()
     {
         if (spawnType == SpawnType.DELAY || spawnType == SpawnType.BOTH)
@@ -61,7 +64,8 @@ public class EnemySpawner : MonoBehaviour
     }
 
     /// <summary>
-    /// Spawns the specified number of enemies
+    /// Called once per frame by the Update() method if the Spawn Type is DELAY or BOTH, 
+    /// this method spawns the specified number of enemies.
     /// </summary>
     public void SpawnEnemy(int count)
     {
@@ -76,7 +80,7 @@ public class EnemySpawner : MonoBehaviour
     }
 
     /// <summary>
-    /// Initialize the level on each SceneLoad
+    /// This method initialises the level on each SceneLoad.
     /// </summary>
     private void InitializeLevel(Scene scene, LoadSceneMode mode)
     {

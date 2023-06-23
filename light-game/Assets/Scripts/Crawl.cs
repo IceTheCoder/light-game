@@ -17,6 +17,10 @@ public class Crawl : MonoBehaviour
     [SerializeField] public bool hitStrongerTriangle = false;
     public bool crawling = false;
 
+    /// <summary>
+    /// Called when the script object is initialised,
+    /// this method initialises the defaultSpeed variable.
+    /// </summary>
     private void Awake()
     {
         defaultSpeed = speed;
@@ -35,7 +39,7 @@ public class Crawl : MonoBehaviour
 
     /// <summary>
     /// Called once per frame, this method runs the TriangleCrawl() method only if
-    /// it's on a normal triangle.
+    /// it's on a normal triangle or if a it's a stronger triangle when one stronger triangle has been hit.
     /// </summary>
     private void Update()
     {
@@ -46,9 +50,10 @@ public class Crawl : MonoBehaviour
     }
 
     /// <summary>
-    /// Called once per frame by the Update() method if on a normal triangle,
-    /// This method defines a new position (a gradual position between the current and target position).
-    /// Then, it checks if the object is close to the target position and gets a new target position if so
+    /// Called once per frame by the Update() method if on a normal triangle 
+    /// or if on a stronger triangle when one stronger triangle has been hit,
+    /// this method defines a new position (a gradual position between the current and target position).
+    /// Then, it checks if the object is close to the target position and gets a new target position if so.
     /// This method also limits the target poistion to the boundaries of the scene.
     /// </summary>
     public void TriangleCrawl()
@@ -73,7 +78,8 @@ public class Crawl : MonoBehaviour
 
     /// <summary>
     /// Called once the object is near the target position, 
-    /// this method generates a new target position for the object within a circle with the radius of the magnitude float.    
+    /// this method generates a new target position for the object within a circle with the radius of the magnitude float.
+    /// Therefore, the magnitude represents how far from the current a position a triangle can walk.
     /// </summary>
     /// <returns>Vector2 target position</returns>
     private Vector2 GetRandomTargetPosition()
@@ -82,7 +88,7 @@ public class Crawl : MonoBehaviour
     }
 
     /// <summary>
-    /// Calling this will change the difficulty of the enemy.
+    /// Calling this will change the difficulty (and therefore speed) of the enemy.
     /// </summary>
     /// <param name="difficulty">difficulty should be a non-negative and non-zero number</param>
     public void SetDifficulty(int difficulty)
