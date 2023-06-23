@@ -1,3 +1,4 @@
+// This script should be used for the sword cooldown, so the length of the sword cooldown can be changed within TriangleCollision.
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;

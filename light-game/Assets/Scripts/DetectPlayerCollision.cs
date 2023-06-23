@@ -8,7 +8,7 @@ public class DetectPlayerCollision : MonoBehaviour
 {
     public EnableObject enableObject;
     public DisableObject disableObject;
-    public ShowTextFor1Sec showTextFor1Sec;
+    public Show1SwordText show1SwordText;
 
     /// <summary>
     /// Called upon collision with another trigger object, this method checks if the object is the Light,
@@ -22,7 +22,7 @@ public class DetectPlayerCollision : MonoBehaviour
         if (collision.CompareTag("Light"))
         {
             enableObject.Enable();
-            showTextFor1Sec.Show();
+            show1SwordText.Show();
             disableObject.Disable();
         }
 
