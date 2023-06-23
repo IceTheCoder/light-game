@@ -17,7 +17,8 @@ public class ShowText : MonoBehaviour
     }
 
     /// <summary>
-    /// Called when a piece of text (such as '+1 SWORD' or the sword cooldown warning), this method sets the position of that text to be visible to the user.
+    /// Called when a piece of text (such as '+1 SWORD' or the sword cooldown warning) needs to be shown, 
+    /// this method sets the position of that text to be visible to the user.
     /// </summary>
     public void Show()
     {
@@ -27,6 +28,10 @@ public class ShowText : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Called when a piece of text (such as '+1 SWORD' or the sword cooldown warning) needs to be hidden, 
+    /// this method sets the position of that text to be invisible to the user.
+    /// </summary>
     public void Hide()
     {
         if (lightCalculator.won == false)
