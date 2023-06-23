@@ -31,7 +31,7 @@ public class EnemySpawner : MonoBehaviour
     private float spawnDelayTimer = 0;
 
     /// <summary>
-    /// Initialize EnemySpawner Singleton
+    /// Called whenever the script object is initialised, this method initialises the EnemySpawner Singleton.
     /// </summary>
     private void Awake()
     {
