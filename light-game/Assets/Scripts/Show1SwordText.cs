@@ -21,7 +21,7 @@ public class Show1SwordText : MonoBehaviour
     /// </summary>
     public void Show()
     {
-        rectTransform.anchoredPosition = new Vector2(0, 450f);
+        rectTransform.anchoredPosition = new Vector2(0, 450f); // 450 is a y position that makes the object sit at the top of the screen.
         StartCoroutine(UpdatePositionAfterDelay());
     }
 
@@ -32,6 +32,6 @@ public class Show1SwordText : MonoBehaviour
     IEnumerator UpdatePositionAfterDelay()
     {
         yield return new WaitForSeconds(secondsOfText);
-        rectTransform.anchoredPosition = new Vector2(0, 1000f);
+        rectTransform.anchoredPosition = new Vector2(0, 1000f); // 1000 so the object is not visible.
     }
 }
