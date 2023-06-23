@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5810375601852111624}
   - component: {fileID: 5810375601852111628}
   - component: {fileID: 5810375601852111629}
-  - component: {fileID: 5810375601852111626}
   m_Layer: 0
   m_Name: WinCondition
   m_TagString: WinCondition
@@ -134,15 +133,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5810375601852111626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5810375601852111625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e6c116a096692478eeee39d50f4c30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

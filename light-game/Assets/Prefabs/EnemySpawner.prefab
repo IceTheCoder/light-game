@@ -46,11 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 7033612964580559146, guid: f8fb27d94a58e164fa62ddbc6e7d260f, type: 3}
   initialSpawnCount: 1
-  spawnType: 2
+  spawnType: 1
   spawnDelay: 10
   spawnCount: 1
   resetEnemyCountOnWin: 0
-  maxDifficulty: 5
-  maxEnemies: 5
+  maxDifficulty: 10
+  maxEnemies: 10
   currentDifficulty: 1
   currentEnemyCount: 0

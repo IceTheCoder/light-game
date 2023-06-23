@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Crawl : MonoBehaviour
 {
-    public float speed = 2.5f;
-    public float magnitude = 0.2f;
+    public float speed = 2f;
+    public float magnitude = 8f;
     public float destinationOverlapRadius = 0.1f;
 
     /// <summary>
