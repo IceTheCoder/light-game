@@ -29,7 +29,7 @@ public class RandomPosition : MonoBehaviour
     }
 
     /// <summary>
-    /// Called shortly after the script first loads, this metho gets a random position within the scene view,
+    /// Called shortly after the script first loads, this method gets a random position within the scene view,
     /// and moves the object to that position.
     /// </summary>
     void MoveObject()
