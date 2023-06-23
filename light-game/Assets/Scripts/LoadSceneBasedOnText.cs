@@ -58,7 +58,7 @@ public class LoadSceneBasedOnText : MonoBehaviour
         int sceneIndex;
         if (int.TryParse(buttonText, out sceneIndex))
         {
-            SceneManager.LoadScene(sceneIndex + 2);
+            SceneManager.LoadScene(sceneIndex + 2); // There are 2 scenes before the levels start.
         }
         else
         {
