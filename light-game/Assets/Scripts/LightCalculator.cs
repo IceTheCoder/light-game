@@ -25,7 +25,7 @@ public class LightCalculator : MonoBehaviour
     private List<float> speedSamples = new List<float>();
 
     /// <summary>
-    /// Called when the script is loaded, this method sets the speed to 0.2, gets the light 2D component,
+    /// Called when the script is first loaded, this method sets the speed to 0.2, gets the light 2D component,
     /// and starts the CalcSpeed coroutine.
     /// </summary>
     void Start()
@@ -40,9 +40,9 @@ public class LightCalculator : MonoBehaviour
     /// <summary>
     /// Called when the script is first loaded, this coroutine waits for the lightChangeDelay to pass,
     /// then continously calculates the distance between the current position 
-    /// and the position 0.01 seconds (lightUpdateDelay) ago, 
+    /// and the position 0.01 (lightUpdateDelay) seconds ago, 
     /// and divides this distance by fixedDeltaTime to get a speed, which it adds to a list of a
-    /// maximum of 10 samples, which are averaged to determine the smooth speed of the light.
+    /// maximum of 20 samples, which are averaged to determine the smooth speed of the light.
     /// It does this if the currentSpeed is below 50 to avoid updating the light's size and intensity
     /// if the movement was abrupt, such as focusing in and out of the game.
     /// </summary>
@@ -83,7 +83,7 @@ public class LightCalculator : MonoBehaviour
     /// speed multiplied by the speedFactor multiplied by health, whichever is bigger, and the
     /// radius of it to 0.2 or the speed multiplied by the speedFactor multiplied by health,
     /// whichever is bigger.
-    /// If the game is won, it disabled the FollowMouse script and gradually increases the light's radius.
+    /// If the game is won, it disables the FollowMouse script and gradually increases the light's radius.
     /// </summary>
     void FixedUpdate()
     {
