@@ -38,7 +38,7 @@ public class RandomPosition : MonoBehaviour
         float randomX = Random.Range(0, screenWidth);
         float randomY = Random.Range(0, screenHeight);
         Vector3 randomPosition = Camera.main.ScreenToWorldPoint(new Vector3(randomX, randomY, 0));
-        randomPosition.z = -0.1f; // Set the Z coordinate to -0.1
+        randomPosition.z = -0.1f; // Set the Z coordinate to -0.1 (so the object is actually visible).
 
         // Move the object to the random position
         objectToMove.position = randomPosition;

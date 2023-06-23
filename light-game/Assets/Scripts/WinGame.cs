@@ -10,6 +10,7 @@ public class WinGame : MonoBehaviour
     public TriangleCollision triangleCollision;
     public GameObject healthText;
     private float winDelay = 2f;
+    public float delayToWin = 2f;
     private bool canCollide = false;
     public GameObject voiceObject;
     public GameObject voiceObject2;
@@ -49,7 +50,7 @@ public class WinGame : MonoBehaviour
     /// <returns>Nothing.</returns>
     public IEnumerator NextLevelAfterDelay()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(delayToWin);
         int nextBuildIndex = SceneManager.GetActiveScene().buildIndex + 1;
         if (nextBuildIndex < SceneManager.sceneCountInBuildSettings && !EnemySpawner.Instance)
         {
