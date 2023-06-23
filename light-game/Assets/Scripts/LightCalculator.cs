@@ -30,7 +30,7 @@ public class LightCalculator : MonoBehaviour
     /// </summary>
     void Start()
     {
-        speed = 0.2f;
+        speed = minimumRadius;
         
         theLight = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
 
@@ -97,7 +97,7 @@ public class LightCalculator : MonoBehaviour
         } else
         {
             followMouseScript.enabled = false;
-            theLight.pointLightOuterRadius += 0.2f;
+            theLight.pointLightOuterRadius += minimumRadius;
         }
     }
 }
