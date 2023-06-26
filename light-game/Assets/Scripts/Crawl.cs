@@ -16,7 +16,7 @@ public class Crawl : MonoBehaviour
     private float defaultSpeed;
 
     [Tooltip("Only for stronger triangles.")]
-    [SerializeField] public bool hitStrongerTriangle = false;
+    public bool hitStrongerTriangle = false;
     public bool crawling = false;
 
     /// <summary>
