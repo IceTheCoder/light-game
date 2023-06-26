@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289188050822197085}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.827, y: 3.085, z: -0.1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -297,4 +297,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableObject: {fileID: 1289188050822197082}
   disableObject: {fileID: 1289188050822197083}
-  showTextFor1Sec: {fileID: 0}
+  show1SwordText: {fileID: 0}
