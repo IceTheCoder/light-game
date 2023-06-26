@@ -297,4 +297,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableObject: {fileID: 1289188050822197082}
   disableObject: {fileID: 1289188050822197083}
-  showTextFor1Sec: {fileID: 0}
+  show1SwordText: {fileID: 0}
