@@ -7,11 +7,17 @@ using TMPro;
 public class TriangleCollision : MonoBehaviour
 {
     public float health = 0f;
+
+    [Tooltip("Only for normal triangles. Stronger triangles one-shot kill.")]
     public float healthChange = 0.1f;
     public float collisionDelay = 1f;
     public float minHealth = 0.1f;
     public float healthChangeColourLength = 1f;
+
+    [Tooltip("Only for stronger triangles.")]
     public float secondsUntilSwordCooldownStarts = 0.25f;
+
+    [Tooltip("Only for stronger triangles.")]
     public float secondsOfSwordCooldown = 1f;
 
     public GameObject gameOverPanel;
@@ -21,6 +27,8 @@ public class TriangleCollision : MonoBehaviour
 
     bool dead;
     bool canCollide = false;
+
+    [Tooltip("Only for stronger triangles.")]
     public bool swordCooldown = false;
     private UnityEngine.Rendering.Universal.Light2D theLight;
 

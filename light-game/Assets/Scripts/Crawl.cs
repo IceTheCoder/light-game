@@ -14,6 +14,8 @@ public class Crawl : MonoBehaviour
     private Vector2 startPosition;
     private Vector2 targetPosition;
     private float defaultSpeed;
+
+    [Tooltip("Only for stronger triangles.")]
     [SerializeField] public bool hitStrongerTriangle = false;
     public bool crawling = false;
 
