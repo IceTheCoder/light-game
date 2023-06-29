@@ -169,7 +169,7 @@ public class TriangleCollision : MonoBehaviour
     {
         if (heal == true)
         {
-            textBox.color = Color.blue;
+            textBox.color = Color.green;
         }
         else
         {
