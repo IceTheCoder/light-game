@@ -19,27 +19,10 @@ public class LoadNextScene : MonoBehaviour
     }
 
     /// <summary>
-    /// Called when a button is clicked, this method starts the LoadTheNextScene() coroutine.
+    /// Called when a button is clicked, this method loads the next scene.
     /// </summary>
     public void OnButtonClick()
     {
-        StartCoroutine(LoadTheNextScene());
-    }
-
-    /// <summary>
-    /// Called after a button is clicked by the OnButtonClick() method, 
-    /// this coroutine sets the button's animation to 'Pressed',
-    /// and waits for the length of the animation before loading the next scene.
-    /// This is done to prevent cases where the user would click a button, 
-    /// but the next scene would load before the animation.
-    /// </summary>
-    /// <returns>Nothing.</returns>
-    IEnumerator LoadTheNextScene()
-    {
-        animator.SetTrigger("Pressed");
-
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length + 0.1f);
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
