@@ -26,35 +26,20 @@ public class LoadSceneBasedOnText : MonoBehaviour
 
     /// <summary>
     /// Called when a 'special' (with text other than integers) button is clicked,
-    /// this method calls the LoadSceneByString() coroutine.
+    /// this method loads the correct scene.
     /// </summary>
     /// <param name="scene">The text of the button.</param>
     public void OnSpecialButtonClick(string scene)
     {
-        StartCoroutine(LoadSceneByString(scene));
+        SceneManager.LoadScene(scene);
     }
 
     /// <summary>
     /// Called when a 'level' (with an integer as text) button is clicked,
-    /// this method calls the LoadCorrectScene() coroutine.
+    /// this method loads the correct scene.
     /// </summary>
     public void OnLevelButtonClick()
     {
-        StartCoroutine(LoadCorrectScene());
-    }
-    
-    /// <summary>
-    /// Called when a 'level' button is clicked by the OnLevelButtonClick() method, 
-    /// this coroutine sets the button's animation to pressed, waits for the animation's length, 
-    /// and loads the correct scene. This is done to prevent cases where the next scene is loaded before the animation.
-    /// </summary>
-    /// <returns></returns>
-    IEnumerator LoadCorrectScene()
-    {
-        animator.SetTrigger("Pressed");
-
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-
         int sceneIndex;
         if (int.TryParse(buttonText, out sceneIndex))
         {
@@ -64,21 +49,5 @@ public class LoadSceneBasedOnText : MonoBehaviour
         {
             Debug.LogError("Invalid scene index: " + buttonText);
         }
-    }
-
-    /// <summary>
-    /// Called when a 'special' button is clicked, by the OnSpecialButtonClick() method, 
-    /// this coroutine sets the button's animation to pressed, waits for the animation's length, 
-    /// and loads the correct scene. This is done to prevent cases where the next scene is loaded before the animation.
-    /// </summary>
-    /// <param name="scene"></param>
-    /// <returns></returns>
-    IEnumerator LoadSceneByString(string scene)
-    {
-        animator.SetTrigger("Pressed");
-
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-
-        SceneManager.LoadScene(scene);
     }
 }
