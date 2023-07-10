@@ -41,6 +41,34 @@ MonoBehaviour:
   platformName: PC
   dataDirNameFormat: '{0}_Data'
   targetGroup: 1
+--- !u!114 &-5317174767021805253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acaf75cc66fc934ea46bf602fc7c245, type: 3}
+  m_Name: WebGL
+  m_EditorClassIdentifier: 
+  enabled: 1
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 20
+    name: WebGL
+    enabled: 1
+    binaryNameFormat: '{0}'
+  variants: []
+  scriptingBackends:
+  - scriptingImplementation: 1
+    name: IL2CPP
+    enabled: 1
+  platformName: WebGL
+  dataDirNameFormat: '{0}_Data'
+  targetGroup: 13
 --- !u!114 &-4983082623724288684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,8 +201,8 @@ MonoBehaviour:
     openFolderPostBuild: 1
   _productParameters:
     buildCounter: 0
-    buildVersion: beta-4.4
-    versionTemplate: beta-4.4
+    buildVersion: beta-4.5
+    versionTemplate: beta-4.5
     autoGenerate: 0
     syncWithPlayerSettings: 1
   _releaseTypeList:
@@ -205,13 +233,14 @@ MonoBehaviour:
     - {fileID: -6638881657022508570}
     - {fileID: 7744377809208851296}
     - {fileID: -4983082623724288684}
+    - {fileID: -5317174767021805253}
   _projectConfigurations:
     configSet:
-      _Buckets: ffffffffffffffff0400000008000000ffffffff05000000ffffffffffffffffffffffffffffffff01000000070000000200000009000000ffffffffffffffff06000000
-      _HashCodes: 0bd5b82c8b5eac510d6e7c149302dd446ba49d65564b5e05d9e28149e246381099bbd054110fe44c00000000000000000000000000000000000000000000000000000000
-      _Next: ffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff0300000000000000000000000000000000000000000000000000000000000000
-      _Count: 10
-      _Version: 10
+      _Buckets: ffffffffffffffff0900000008000000ffffffff05000000ffffffffffffffffffffffffffffffff0b00000007000000020000000c0000000a000000ffffffff06000000
+      _HashCodes: 0bd5b82c8b5eac510d6e7c149302dd446ba49d65564b5e05d9e28149e246381099bbd0549e0c1f16d118b30a81f6ab4c110fe44c00000000000000000000000000000000
+      _Next: ffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff04000000ffffffff010000000300000000000000000000000000000000000000
+      _Count: 13
+      _Version: 13
       _FreeList: -1
       _FreeCount: 0
       _Keys:
@@ -226,10 +255,10 @@ MonoBehaviour:
       - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
         Binary,Auto,Auto,Disabled)
       - light-game/Android
+      - light-game/WebGL/WebGL/IL2CPP
+      - light-game/WebGL/WebGL
+      - light-game/WebGL
       - light-game
-      - 
-      - 
-      - 
       - 
       - 
       - 
@@ -262,16 +291,19 @@ MonoBehaviour:
         - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
           Binary,Auto,Auto,Disabled)
       - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - light-game/WebGL/WebGL/IL2CPP
+      - enabled: 1
+        childKeys:
+        - light-game/WebGL/WebGL
+      - enabled: 1
         childKeys:
         - light-game/PC
         - light-game/Linux
         - light-game/Android
-      - enabled: 1
-        childKeys: []
-      - enabled: 1
-        childKeys: []
-      - enabled: 1
-        childKeys: []
+        - light-game/WebGL
       - enabled: 1
         childKeys: []
       - enabled: 1
