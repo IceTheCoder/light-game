@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 3110
+  controlID: 7879
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 3111
+  controlID: 7880
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 3112
+  controlID: 7881
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,8 +195,8 @@ MonoBehaviour:
     y: 0
     width: 222
     height: 992
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -239,9 +239,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 38b50000
+      m_SelectedIDs: 4ab50000
       m_LastClickedID: 0
-      m_ExpandedIDs: 92c8feff52edfefff0f0feffd2f2feffa0f8feff56fafeffc8fcfeff38fefeffe607ffff2209ffffc20affffa80cfffffa24ffffa825ffff0a29ffff1429ffff7029ffff142bffffd22bffff842cffff3a2dffffca2dffff422effffb82effff182fffff2e2fffff542fffffa238ffff5039ffffb23cffffbc3cffff183dffffbc3effff7a3fffff2c40ffffe240ffff7241ffffea41ffff6042ffffc042ffffd642fffffc42ffff904bffff3e4cffff844fffff8e4fffffea4fffff8e51ffff4c52fffffe52ffffb453ffff4454ffffbc54ffff3255ffff9255ffffa855ffffce55ffff6c5effff1a5fffff7c62ffff8662ffffe262ffff8664ffff4465fffff665ffffac66ffff3c67ffffb467ffff2a68ffff8a68ffffa068ffffc668ffff6e7dffff1c7effffea80ffff168affffc48affff928dffff0a96ffffb896ffff6a99ffffe2a1ffff90a2ffff5ea5ffffc8c7ffff76c8ffffd8cbffffe2cbffff3eccffffe2cdffffa0ceffff52cfffff08d0ffff98d0ffff10d1ffff86d1ffffe6d1fffffcd1ffff22d2ffff10e6ffffbee6ffff24eaffff32eaffff92eaffff3aecfffffcecffffb2edffff6ceeffff00efffff7ceffffff6efffff5af0ffff76f0ffffa0f0ffffb0faffffbab4000078b6000084b70000d6b700002ab800007eb80000c4b800001ab90000
+      m_ExpandedIDs: 045dfcff7661fcff7e70fcff2c71fcff8e74fcff9874fcfff474fcffa476fcff6277fcff1478fcffca78fcff5a79fcffd279fcff487afcffa87afcffbe7afcffe47afcff3084fcffde84fcff4088fcff4a88fcffa688fcff568afcff148bfcffc68bfcff7c8cfcff0c8dfcff848dfcfffa8dfcff5a8efcff708efcff968efcff3497fcffe297fcff289bfcff329bfcff8e9bfcff3e9dfcfffc9dfcffae9efcff649ffcfff49ffcff6ca0fcffe2a0fcff42a1fcff58a1fcff7ea1fcff1caafcffcaaafcff30aefcff3eaefcff9eaefcff52b0fcff14b1fcffcab1fcff84b2fcff18b3fcff94b3fcff0eb4fcff72b4fcff8cb4fcffb8b4fcff5ed6fcff0ed7fcff70dafcff7adafcffd6dafcff86dcfcff44ddfcfff6ddfcffacdefcff3cdffcffb4dffcff2ae0fcff8ae0fcffa0e0fcffc6e0fcff12eafcffc2eafcff24eefcff2eeefcff8aeefcff3af0fcfff8f0fcffaaf1fcff60f2fcfff0f2fcff68f3fcffdef3fcff3ef4fcff54f4fcff7af4fcff18fdfcffc6fdfcff0c01fdff1601fdff7201fdff2203fdffe003fdff9204fdff4805fdffd805fdff5006fdffc606fdff2607fdff3c07fdff6207fdff0010fdffb010fdff1214fdff1c14fdff7814fdff2816fdffe616fdff9817fdff4e18fdffde18fdff5619fdffcc19fdff2c1afdff421afdff681afdffee1dfdffca57fdff7a58fdffdc5bfdffe65bfdff425cfdfff25dfdffb05efdff625ffdff1860fdffa860fdff2061fdff9661fdfff661fdff0c62fdff3262fdff786bfdff286cfdff8a6ffdff946ffdfff06ffdffa071fdff5e72fdff1073fdffc673fdff5674fdffce74fdff4475fdffa475fdffba75fdffe075fdff807efdff307ffdff7682fdff8082fdffdc82fdff8c84fdff4a85fdfffc85fdffb286fdff4287fdffba87fdff3088fdff9088fdffa688fdffcc88fdff6291fdff1292fdff7495fdff7e95fdffda95fdff8a97fdff4898fdfffa98fdffb099fdff409afdffb89afdff2e9bfdff8e9bfdffa49bfdffca9bfdff5eaafdff0eabfdff4aaffdff08b0fdffbab0fdff70b1fdff00b2fdff78b2fdffeab2fdff3cb3fdfff8b3fdff02b4fdff6eb4fdff84b4fdffaab4fdff56bdfdff06befdff5ec2fdff1cc3fdffcec3fdff84c4fdff14c5fdff8cc5fdfffec5fdff50c6fdff0cc7fdff16c7fdff82c7fdff98c7fdffbec7fdff48d7fdfff8d7fdffc6dafdff3ee6fdffeee6fdffbce9fdff72f8fdff20f9fdff5cfdfdff1afefdffccfefdff82fffdff1200feff8a00fefffc00feff4e01feff0a02feff1402feff8002feff9602feffbc02feff580bfeff060cfeff5e10feff1c11feffce11feff8412feff1413feff8c13fefffe13feff5014feff0c15feff1615feff8215feff9815feffbe15feffda2bfeff882cfeff3a2ffeffb237feff6038feff2e3bfeff3680feffea85feff3896feffe496feff2a9afeff349afeff909afeff409cfefffe9cfeffb09dfeff669efefff69efeff6e9ffeffe49ffeff44a0feff5aa0feff80a0feff12a9feffc0a9feff2aadfeff3cadfeffa0adfeff58affeff1eb0feffd8b0feff96b1feff2eb2feffaeb2feff2cb3feff94b3feffb4b3feffe2b3feff92c8feff52edfefff0f0feffd2f2feffa0f8feff56fafeffc8fcfeff38fefeffe607ffff2209ffffc20affffa80cfffffa24ffffa825ffff0a29ffff1429ffff7029ffff142bffffd22bffff842cffff3a2dffffca2dffff422effffb82effff182fffff2e2fffff542fffffa238ffff5039ffffb23cffffbc3cffff183dffffbc3effff7a3fffff2c40ffffe240ffff7241ffffea41ffff6042ffffc042ffffd642fffffc42ffff904bffff3e4cffff844fffff8e4fffffea4fffff8e51ffff4c52fffffe52ffffb453ffff4454ffffbc54ffff3255ffff9255ffffa855ffffce55ffff6c5effff1a5fffff7c62ffff8662ffffe262ffff8664ffff4465fffff665ffffac66ffff3c67ffffb467ffff2a68ffff8a68ffffa068ffffc668ffff6e7dffff1c7effffea80ffff168affffc48affff928dffff0a96ffffb896ffff6a99ffffe2a1ffff90a2ffff5ea5ffffc8c7ffff76c8ffffd8cbffffe2cbffff3eccffffe2cdffffa0ceffff52cfffff08d0ffff98d0ffff10d1ffff86d1ffffe6d1fffffcd1ffff22d2ffff10e6ffffbee6ffff24eaffff32eaffff92eaffff3aecfffffcecffffb2edffff6ceeffff00efffff7ceffffff6efffff5af0ffff76f0ffffa0f0ffffb0faffffbab4000078b6000084b70000d6b700002ab800007eb80000c4b800001ab9000004e1000054250100642501006e2501002a42010042420100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -284,8 +284,8 @@ MonoBehaviour:
     y: 0
     width: 840
     height: 992
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -330,8 +330,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -166, y: -26}
+      snapOffset: {x: -166, y: -26}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -674,9 +674,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.315464, y: 13.912617, z: -0.5637358}
+    m_Target: {x: 70.12603, y: 93.84609, z: -4.6517005}
     speed: 2
-    m_Value: {x: 4.315464, y: 13.912617, z: -0.5637358}
+    m_Value: {x: 70.12603, y: 93.84609, z: -4.6517005}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -726,9 +726,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 49.631824
+    m_Target: 439.3853
     speed: 2
-    m_Value: 49.631824
+    m_Value: 439.3853
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1077,8 +1077,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 38b50000
-    m_LastClickedInstanceID: 46392
+    m_SelectedInstanceIDs: 4ab50000
+    m_LastClickedInstanceID: 46410
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300008e700000c66c0000bc6c0000
     m_RenameOverlay:
@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: UnityBuildWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -1198,14 +1198,14 @@ MonoBehaviour:
     y: 0
     width: 605
     height: 1307
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1292,20 +1292,20 @@ MonoBehaviour:
     notifications:
     - cat: 0
       title: 'Building (1/4): '
-      details: LIGHT GAME/PC/Windows x86 (App)/Mono
+      details: light-game/PC/Windows x86 (App)/Mono
       clearable: 1
     - cat: 0
       title: 'Building (2/4): '
-      details: LIGHT GAME/Linux/Linux x64/Mono
+      details: light-game/Linux/Linux x64/Mono
       clearable: 1
     - cat: 0
       title: 'Building (3/4): '
-      details: LIGHT GAME/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+      details: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
         Binary,Auto,Auto,Disabled)/IL2CPP
       clearable: 1
     - cat: 0
       title: 'Building (4/4): '
-      details: LIGHT GAME/WebGL/WebGL/IL2CPP
+      details: light-game/WebGL/WebGL/IL2CPP
       clearable: 1
     - cat: 0
       title: Build Complete.
