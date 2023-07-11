@@ -16,6 +16,7 @@ public static class BuildConstants
         PC,
         Linux,
         Android,
+        WebGL,
     }
 
     public enum Architecture
@@ -24,6 +25,7 @@ public static class BuildConstants
         Windows_x86,
         Linux_x64,
         Android,
+        WebGL,
     }
 
     public enum Distribution
@@ -31,8 +33,8 @@ public static class BuildConstants
         None,
     }
 
-    public static readonly DateTime buildDate = new DateTime(638219945147452241);
-    public const string version = "beta-2.9.1.1";
+    public static readonly DateTime buildDate = new DateTime(638246641590003737);
+    public const string version = "beta-4.5";
     public const ReleaseType releaseType = ReleaseType.light_game;
     public const Platform platform = Platform.Linux;
     public const Architecture architecture = Architecture.Linux_x64;
