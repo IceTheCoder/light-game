@@ -156,6 +156,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.IceTheDev2.lightgame
     Standalone: com.DefaultCompany.2DProject
+    WebGL: com.IceTheDev2.light-game
   buildNumber:
     Bratwurst: 0
     Standalone: 1
@@ -713,6 +714,7 @@ PlayerSettings:
   scriptingBackend:
     Android: 1
     Standalone: 0
+    WebGL: 1
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   managedStrippingLevel:
