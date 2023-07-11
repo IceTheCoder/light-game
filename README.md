@@ -57,3 +57,4 @@ E-mail: icethedev2@gmail.com
 - These 2 Linux on VirtualBox tutorial from Pawan Dai and TechJunkie: https://youtu.be/6rxMqu-6vIM, https://youtu.be/SHErR5NBqsc.
 - https://youtu.be/tMSDz0Bzwwc.
 - https://markdowntohtml.com/
+- https://gamedevbeginner.com/how-to-lock-hide-the-cursor-in-unity/#:~:text=Hiding%20the%20cursor%20in%20Unity%20is%2C%20helpfully%2C%20very%20simple%20to,true%20to%20show%20it%20again.
