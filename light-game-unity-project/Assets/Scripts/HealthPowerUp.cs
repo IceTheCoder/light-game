@@ -9,12 +9,6 @@ public class HealthPowerUp : MonoBehaviour
     public LightCalculator lightCalculator;
     public float destroyDelay = 1f;
 
-
-    private void Start()
-    {
-        //DontDestroyOnLoad(gameObject);
-    }
-
     /// <summary>
     /// Called when the health power-up collides with the light,
     /// this function sets the health to 1, calls the UpdateText method of TriangleCollision
