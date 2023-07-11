@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: SuperUnityBuildSettings
   m_EditorClassIdentifier: 
   _basicSettings:
-    baseBuildFolder: Builds
+    baseBuildFolder: C:\Users\Cristi\Desktop\light-game
     buildPath: $PLATFORM
     openFolderPostBuild: 1
   _productParameters:
     buildCounter: 0
-    buildVersion: beta-4.5.1
-    versionTemplate: beta-4.5.1
+    buildVersion: beta-4.5.2
+    versionTemplate: beta-4.5.2
     autoGenerate: 0
     syncWithPlayerSettings: 1
   _releaseTypeList:
@@ -47,14 +47,14 @@ MonoBehaviour:
         - fileGUID: 5d3e047155406bd4ba8d1a47139489ca
   _platformList:
     platforms:
-    - {fileID: 5412991266514384159}
-    - {fileID: 192692556792337220}
-    - {fileID: 6713187719833946719}
-    - {fileID: 4934651891413811477}
+    - {fileID: 276890498779595895}
+    - {fileID: 7124520381599343839}
+    - {fileID: 8056428942208189689}
+    - {fileID: 896075656118238620}
   _projectConfigurations:
     configSet:
-      _Buckets: ffffffffffffffff0900000008000000ffffffff050000000600000007000000ffffffffffffffff0b000000ffffffff020000000c0000000a000000ffffffffffffffff
-      _HashCodes: 0bd5b82c8b5eac510d6e7c149302dd446ba49d65564b5e0526be1c164f166c1399bbd0549e0c1f16d118b30a81f6ab4c110fe44c00000000000000000000000000000000
+      _Buckets: ffffffffffffffff0900000008000000ffffffff05000000ffffffffffffffffffffffffffffffff0b00000007000000020000000c0000000a000000ffffffff06000000
+      _HashCodes: 0bd5b82c8b5eac510d6e7c149302dd446ba49d65564b5e05d9e28149e246381099bbd0549e0c1f16d118b30a81f6ab4c110fe44c00000000000000000000000000000000
       _Next: ffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff04000000ffffffff010000000300000000000000000000000000000000000000
       _Count: 13
       _Version: 13
@@ -67,8 +67,10 @@ MonoBehaviour:
       - light-game/Linux/Linux x64/Mono
       - light-game/Linux/Linux x64
       - light-game/Linux
-      - light-game/Android/Android (,Generic,App,APK,Single Binary,Auto,Auto,Disabled)/IL2CPP
-      - light-game/Android/Android (,Generic,App,APK,Single Binary,Auto,Auto,Disabled)
+      - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)/IL2CPP
+      - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)
       - light-game/Android
       - light-game/WebGL/WebGL/IL2CPP
       - light-game/WebGL/WebGL
@@ -99,10 +101,12 @@ MonoBehaviour:
         childKeys: []
       - enabled: 1
         childKeys:
-        - light-game/Android/Android (,Generic,App,APK,Single Binary,Auto,Auto,Disabled)/IL2CPP
+        - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+          Binary,Auto,Auto,Disabled)/IL2CPP
       - enabled: 1
         childKeys:
-        - light-game/Android/Android (,Generic,App,APK,Single Binary,Auto,Auto,Disabled)
+        - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+          Binary,Auto,Auto,Disabled)
       - enabled: 1
         childKeys: []
       - enabled: 1
@@ -130,7 +134,7 @@ MonoBehaviour:
     showBuildInfo: 0
     hideDisabled: 0
     treeView: 0
-    selectedKeyChain: 
+    selectedKeyChain: light-game/PC/Windows x86 (App)/Mono
   _preBuildActions:
     buildActions: []
   _postBuildActions:
@@ -166,6 +170,75 @@ MonoBehaviour:
   platformName: Linux
   dataDirNameFormat: '{0}_Data'
   targetGroup: 1
+--- !u!114 &276890498779595895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2786f6b2301a94f4288672ff5305244c, type: 3}
+  m_Name: PC
+  m_EditorClassIdentifier: 
+  enabled: 1
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 5
+    name: Windows x86
+    enabled: 1
+    binaryNameFormat: '{0}.exe'
+  - target: 19
+    name: Windows x64
+    enabled: 0
+    binaryNameFormat: '{0}.exe'
+  variants:
+  - variantName: Build Output
+    selectedIndex: 0
+    values:
+    - App
+    - Visual Studio Solution
+    isFlag: 0
+  scriptingBackends:
+  - scriptingImplementation: 0
+    name: Mono
+    enabled: 1
+  - scriptingImplementation: 1
+    name: IL2CPP
+    enabled: 0
+  platformName: PC
+  dataDirNameFormat: '{0}_Data'
+  targetGroup: 1
+--- !u!114 &896075656118238620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acaf75cc66fc934ea46bf602fc7c245, type: 3}
+  m_Name: WebGL
+  m_EditorClassIdentifier: 
+  enabled: 1
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 20
+    name: WebGL
+    enabled: 1
+    binaryNameFormat: '{0}'
+  variants: []
+  scriptingBackends:
+  - scriptingImplementation: 1
+    name: IL2CPP
+    enabled: 1
+  platformName: WebGL
+  dataDirNameFormat: '{0}_Data'
+  targetGroup: 13
 --- !u!114 &4934651891413811477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +331,151 @@ MonoBehaviour:
   variants:
   - variantName: Device Type
     selectedIndex: 0
+    values:
+    - ARMv7
+    - ARM64
+    - X86
+    - X86_64
+    isFlag: 1
+  - variantName: Texture Compression
+    selectedIndex: 0
+    values:
+    - Generic
+    - DXT
+    - PVRTC
+    - ATC
+    - ETC
+    - ETC2
+    - ASTC
+    isFlag: 0
+  - variantName: Build Output
+    selectedIndex: 0
+    values:
+    - App
+    - Gradle Project
+    isFlag: 0
+  - variantName: Binary Type
+    selectedIndex: 0
+    values:
+    - APK
+    - Split APK
+    - AAB
+    isFlag: 0
+  - variantName: APK Expansion Type
+    selectedIndex: 0
+    values:
+    - Single Binary
+    - Split App Binary
+    isFlag: 0
+  - variantName: Min SDK Version
+    selectedIndex: 0
+    values:
+    - Auto
+    - 16
+    - 17
+    - 18
+    - 19
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    isFlag: 0
+  - variantName: Target SDK Version
+    selectedIndex: 0
+    values:
+    - Auto
+    - 16
+    - 17
+    - 18
+    - 19
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    isFlag: 0
+  - variantName: Create symbols.zip
+    selectedIndex: 0
+    values:
+    - Disabled
+    - Public
+    - Debugging
+    isFlag: 0
+  scriptingBackends:
+  - scriptingImplementation: 0
+    name: Mono
+    enabled: 0
+  - scriptingImplementation: 1
+    name: IL2CPP
+    enabled: 1
+  platformName: Android
+  dataDirNameFormat: '{0}_Data'
+  targetGroup: 7
+--- !u!114 &7124520381599343839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc439ce9d1bfb34a821f7d6fabc4fef, type: 3}
+  m_Name: Linux
+  m_EditorClassIdentifier: 
+  enabled: 1
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 24
+    name: Linux x64
+    enabled: 1
+    binaryNameFormat: '{0}.x86_64'
+  variants: []
+  scriptingBackends:
+  - scriptingImplementation: 0
+    name: Mono
+    enabled: 1
+  - scriptingImplementation: 1
+    name: IL2CPP
+    enabled: 0
+  platformName: Linux
+  dataDirNameFormat: '{0}_Data'
+  targetGroup: 1
+--- !u!114 &8056428942208189689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89df54eebccd0704dbbe96915fbb9a6f, type: 3}
+  m_Name: Android
+  m_EditorClassIdentifier: 
+  enabled: 1
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 13
+    name: Android
+    enabled: 1
+    binaryNameFormat: '{0}.apk'
+  variants:
+  - variantName: Device Type
+    selectedIndex: -1
     values:
     - ARMv7
     - ARM64
