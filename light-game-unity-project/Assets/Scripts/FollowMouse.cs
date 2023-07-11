@@ -3,6 +3,14 @@ using UnityEngine;
 public class FollowMouse : MonoBehaviour
 {
     /// <summary>
+    /// Called when the script is loaded, this method hides the cursor.
+    /// </summary>
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
+    /// <summary>
     /// Called once per frame, this method retrieves the position of the cursor in world space and sets
     /// the position of the game object to match the cursor position. This allows the object to follow the
     /// movement of the mouse cursor on the screen.
