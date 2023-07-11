@@ -12,7 +12,7 @@ Download: https://icethedev2.itch.io/light-game
 ## Notices
 - If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
 - If the issue persists, check for driver updates for your graphics card or monitor.
-- If the issue still persists, post an issue on this GitHub repo or a comment on the devlog of the itch.io version on which the issue persisted with as much information as possible.
+- If the issue still persists, post an issue on this GitHub repo or a comment on the itch.io page for the game.
 
 ## How to run
 Open the 'light-game' folder as a project in Unity and hit the play button.
@@ -51,7 +51,7 @@ E-mail: icethedev2@gmail.com
 - Special thanks to [Bing](https://www.bing.com) for providing helpful information and assistance during the development of this project.
 - [Brackeys](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) for making such a great beginner's guide on getting into game development.
 - [This video](https://www.youtube.com/watch?v=ACyqpLh4jrs) by [The Game Dev Show](https://www.youtube.com/@thegamedevshow8449/videos) for helping me introduce light in my game.
-- [Comp-3 Interactive](https://youtu.be/W11uv7jf1e4) for explaining me how I can use custom fonts with TextMeshPro.
+- [Comp-3 Interactive](https://youtu.be/W11uv7jf1e4) for explaining to me how I can use custom fonts with TextMeshPro.
 - [This Submain blog post](https://blog.submain.com/c-documentation-start-finish-guide/) for explaining how to document C# code.
 - https://youtu.be/2vfTe3wizZ0.
 - These 2 Linux on VirtualBox tutorial from Pawan Dai and TechJunkie: https://youtu.be/6rxMqu-6vIM, https://youtu.be/SHErR5NBqsc.
