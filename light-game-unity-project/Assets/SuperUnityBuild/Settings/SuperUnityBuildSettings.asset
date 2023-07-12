@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3080144293563874902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d962d142a259c394da2bdb301b72eeb5, type: 3}
+  m_Name: macOS
+  m_EditorClassIdentifier: 
+  enabled: 1
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 2
+    name: macOS
+    enabled: 1
+    binaryNameFormat: '{0}.app'
+  variants:
+  - variantName: macOS Architecture
+    selectedIndex: 0
+    values:
+    - Intelx64
+    - Apple Silicon
+    - Universal
+    isFlag: 0
+  - variantName: Build Output
+    selectedIndex: 0
+    values:
+    - App
+    - Xcode Project
+    isFlag: 0
+  scriptingBackends:
+  - scriptingImplementation: 0
+    name: Mono
+    enabled: 1
+  - scriptingImplementation: 1
+    name: IL2CPP
+    enabled: 0
+  platformName: macOS
+  dataDirNameFormat: '{0}.app/Contents'
+  targetGroup: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,13 +95,14 @@ MonoBehaviour:
     - {fileID: 7124520381599343839}
     - {fileID: 8056428942208189689}
     - {fileID: 896075656118238620}
+    - {fileID: -3080144293563874902}
   _projectConfigurations:
     configSet:
-      _Buckets: ffffffffffffffff0900000008000000ffffffff05000000ffffffffffffffffffffffffffffffff0b00000007000000020000000c0000000a000000ffffffff06000000
-      _HashCodes: 0bd5b82c8b5eac510d6e7c149302dd446ba49d65564b5e05d9e28149e246381099bbd0549e0c1f16d118b30a81f6ab4c110fe44c00000000000000000000000000000000
-      _Next: ffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff04000000ffffffff010000000300000000000000000000000000000000000000
-      _Count: 13
-      _Version: 13
+      _Buckets: ffffffffffffffff0900000008000000ffffffff0d000000ffffffffffffffffffffffffffffffff0b00000007000000020000000f0000000c0000000e00000006000000
+      _HashCodes: 0bd5b82c8b5eac510d6e7c149302dd446ba49d65564b5e05d9e28149e246381099bbd0549e0c1f16d118b30a81f6ab4cade21018c1f8ab7ce1e51246110fe44c00000000
+      _Next: ffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff04000000ffffffff010000000a00000005000000ffffffff0300000000000000
+      _Count: 16
+      _Version: 16
       _FreeList: -1
       _FreeCount: 0
       _Keys:
@@ -75,10 +120,10 @@ MonoBehaviour:
       - light-game/WebGL/WebGL/IL2CPP
       - light-game/WebGL/WebGL
       - light-game/WebGL
+      - light-game/macOS/macOS (Intelx64,App)/Mono
+      - light-game/macOS/macOS (Intelx64,App)
+      - light-game/macOS
       - light-game
-      - 
-      - 
-      - 
       - 
       _Values:
       - enabled: 1
@@ -116,17 +161,20 @@ MonoBehaviour:
         childKeys:
         - light-game/WebGL/WebGL
       - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - light-game/macOS/macOS (Intelx64,App)/Mono
+      - enabled: 1
+        childKeys:
+        - light-game/macOS/macOS (Intelx64,App)
+      - enabled: 1
         childKeys:
         - light-game/PC
         - light-game/Linux
         - light-game/Android
         - light-game/WebGL
-      - enabled: 1
-        childKeys: []
-      - enabled: 1
-        childKeys: []
-      - enabled: 1
-        childKeys: []
+        - light-game/macOS
       - enabled: 1
         childKeys: []
     showViewOptions: 0
