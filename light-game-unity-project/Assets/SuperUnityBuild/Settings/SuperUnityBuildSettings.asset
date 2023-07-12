@@ -18,8 +18,8 @@ MonoBehaviour:
     openFolderPostBuild: 1
   _productParameters:
     buildCounter: 0
-    buildVersion: beta-4.5.2
-    versionTemplate: beta-4.5.2
+    buildVersion: beta-4.5.4
+    versionTemplate: beta-4.5.4
     autoGenerate: 0
     syncWithPlayerSettings: 1
   _releaseTypeList:
