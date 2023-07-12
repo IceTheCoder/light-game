@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using TMPro;
+using System.Diagnostics.Tracing;
 
 public class DetectPlayerCollision : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class DetectPlayerCollision : MonoBehaviour
     public EnableObject enableObject;
     public DisableObject disableObject;
     public ShowText showText;
+    public SpriteRenderer spriteRenderer;
 
     /// <summary>
     /// Called upon collision with another trigger object, this method checks if the object is the Light,
@@ -25,6 +27,7 @@ public class DetectPlayerCollision : MonoBehaviour
         {
             enableObject.Enable();
             showText.Show();
+            spriteRenderer.sprite = null;
             StartCoroutine(HideText());
         }
     }

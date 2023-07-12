@@ -106,6 +106,12 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -120,6 +126,25 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -257,6 +282,7 @@ PolygonCollider2D:
       - {x: 0.049999997, y: 0.08}
       - {x: 0.03999999, y: 0.08}
       - {x: 0.03999999, y: 0.06999999}
+  m_UseDelaunayMesh: 0
 --- !u!114 &1289188050822197082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,6 +321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19baa4dae6171cb489eb35477cf39876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  secondsOfText: 1
   enableObject: {fileID: 1289188050822197082}
   disableObject: {fileID: 1289188050822197083}
-  show1SwordText: {fileID: 0}
+  showText: {fileID: 0}
+  spriteRenderer: {fileID: 1289188050822197074}
