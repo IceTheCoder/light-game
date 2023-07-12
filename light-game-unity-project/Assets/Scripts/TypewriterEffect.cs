@@ -8,6 +8,7 @@ public class TypewriterEffect : MonoBehaviour
 {
     public float typingDelay = 0.02f;  // Delay between each letter
     public float deletionDelay = 0.002f;  // Delay between each letter during deletion
+    public float delayBeforeTyping = 0.5f; // Delay before text stars typing
     public float delayBeforeDeletion = 1.5f;  // Delay before text starts disappearing
     public string[] texts;
     public LightCalculator lightCalculator;
@@ -40,7 +41,7 @@ public class TypewriterEffect : MonoBehaviour
     /// <returns></returns>
     private IEnumerator TypeText()
     {
-        yield return new WaitForSeconds(delayBeforeDeletion);
+        yield return new WaitForSeconds(delayBeforeTyping);
 
         if (textIndex < texts.Length)
         {
