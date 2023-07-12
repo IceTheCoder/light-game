@@ -170,9 +170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f58daab5bb812347ac08c84fc6d9c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typingSpeed: 0.05
-  deletionSpeed: 0.01
-  delayBeforeDeletion: 1
+  typingDelay: 0.02
+  deletionDelay: 0.002
+  delayBeforeDeletion: 1.5
   texts:
   - 'You have been cursed to one of the simplest of forms: you have become light.'
   - Try to move around a bit.
