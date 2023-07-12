@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using TMPro;
+using System.Diagnostics.Tracing;
 
 public class DetectPlayerCollision : MonoBehaviour
 {
+    public float secondsOfText = 1f;
+
     public EnableObject enableObject;
     public DisableObject disableObject;
-    public Show1SwordText show1SwordText;
+    public ShowText showText;
+    public SpriteRenderer spriteRenderer;
 
     /// <summary>
     /// Called upon collision with another trigger object, this method checks if the object is the Light,
@@ -22,9 +26,16 @@ public class DetectPlayerCollision : MonoBehaviour
         if (collision.CompareTag("Light"))
         {
             enableObject.Enable();
-            show1SwordText.Show();
-            disableObject.Disable();
+            showText.Show();
+            spriteRenderer.sprite = null;
+            StartCoroutine(HideText());
         }
+    }
 
+    IEnumerator HideText()
+    {
+        yield return new WaitForSeconds(secondsOfText);
+        showText.Hide();
+        disableObject.Disable();
     }
 }

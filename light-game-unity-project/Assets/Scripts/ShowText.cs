@@ -25,7 +25,7 @@ public class ShowText : MonoBehaviour
     {
         if (lightCalculator.won == false) 
         {
-            rectTransform.anchoredPosition = new Vector2(0, 350f); // 450 is a y position that makes the object sit at the top of the screen,
+            rectTransform.anchoredPosition = new Vector2(0, 350f); // 350 is a y position that makes the object sit at the top of the screen,
             // but still low enough so the voice's text is visible.
         }
     }

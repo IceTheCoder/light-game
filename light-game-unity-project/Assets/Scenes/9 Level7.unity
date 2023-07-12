@@ -486,9 +486,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1289188050822197078, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-      propertyPath: show1SwordText
+      propertyPath: showText
       value: 
       objectReference: {fileID: 1087458817}
+    - target: {fileID: 1289188050822197078, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
+      propertyPath: show1SwordText
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1289188050822197078, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
       propertyPath: showTextFor1Sec
       value: 
@@ -2464,10 +2468,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1087458813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3995e6bda4f0d214182c2007d28d4097, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cadac5751a2f4d4eac101133e233c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsOfText: 0.5
+  lightCalculator: {fileID: 1774395532}
 --- !u!1001 &1236471101
 PrefabInstance:
   m_ObjectHideFlags: 0
