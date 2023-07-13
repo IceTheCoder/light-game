@@ -155,7 +155,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.IceTheDev2.lightgame
-    Standalone: com.DefaultCompany.2DProject
+    Standalone: com.IceTheDev2.lightgame
     WebGL: com.IceTheDev2.lightgame
   buildNumber:
     Bratwurst: 0
