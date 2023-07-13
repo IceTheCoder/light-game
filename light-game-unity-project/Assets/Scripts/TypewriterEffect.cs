@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class TypewriterEffect : MonoBehaviour
 {
-    public float typingSpeed = 0.1f;  // Delay between each letter
-    public float deletionSpeed = 0.05f;  // Delay between each letter during deletion
-    public float delayBeforeDeletion = 2f;  // Delay before text starts disappearing
+    public float typingDelay = 0.02f;  // Delay between each letter
+    public float deletionDelay = 0.002f;  // Delay between each letter during deletion
+    public float delayBeforeTyping = 0.5f; // Delay before text stars typing
+    public float delayBeforeDeletion = 1.5f;  // Delay before text starts disappearing
     public string[] texts;
     public LightCalculator lightCalculator;
     public bool voiceIsDone = false;
@@ -33,13 +34,14 @@ public class TypewriterEffect : MonoBehaviour
     }
 
     /// <summary>
-    /// Called after the object is enabled by the OnEnable() method, this coroutine starts typing the text if it's not fully typed at the typingSpeed,
+    /// Called after the object is enabled by the OnEnable() method, 
+    /// this coroutine starts typing the text if it's not fully typed,
     /// or calls the DeleteText() coroutine if it's fully typed.
     /// </summary>
     /// <returns></returns>
     private IEnumerator TypeText()
     {
-        yield return new WaitForSeconds(delayBeforeDeletion);
+        yield return new WaitForSeconds(delayBeforeTyping);
 
         if (textIndex < texts.Length)
         {
@@ -50,7 +52,7 @@ public class TypewriterEffect : MonoBehaviour
                 currentText.Append(fullText[i]);
                 textMeshPro.text = currentText.ToString();
 
-                yield return new WaitForSeconds(typingSpeed);
+                yield return new WaitForSeconds(typingDelay);
             }
 
             deletionCoroutine = StartCoroutine(DeleteText());
@@ -58,7 +60,8 @@ public class TypewriterEffect : MonoBehaviour
     }
 
     /// <summary>
-    /// Called when the text needs to be deleted by the TypeText() coroutine, this coroutine waits delayBeforeDeletion seconds before starting to delete the text at the deletionSpeed.
+    /// Called when the text needs to be deleted by the TypeText() coroutine,
+    /// this coroutine waits delayBeforeDeletion seconds before starting to delete the text.
     /// If there's another phrase to be said, it also calls the TypeText() coroutine to type it, else it sets voiceIsDone to true.
     /// </summary>
     /// <returns></returns>
@@ -71,7 +74,7 @@ public class TypewriterEffect : MonoBehaviour
             currentText.Remove(i, 1);
             textMeshPro.text = currentText.ToString();
 
-            yield return new WaitForSeconds(deletionSpeed);
+            yield return new WaitForSeconds(deletionDelay);
         }
 
         textIndex++;
