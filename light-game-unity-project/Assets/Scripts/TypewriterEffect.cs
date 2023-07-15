@@ -8,8 +8,8 @@ public class TypewriterEffect : MonoBehaviour
 {
     public float typingDelay = 0.02f;  // Delay between each letter
     public float deletionDelay = 0.002f;  // Delay between each letter during deletion
-    public float delayBeforeTyping = 0.5f; // Delay before text stars typing
     public float delayBeforeDeletion = 1.5f;  // Delay before text starts disappearing
+    public float delayBeforeTyping = 0.5f; // Delay before text starts typing
     public string[] texts;
     public LightCalculator lightCalculator;
     public bool voiceIsDone = false;
@@ -33,9 +33,8 @@ public class TypewriterEffect : MonoBehaviour
         typingCoroutine = StartCoroutine(TypeText());
     }
 
-    /// <summary>
-    /// Called after the object is enabled by the OnEnable() method, 
-    /// this coroutine starts typing the text if it's not fully typed,
+    /// <summary> the typing
+    /// Called after the object is enabled by the OnEnable() method, this coroutine starts typing the text if it's not fully typed,
     /// or calls the DeleteText() coroutine if it's fully typed.
     /// </summary>
     /// <returns></returns>
@@ -60,8 +59,7 @@ public class TypewriterEffect : MonoBehaviour
     }
 
     /// <summary>
-    /// Called when the text needs to be deleted by the TypeText() coroutine,
-    /// this coroutine waits delayBeforeDeletion seconds before starting to delete the text.
+    /// Called when the text needs to be deleted by the TypeText() coroutine, this coroutine waits delayBeforeDeletion seconds before starting to delete the text.
     /// If there's another phrase to be said, it also calls the TypeText() coroutine to type it, else it sets voiceIsDone to true.
     /// </summary>
     /// <returns></returns>

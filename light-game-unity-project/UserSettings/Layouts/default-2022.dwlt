@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1357
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Console
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 5303
+  controlID: 117
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 5304
+  controlID: 74
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 5305
+  controlID: 50
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,8 +190,8 @@ MonoBehaviour:
     y: 0
     width: 222
     height: 992
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -216,8 +216,8 @@ MonoBehaviour:
     y: 0
     width: 840
     height: 992
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -243,8 +243,8 @@ MonoBehaviour:
     y: 0
     width: 893
     height: 992
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -269,15 +269,15 @@ MonoBehaviour:
     y: 992
     width: 1955
     height: 315
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: UnityBuildWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -297,15 +297,15 @@ MonoBehaviour:
     y: 0
     width: 605
     height: 1307
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 2
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -443,9 +443,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7e7b0000
-      m_LastClickedID: 31614
-      m_ExpandedIDs: c683ffffaebaffffa4faffffe07a0000227b00006e7b0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 92c2fcff40c3fcff88c6fcff92c6fcffeec6fcff9cc8fcff5ac9fcff0ccafcffc2cafcff52cbfcffcacbfcff40ccfcffa0ccfcffb6ccfcffe0ccfcffa0d5fcff50d6fcffb4d9fcffbed9fcff1adafcffc8dbfcff86dcfcff38ddfcffeeddfcff7edefcfff6defcff6cdffcffccdffcffe2dffcff0ce0fcffccf4fcff7af5fcffc2f8fcffccf8fcff28f9fcffd6fafcff94fbfcff46fcfcfffcfcfcff8cfdfcff04fefcff7afefcffdafefcfff0fefcff1afffcffda07fdff8a08fdffee0bfdfff80bfdff540cfdff020efdffc00efdff720ffdff2810fdffb810fdff3011fdffa611fdff0612fdff1c12fdff4612fdff163afdffc43afdff283efdff323efdff8e3efdff3c40fdfffa40fdffac41fdff6242fdfff242fdff6a43fdffe043fdff4044fdff5644fdff8044fdffc298fdff7099fdffd49cfdffde9cfdff3a9dfdffe89efdffa69ffdff58a0fdff0ea1fdff9ea1fdff16a2fdff8ca2fdffeca2fdff02a3fdff2ca3fdffcaf6fdff76f7fdffbefafdffc8fafdff24fbfdffd2fcfdff90fdfdff42fefdfff8fefdff88fffdff0000feff7600feffd600feffec00feff1601feff920dfeff3e0efeffaa11feffbc11feff2012feffd613feff9c14feff5615feff1416feffac16feff2c17feffaa17feff1218feff3018feff6218feff022dfeff602ffeff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -864,9 +864,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 467.94983, y: 102.80465, z: -3.3754942}
+    m_Target: {x: 372.4042, y: 322.1236, z: -2.321388}
     speed: 2
-    m_Value: {x: 459.33353, y: 116.501595, z: -3.1265092}
+    m_Value: {x: 372.4042, y: 322.1236, z: -2.321388}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -916,9 +916,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 578.19025
+    m_Target: 538.12225
     speed: 2
-    m_Value: 553.2921
+    m_Value: 538.12225
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1083,9 +1083,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 80ba783b5fdd144468e9816d3a873b86, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 890ff0908ec07df439c1d2bce2ef3864, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 3529769019316574786, guid: 80ba783b5fdd144468e9816d3a873b86, type: 2}
+  - m_Target: {fileID: 4938752840301883456, guid: 890ff0908ec07df439c1d2bce2ef3864, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1143,7 +1143,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1151,16 +1151,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Cristi\Documents\GitHub\light-game\light-game-unity-project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9c740000
-    m_LastClickedID: 29852
-    m_ExpandedIDs: 00000000727400007474000076740000787400007a7400007c7400007e74000000ca9a3b
+    m_SelectedIDs: 18410000
+    m_LastClickedID: 16664
+    m_ExpandedIDs: 00000000c440000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1188,7 +1188,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000727400007474000076740000787400007a7400007c7400007e74000000ca9a3b
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1215,7 +1215,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300008e700000c66c0000bc6c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1398,7 +1398,15 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   currentBuildSettings: {fileID: 11400000, guid: 8af9b81f5ea881e41afc7c91a9a8bd91, type: 2}
   notifications:
-    notifications: []
+    notifications:
+    - cat: 0
+      title: 'Building (1/4): '
+      details: light-game/PC/Windows x86 (App)/Mono
+      clearable: 1
+    - cat: 0
+      title: 'Building (2/4): '
+      details: light-game/Linux/Linux x64/Mono
+      clearable: 1
     warnings: []
     errors:
     - cat: 2
