@@ -17,6 +17,7 @@ public class WinGame : MonoBehaviour
     public TypewriterEffect typewriterEffect;
     public TextMeshProUGUI voice2TextMeshPro;
     public TextMeshProUGUI voiceTextMeshPro;
+    public DisableObject equippedSwordDisablingScript;
     public bool disableFirstVoiceAfterWinning = true;
 
     /// <summary>
@@ -75,6 +76,10 @@ public class WinGame : MonoBehaviour
     {
         if (collision.CompareTag("WinCondition") && canCollide)
         {
+            if (equippedSwordDisablingScript != null)
+            {
+                equippedSwordDisablingScript.Disable();
+            }
             if (voiceTextMeshPro != null)
             {
                 voiceTextMeshPro.color = Color.black;

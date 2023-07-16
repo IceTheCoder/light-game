@@ -13,6 +13,7 @@ public class LightCalculator : MonoBehaviour
     public float minimumIntensity = 0.34f;
     public float minimumRadius = 0.2f;
     public float lightChangeDelay = 1f;
+    public float winRadius = 3f;
     public bool won = false;
     public TriangleCollision collision;
     public FollowMouse followMouseScript;
@@ -98,6 +99,7 @@ public class LightCalculator : MonoBehaviour
         {
             followMouseScript.enabled = false;
             theLight.pointLightOuterRadius += minimumRadius;
+            theLight.intensity = winRadius;
         }
     }
 }
