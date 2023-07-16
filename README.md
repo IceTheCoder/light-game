@@ -46,7 +46,7 @@ E-mail: icethedev2@gmail.com
 ## Acknowledgements
 - [Kevin Tran](https://github.com/kevintr303) for taking the time to code such a great infinite level, 'where you are trying to survive as long as possible'.
 - The sword in Level 7 is [Sword Normal](https://opengameart.org/content/sword-normal) by [Skycore](https://opengameart.org/users/skycore), licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
-- The health power-up is [Heart 16*16](https://opengameart.org/content/heart-1616) by [Nicole Marie T](https://opengameart.org/users/nicole-marie-t), licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- The health power-up is [Heart 16*16](https://opengameart.org/content/heart-1616) by [Nicole Marie T](https://opengameart.org/users/nicole-marie-t), licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), and modified into a more vibrant red.
 - [ChatGPT](https://chat.openai.com/chat) for providing me with unique solutions to SO MANY problems.
 - Special thanks to [Bing](https://www.bing.com) for providing helpful information and assistance during the development of this project.
 - [Brackeys](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) for making such a great beginner's guide on getting into game development.
