@@ -98,6 +98,7 @@ public class LightCalculator : MonoBehaviour
         {
             followMouseScript.enabled = false;
             theLight.pointLightOuterRadius += minimumRadius;
+            theLight.intensity = 3f;
         }
     }
 }
