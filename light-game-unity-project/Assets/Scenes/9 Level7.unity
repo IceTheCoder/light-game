@@ -1311,15 +1311,20 @@ PrefabInstance:
       objectReference: {fileID: 1774395532}
     - target: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
       propertyPath: texts.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
       propertyPath: texts.Array.data[0]
-      value: Orange triangles are more powerful.
+      value: Orange triangles are extremely powerful and guard the square.
       objectReference: {fileID: 0}
     - target: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
       propertyPath: texts.Array.data[1]
-      value: You will need to distract them with something.
+      value: If they detect an attack, they will scramble to find the attacker.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857604945609703400, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
+      propertyPath: texts.Array.data[2]
+      value: Therefore, you must disract (attack) them with an item to clear the
+        way to the square.
       objectReference: {fileID: 0}
     - target: {fileID: 1857604945609703403, guid: 73d6d439fde08e7449c239101762bc53, type: 3}
       propertyPath: m_Pivot.x
