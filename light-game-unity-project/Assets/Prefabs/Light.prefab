@@ -51,6 +51,25 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -90,35 +109,6 @@ MonoBehaviour:
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
-  m_Vertices:
-  - position: {x: 0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0.70710677, g: 0.70710677, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.9985302, y: 0.9985302, z: 0}
-    color: {r: -0.70710677, g: 0.70710677, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.99853003, y: -0.9985304, z: 0}
-    color: {r: -0.70710665, g: -0.7071069, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0.70710665, g: -0.7071069, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: 0, y: 0, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  m_Triangles: 030001000800020000000100030002000100050003000800040002000300050004000300070005000800060004000500070006000500010007000800000006000700010000000700
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
@@ -166,6 +156,7 @@ MonoBehaviour:
   minimumIntensity: 0.34
   minimumRadius: 0.2
   lightChangeDelay: 1
+  winRadius: 3
   won: 0
   collision: {fileID: 3275313659899705819}
   followMouseScript: {fileID: 3275313659899705817}
@@ -204,6 +195,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 0}
   equippedSword: {fileID: 7320576637351078401}
   textBox: {fileID: 0}
+  showText: {fileID: 0}
   swordCooldown: 0
 --- !u!114 &3275313659899705764
 MonoBehaviour:
@@ -221,11 +213,13 @@ MonoBehaviour:
   lightCalculator: {fileID: 3275313659899705822}
   triangleCollision: {fileID: 3275313659899705819}
   healthText: {fileID: 0}
+  delayToWin: 2
   voiceObject: {fileID: 0}
   voiceObject2: {fileID: 0}
   typewriterEffect: {fileID: 0}
   voice2TextMeshPro: {fileID: 0}
   voiceTextMeshPro: {fileID: 0}
+  equippedSwordDisablingScript: {fileID: 7320576637351078407}
   disableFirstVoiceAfterWinning: 1
 --- !u!212 &3275313659899705818
 SpriteRenderer:
@@ -296,6 +290,12 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -305,6 +305,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3275313659899705821}
     m_Modifications:
     - target: {fileID: 1289188050822197074, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
@@ -371,14 +372,27 @@ PrefabInstance:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 1289188050822197082, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
-    - {fileID: 1289188050822197083, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
     - {fileID: 1289188050822197078, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
 --- !u!1 &7320576637351078401 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1289188050822197085, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
   m_PrefabInstance: {fileID: 8391318922384295260}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7320576637351078407 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1289188050822197083, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
+  m_PrefabInstance: {fileID: 8391318922384295260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7320576637351078401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf0dabf9a28b194eadd872fa8f43de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7320576637351078415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1289188050822197075, guid: ac80fd9e0024f174ebc1d3f2f55c27e7, type: 3}
