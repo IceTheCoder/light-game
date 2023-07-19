@@ -35,7 +35,7 @@ public static class BuildConstants
         None,
     }
 
-    public static readonly DateTime buildDate = new DateTime(638253639256886368);
+    public static readonly DateTime buildDate = new DateTime(638253647774574932);
     public const string version = "beta-4.6";
     public const ReleaseType releaseType = ReleaseType.light_game;
     public const Platform platform = Platform.macOS;
