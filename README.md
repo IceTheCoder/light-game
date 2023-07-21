@@ -12,7 +12,7 @@ Download: https://icethedev2.itch.io/light-game
 ## Notices
 - If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
 - If the issue persists, check for driver updates for your graphics card or monitor.
-- If the issue still persists, post an issue on this GitHub repo or a comment on the itch.io page for the game.
+- If the issue still persists, post an issue on this GitHub repo or comment on the itch.io page for the game.
 
 ## How to run
 Open the 'light-game' folder as a project in Unity and hit the play button.
@@ -20,7 +20,7 @@ Open the 'light-game' folder as a project in Unity and hit the play button.
 ## License
 This repository is licensed under the MIT license. In short, you must include the exact copy of this project's license in your end-user application. Read LICENSE for more information.
 
-If you decide to use portions of my software, it would be appreciated if you include an attribution in the final application, mentioning the name of software and its contributors, as well as the section(s) in which it was used.
+If you decide to use portions of my software, it would be appreciated if you include an attribution in the final application, mentioning the name of the software and its contributors, as well as the section(s) in which it was used.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -35,13 +35,18 @@ I'd love to hear your suggestions on how I can improve my first game!
 You can fork the project to play around with it and create a pull request to submit your suggestions. You can also open an issue to tell me about any problems my code might have (or new ideas for features you have).
 
 ## Contact
-Project Link: https://github.com/IceTheDev2/light-game/
+Project Link: https://github.com/IceTheDev2/light-game/.
 
-Reddit: https://www.reddit.com/user/AnEntirePeach
+E-mail: icethedev2@gmail.com.
 
-Youtube: https://www.youtube.com/channel/UCBqVJU4gjeik1RavAsVR6Pg
+Reddit: https://www.reddit.com/user/AnEntirePeach.
 
-E-mail: icethedev2@gmail.com
+Youtube: https://www.youtube.com/channel/UCBqVJU4gjeik1RavAsVR6Pg.
+
+Instagram: https://www.instagram.com/icethedev2/.
+
+TikTok: https://www.tiktok.com/@icethedev2.
+
 
 ## Acknowledgements
 - [Kevin Tran](https://github.com/kevintr303) for taking the time to code such a great infinite level, 'where you are trying to survive as long as possible'.
