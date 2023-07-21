@@ -289,7 +289,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Infinite Level
 
-    by kevintr303'
+    by Kevin Tran
+
+    and IceTheDev2'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -429,7 +431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &471196182
 RectTransform:
   m_ObjectHideFlags: 0
@@ -756,6 +758,7 @@ GameObject:
   - component: {fileID: 627887722}
   - component: {fileID: 627887724}
   - component: {fileID: 627887723}
+  - component: {fileID: 627887725}
   m_Layer: 5
   m_Name: Points
   m_TagString: Untagged
@@ -780,8 +783,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 253, y: -75}
-  m_SizeDelta: {x: 380, y: 100}
+  m_AnchoredPosition: {x: 511.58994, y: -75}
+  m_SizeDelta: {x: 897.18, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &627887723
 MonoBehaviour:
@@ -880,6 +883,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627887721}
   m_CullTransparentMesh: 1
+--- !u!114 &627887725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627887721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b5f38c1dd0d36419da821322873921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 627887723}
 --- !u!1001 &1373767841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1344,6 +1360,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4660029136773146600, guid: edc1c382220684e0194d894faf410832, type: 3}
+      propertyPath: maxEnemies
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660029136773146600, guid: edc1c382220684e0194d894faf410832, type: 3}
+      propertyPath: spawnCount
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660029136773146600, guid: edc1c382220684e0194d894faf410832, type: 3}
+      propertyPath: maxDifficulty
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660029136773146600, guid: edc1c382220684e0194d894faf410832, type: 3}
+      propertyPath: currentDifficulty
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4660029136773146601, guid: edc1c382220684e0194d894faf410832, type: 3}
       propertyPath: m_Name
       value: EnemySpawner
