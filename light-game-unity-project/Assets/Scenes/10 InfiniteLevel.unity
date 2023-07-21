@@ -1360,18 +1360,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4660029136773146600, guid: edc1c382220684e0194d894faf410832, type: 3}
-      propertyPath: maxEnemies
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4660029136773146600, guid: edc1c382220684e0194d894faf410832, type: 3}
-      propertyPath: spawnCount
-      value: 74
-      objectReference: {fileID: 0}
-    - target: {fileID: 4660029136773146600, guid: edc1c382220684e0194d894faf410832, type: 3}
-      propertyPath: maxDifficulty
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4660029136773146601, guid: edc1c382220684e0194d894faf410832, type: 3}
       propertyPath: m_Name
       value: EnemySpawner
