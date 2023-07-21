@@ -8,9 +8,9 @@ public class Crawl : MonoBehaviour
     public float destinationOverlapRadius = 0.1f;
 
     /// <summary>
-    /// Difficulty multiplier, the number to multiply by for each difficulty.
+    /// Difficulty multiplier, the number to multiply the speed of the triangle by for each difficulty.
     /// </summary>
-    [SerializeField] private float difficultyMultiplier = 1.05f;
+    [SerializeField] private float difficultyMultiplier = 0.03f;
     private Vector2 startPosition;
     private Vector2 targetPosition;
     private float defaultSpeed;
