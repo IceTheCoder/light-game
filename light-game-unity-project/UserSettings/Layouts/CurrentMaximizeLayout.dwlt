@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 24526
+  controlID: 30556
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_SerializedViewNames:
   - UnityEditor.GameView
   m_SerializedViewValues:
-  - C:\Users\Cristi\Documents\GitHub\light-game\light-game-unity-project\Library\PlayModeViewStates\53b122bbba46e204197e6533b44bf16e
+  - C:\Users\Cristi\Documents\GitHub\light-game\light-game-unity-project\Library\PlayModeViewStates\f196cdb7974be5c4181378a4d63188c9
   m_PlayModeViewName: Device Simulator
   m_ShowGizmos: 0
   m_TargetDisplay: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 24527
+  controlID: 30557
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 24528
+  controlID: 30558
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -205,9 +205,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 4cf1f8ff284ff9ff2694f9ffec94f9ffa6a1f9ff8ca2f9ffb0c0fcff84c3fdff7656ffff7c5bffff88dcffffd0fafffff4ffffff00790000548300005086000064d600007cd60000e0d7000022d8000056d800006ed80000b4dd0000ccdd0000
+      m_SelectedIDs: 88740100
+      m_LastClickedID: 95368
+      m_ExpandedIDs: b862f3ff6663f3ffce66f3ffd866f3ff3a67f3ffea68f3ffaa69f3ff5e6af3ff166bf3ffa86bf3ff226cf3ff9a6cf3fffc6cf3ff126df3ff3a6df3ffea75f3ff9876f3ffe479f3ffee79f3ff507af3ff007cf3ffc07cf3ff747df3ff2c7ef3ffbe7ef3ff387ff3ffb07ff3ff1280f3ff2880f3ff5080f3fff288f3ffa089f3ffec8cf3fff68cf3ff588df3ff088ff3ffc88ff3ff7c90f3ff3491f3ffc691f3ff4092f3ffb892f3ff1a93f3ff3093f3ff5893f3ff009cf3ffae9cf3fffa9ff3ff04a0f3ff66a0f3ff16a2f3ffd6a2f3ff8aa3f3ff42a4f3ffd4a4f3ff4ea5f3ffc6a5f3ff28a6f3ff3ea6f3ff66a6f3ff0eaff3ffbcaff3ff0cb3f3ff1ab3f3ff80b3f3ff34b5f3fff8b5f3ffb0b6f3ff6cb7f3ff02b8f3ff80b8f3fffcb8f3ff62b9f3ff7cb9f3ffa8b9f3ff5ae4f3ff02e5f3ff6ee8f3ff7ce8f3ffe2e8f3ff96eaf3ff5aebf3ff12ecf3ffceecf3ff64edf3ffe2edf3ff5eeef3ffc4eef3ffdeeef3ff0aeff3ffba02f4ff7c03f4ffe406f4ffee06f4ff5007f4ff0009f4ffc009f4ff740af4ff2c0bf4ffbe0bf4ff380cf4ffb00cf4ff120df4ff280df4ff520df4ff1816f4ffda16f4ff261af4ff301af4ff921af4ff421cf4ff021df4ffb61df4ff6e1ef4ff001ff4ff7a1ff4fff21ff4ff5420f4ff6a20f4ff9420f4ff5029f4ff122af4ff5e2df4ff682df4ffca2df4ff7a2ff4ff3a30f4ffee30f4ffa631f4ff3832f4ffb232f4ff2a33f4ff8c33f4ffa233f4ffcc33f4ff883cf4ff483df4ff9440f4ff9e40f4ff0041f4ffb042f4ff7043f4ff2444f4ffdc44f4ff6e45f4ffe845f4ff6046f4ffc246f4ffd846f4ff0247f4ffbe4ff4ff8050f4ffec53f4fffa53f4ff6054f4ff1456f4ffd856f4ff9057f4ff4c58f4ffe258f4ff6059f4ffdc59f4ff425af4ff5c5af4ff8a5af4ff9e62f4ff4cf1f8ff284ff9ff2694f9ffec94f9ffa6a1f9ff8ca2f9ffb0c0fcff84c3fdff7656ffff7c5bffff88dcffffd0fafffff4ffffff00790000548300005086000064d600007cd60000e0d7000022d8000056d800006ed80000b4dd0000ccdd0000f00a0100320b01007e0b0100dc4801001e4901006a49010060500100ee500100be510100005201004c520100ea7301002c7401006074010078740100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -653,9 +653,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 352.3902, y: 161.01303, z: -13.302298}
+    m_Target: {x: 1078.5442, y: 902.6687, z: -0.8334921}
     speed: 2
-    m_Value: {x: 352.3902, y: 161.01303, z: -13.302298}
+    m_Value: {x: 1076.2648, y: 900.91534, z: -1.2008266}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -705,9 +705,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 616.4636
+    m_Target: 779.5651
     speed: 2
-    m_Value: 616.4636
+    m_Value: 816.2986
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -923,7 +923,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -932,15 +932,15 @@ MonoBehaviour:
     y: 987
     width: 1955
     height: 320
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -986,7 +986,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -994,15 +994,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Cristi\Documents\GitHub\light-game\light-game-unity-project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 88740000
-    m_LastClickedID: 29832
+    m_SelectedIDs: 8a740000
+    m_LastClickedID: 29834
     m_ExpandedIDs: 000000006c74000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1157,7 +1157,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -438524
+  m_LastSelectedObjectID: 95368
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1227,7 +1227,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 267
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -1271,12 +1271,29 @@ MonoBehaviour:
   notifications:
     notifications:
     - cat: 0
-      title: 'Building (1/4): '
+      title: 'Building (1/5): '
       details: light-game/PC/Windows x86 (App)/Mono
       clearable: 1
     - cat: 0
-      title: 'Building (2/4): '
+      title: 'Building (2/5): '
       details: light-game/Linux/Linux x64/Mono
+      clearable: 1
+    - cat: 0
+      title: 'Building (3/5): '
+      details: light-game/WebGL/WebGL/IL2CPP
+      clearable: 1
+    - cat: 0
+      title: 'Building (4/5): '
+      details: light-game/macOS/macOS (Intelx64,App)/Mono
+      clearable: 1
+    - cat: 0
+      title: 'Building (5/5): '
+      details: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)/IL2CPP
+      clearable: 1
+    - cat: 0
+      title: Build Complete.
+      details: "5 successful builds. No failures. \u2714\uFE0F"
       clearable: 1
     warnings: []
     errors:
