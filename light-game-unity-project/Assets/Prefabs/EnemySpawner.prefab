@@ -48,9 +48,9 @@ MonoBehaviour:
   initialSpawnCount: 1
   spawnType: 1
   spawnDelay: 10
-  spawnCount: 1
+  spawnCount: 74
   resetEnemyCountOnWin: 0
-  maxDifficulty: 1
-  maxEnemies: 100
+  maxDifficulty: 50
+  maxEnemies: 50
   currentDifficulty: 1
   currentEnemyCount: 0
