@@ -63,3 +63,4 @@ TikTok: https://www.tiktok.com/@icethedev2.
 - https://youtu.be/tMSDz0Bzwwc.
 - https://markdowntohtml.com/.
 - https://gamedevbeginner.com/how-to-lock-hide-the-cursor-in-unity/#:~:text=Hiding%20the%20cursor%20in%20Unity%20is%2C%20helpfully%2C%20very%20simple%20to,true%20to%20show%20it%20again.
+- These 2 resources for helping me make WebGL full-screen work: https://youtu.be/eUy0zjDuiWA, https://seansleblanc.itch.io/better-minimal-webgl-template.
