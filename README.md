@@ -5,7 +5,7 @@ Avoid triangles. They are your enemies.
 
 Find the green square to win.
 
-Download: https://icethedev2.itch.io/light-game
+Download: https://icethedev2.itch.io/light-game.
 
 (Updates will be released to GitHub first and then to itch.io)
 
