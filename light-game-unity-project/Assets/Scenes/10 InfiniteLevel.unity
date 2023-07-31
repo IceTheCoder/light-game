@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 145548907}
   - component: {fileID: 145548906}
   m_Layer: 5
-  m_Name: kevintr303
+  m_Name: Attribution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
 
     by Kevin Tran
 
-    and IceTheDev2'
+    and IceTheGameDev'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
