@@ -1642,7 +1642,7 @@ GameObject:
   - component: {fileID: 1273008582}
   - component: {fileID: 1273008581}
   m_Layer: 5
-  m_Name: LicenseButton (1)
+  m_Name: TutorialButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
