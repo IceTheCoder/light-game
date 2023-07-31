@@ -5,7 +5,7 @@ Avoid triangles. They are your enemies.
 
 Find the green square to win.
 
-Download: https://icethedev2.itch.io/light-game.
+Download: https://icethegamedev.itch.io/light-game.
 
 (Updates will be released to GitHub first and then to itch.io)
 
@@ -35,17 +35,17 @@ I'd love to hear your suggestions on how I can improve my first game!
 You can fork the project to play around with it and create a pull request to submit your suggestions. You can also open an issue to tell me about any problems my code might have (or new ideas for features you have).
 
 ## Contact
-Project Link: https://github.com/IceTheDev2/light-game/.
+Project Link: https://github.com/IceTheGameDev/light-game/.
 
-E-mail: icethedev2@gmail.com.
+E-mail: icethegamedev@yahoo.com.
 
 Reddit: https://www.reddit.com/user/AnEntirePeach.
 
-Youtube: https://www.youtube.com/channel/UCBqVJU4gjeik1RavAsVR6Pg.
+Youtube: https://www.youtube.com/@IceTheGameDev.
 
-Instagram: https://www.instagram.com/icethedev2/.
+Instagram: https://www.instagram.com/icethegamedev/.
 
-TikTok: https://www.tiktok.com/@icethedev2.
+TikTok: https://www.tiktok.com/@icethegamedev.
 
 
 ## Acknowledgements
