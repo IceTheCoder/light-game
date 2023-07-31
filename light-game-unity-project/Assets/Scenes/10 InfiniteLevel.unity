@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 145548907}
   - component: {fileID: 145548906}
   m_Layer: 5
-  m_Name: kevintr303
+  m_Name: Attribution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
