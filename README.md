@@ -7,7 +7,7 @@ Find the green square to win.
 
 Download: https://icethegamedev.itch.io/light-game.
 
-(Updates will be released to GitHub first and then to itch.io)
+(Updates will be released to GitHub first and then to Itch)
 
 ## Notices
 - If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
