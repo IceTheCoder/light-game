@@ -25,8 +25,8 @@ MonoBehaviour:
   _releaseTypeList:
     releaseTypes:
     - typeName: light-game
-      bundleIdentifier: com.IceTheDev2.lightgame
-      companyName: IceTheDev2
+      bundleIdentifier: com.IceTheGameDev.lightgame
+      companyName: IceTheGameDev
       productName: light-game
       buildOptions: 1
       customDefines: 
