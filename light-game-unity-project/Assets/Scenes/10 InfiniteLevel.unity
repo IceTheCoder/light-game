@@ -289,7 +289,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Infinite Level
 
-    by Kevin Tran
+    by kevintr303
 
     and IceTheGameDev'
   m_isRightToLeft: 0
@@ -318,8 +318,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
