@@ -5,9 +5,9 @@ Avoid triangles. They are your enemies.
 
 Find the green square to win.
 
-Download: https://icethegamedev.itch.io/light-game.
+**Download (Windows, Mac, Linux, and Android) and browser: https://icethegamedev.itch.io/light-game.**
 
-(Updates will be released to GitHub first and then to Itch)
+**Browser-only: https://icethegamedev.github.io/light-game/WebGL/.**
 
 ## Notices
 - If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
