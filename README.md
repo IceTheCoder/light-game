@@ -9,6 +9,13 @@ Find the green square to win.
 
 **Browser-only: https://icethegamedev.github.io/light-game/WebGL/.**
 
+## Screenshots
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53094636519/in/dateposted-public/" title="202"><img src="https://live.staticflickr.com/65535/53094636519_7a346d6cc6_o.png"/></a>
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53094859435/in/dateposted-public/" title="206"><img src="https://live.staticflickr.com/65535/53094859435_27782e2265_o.png"/></a>
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53093895907/in/dateposted-public/" title="205"><img src="https://live.staticflickr.com/65535/53093895907_dbcbf67f21_o.png"/></a>
+
 ## Notices
 - If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
 - If the issue persists, check for driver updates for your graphics card or monitor.
