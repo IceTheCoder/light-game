@@ -19,7 +19,7 @@ Find the green square to win.
 ## Notices
 - If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
 - If the issue persists, check for driver updates for your graphics card or monitor.
-- If the issue still persists, post an issue on this GitHub repo or a comment on the itch.io page for the game.
+- If the issue still persists, post an issue on this GitHub repo or a comment on Itch.
 
 ## How to run
 Open the 'light-game' folder as a project in Unity and hit the play button.
