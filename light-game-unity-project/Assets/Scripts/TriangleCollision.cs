@@ -32,6 +32,8 @@ public class TriangleCollision : MonoBehaviour
     public bool swordCooldown = false;
     private UnityEngine.Rendering.Universal.Light2D theLight;
 
+    // Reference the placeholder's transform
+
     /// <summary>
     /// Called when the script first runs, this method sets dead to false, health to 1 and starts
     /// the CollisionDelay coroutine.
@@ -102,6 +104,7 @@ public class TriangleCollision : MonoBehaviour
                 float[] health0 = new float[] { health - healthChange, 0f };
                 health = health0.Max();
                 UpdateText(false);
+                // Set the placeholder's position to the player's position.
             }
             if (collision.CompareTag("StrongerTriangle") && canCollide)
             {
