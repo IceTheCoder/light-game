@@ -164,7 +164,7 @@ PlayerSettings:
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 3
-  AndroidMinSdkVersion: 0
+  AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -697,7 +697,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: BUILD_TYPE_LIGHT_GAME;BUILD_PLATFORM_ANDROID;BUILD_ARCH_ANDROID;BUILD_BACKEND_MONO;UNITY_POST_PROCESSING_STACK_V2
+    Android: BUILD_TYPE_LIGHT_GAME;BUILD_PLATFORM_ANDROID;BUILD_ARCH_ANDROID;BUILD_BACKEND_IL2CPP;UNITY_POST_PROCESSING_STACK_V2
     Bratwurst: UNITY_POST_PROCESSING_STACK_V2
     EmbeddedLinux: UNITY_POST_PROCESSING_STACK_V2
     GameCoreXboxOne: UNITY_POST_PROCESSING_STACK_V2
