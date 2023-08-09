@@ -45,4 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 6578347215210570425, guid: d17f2487b8deea94eb68d0dc850a9492, type: 3}
+  estimatedPlayerPos: {fileID: 0}
+  triangleRotation: {fileID: 0}
   spawnInterval: 1

@@ -114,7 +114,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &7033612964580559147
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -237,6 +237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2048853530882550392, guid: 2c3435353b948dc479d2ed6c36cd9bf8, type: 3}
+      propertyPath: triangleRotation
+      value: 
+      objectReference: {fileID: 7033612964580559145}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
