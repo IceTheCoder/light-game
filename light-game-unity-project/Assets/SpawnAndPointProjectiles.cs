@@ -9,12 +9,13 @@ public class SpawnAndPointProjectiles : MonoBehaviour
     public Transform triangleRotation;
     public float spawnInterval = 1.0f;   // Time interval between spawning projectiles
 
-    private float timer = 0.0f;
+    private float lastSpawnTime = 0.0f;
     private GameObject currentProjectile;
     private Transform circleTransform;
     private TriangleCollision triangleCollision;
     private EnemySpawner enemySpawner;
     private LightCalculator lightCalculator;
+
     private void Start()
     {
         enemySpawner = EnemySpawner.Instance;
@@ -30,12 +31,9 @@ public class SpawnAndPointProjectiles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-
-        // Update the rotation of the spawner to match the negative of triangleRotation.rotation
-
-        if (triangleCollision.hasCollided == true && currentProjectile == null && enemySpawner.currentEnemyCount >= 4
-            && lightCalculator.won == false)
+        if (Time.time - lastSpawnTime >= spawnInterval &&
+            triangleCollision.hasCollided == true && enemySpawner.currentEnemyCount >= 4 &&
+            lightCalculator.won == false)
         {
             // Spawn a projectile at the position of the spawner
             currentProjectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
@@ -50,11 +48,8 @@ public class SpawnAndPointProjectiles : MonoBehaviour
                 currentProjectile.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             }
 
-            // Destroy the projectile after a set time
-            Destroy(currentProjectile, 1.0f);
-
-            // Reset the timer
-            timer = 0.0f;
+            // Update the last spawn time
+            lastSpawnTime = Time.time;
         }
     }
 }
