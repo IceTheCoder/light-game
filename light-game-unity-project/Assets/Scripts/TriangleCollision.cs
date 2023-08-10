@@ -27,6 +27,7 @@ public class TriangleCollision : MonoBehaviour
 
     bool dead;
     bool canCollide = false;
+    public bool hasCollided = false;
 
     [Tooltip("Only for stronger triangles.")]
     public bool swordCooldown = false;
@@ -41,6 +42,7 @@ public class TriangleCollision : MonoBehaviour
     /// </summary>
     void Start()
     {
+        hasCollided = false;
         dead = false;
         health = 1f;
         StartCoroutine(CollisionDelay());
@@ -100,20 +102,18 @@ public class TriangleCollision : MonoBehaviour
 
         if (!isEquippedSwordActive || (isEquippedSwordActive && isSwordCooldown))
         {
-            if ((collision.CompareTag("Triangle") || collision.CompareTag("StrongerTriangle")) && canCollide)
+            if (collision.CompareTag("Triangle"))
             {
-                if (collision.CompareTag("Triangle"))
-                {
-                    float newHealth = Mathf.Max(health - healthChange, 0f);
-                    health = newHealth;
-                    UpdateText(false);
-                    UpdatePlaceholderPosition();
-                }
-                else if (collision.CompareTag("StrongerTriangle"))
-                {
-                    health = 0f;
-                    UpdateText(false);
-                }
+                hasCollided = true;
+                float newHealth = Mathf.Max(health - healthChange, 0f);
+                health = newHealth;
+                UpdateText(false);
+                UpdatePlaceholderPosition();
+            }
+            else if (collision.CompareTag("StrongerTriangle"))
+            {
+                health = 0f;
+                UpdateText(false);
             }
         }
         else if (collision.CompareTag("StrongerTriangle") && canCollide && !isSwordCooldown)

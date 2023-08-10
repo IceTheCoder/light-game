@@ -1519,6 +1519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle
       objectReference: {fileID: 0}
+    - target: {fileID: 4022668683399564613, guid: 6d7bf7c4c175125468a0483fe4527678, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5956008628344796809, guid: 6d7bf7c4c175125468a0483fe4527678, type: 3}
       propertyPath: m_RootOrder
       value: 9
