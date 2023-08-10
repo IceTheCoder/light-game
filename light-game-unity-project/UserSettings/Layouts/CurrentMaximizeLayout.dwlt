@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 12368
+  controlID: 12675
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 12369
+  controlID: 12676
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 12370
+  controlID: 12677
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,23 +239,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9e720000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: e0faffff84710000
+      m_ExpandedIDs: 80d4f8ff30d5f8ffd6d8f8ffded8f8ffe8d8f8ff4ad9f8ff90dbf8ff7adcf8ff52ddf8ff28def8ffd2def8ff58dff8ffd8dff8ff3ae0f8ff50e0f8ff80e0f8ff4ae9f8fffae9f8ff84edf8ff8cedf8ff96edf8fff8edf8ff3ef0f8ff28f1f8ff00f2f8ffd6f2f8ff80f3f8ff06f4f8ff86f4f8ffe8f4f8fffef4f8ff2ef5f8ffeafdf8ff9afef8ff2402f9ff2c02f9ff3602f9ff9802f9ffde04f9ffc805f9ffa006f9ff7607f9ff2008f9ffa608f9ff2609f9ff8809f9ff9e09f9ffce09f9ff9012f9ff3e13f9ffc816f9ffd016f9ffda16f9ff3c17f9ff8219f9ff6c1af9ff441bf9ff1a1cf9ffc41cf9ff4a1df9ffca1df9ff2c1ef9ff421ef9ff721ef9ff3427f9ffe427f9ff8e2bf9ff9a2bf9ffa82bf9ff0e2cf9ff582ef9ff462ff9ff2230f9fffc30f9ffaa31f9ff3432f9ffb832f9ff1e33f9ff3833f9ff6c33f9ff5052f9ff0053f9ffa656f9ffae56f9ffb856f9ff1a57f9ff6059f9ff4a5af9ff225bf9fff85bf9ffa25cf9ff285df9ffa85df9ff0a5ef9ff205ef9ff505ef9ff1c67f9ffcc67f9ff566bf9ff5e6bf9ff686bf9ffca6bf9ff106ef9fffa6ef9ffd26ff9ffa870f9ff5271f9ffd871f9ff5872f9ffba72f9ffd072f9ff0073f9ffc27bf9ff727cf9fffc7ff9ff0480f9ff0e80f9ff7080f9ffb682f9ffa083f9ff7884f9ff4e85f9fff885f9ff7e86f9fffe86f9ff6087f9ff7687f9ffa687f9ff6890f9ff1691f9ffa094f9ffa894f9ffb294f9ff1495f9ff5a97f9ff4498f9ff1c99f9fff299f9ff9c9af9ff229bf9ffa29bf9ff049cf9ff1a9cf9ff4a9cf9ff0ca5f9ffbca5f9ff66a9f9ff72a9f9ff80a9f9ffe6a9f9ff30acf9ff1eadf9fffaadf9ffd4aef9ff82aff9ff0cb0f9ff90b0f9fff6b0f9ff10b1f9ff44b1f9ff62c9f9ffe0faffff8471000064290100a6290100062a01002e6c0100706c0100d06c0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: VersionNumber
+        m_OriginalName: VersionNumber
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 76318
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -687,9 +687,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.3923473, y: -5.030135, z: -0.1687052}
+    m_Target: {x: 427.72656, y: 414.42465, z: -2.610072}
     speed: 2
-    m_Value: {x: 4.3923473, y: -5.030135, z: -0.1687052}
+    m_Value: {x: 427.72656, y: 414.42465, z: -2.610072}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -739,9 +739,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 28.369001
+    m_Target: 345.47635
     speed: 2
-    m_Value: 28.369001
+    m_Value: 345.47635
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1020,7 +1020,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1028,15 +1028,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Cristi\Documents\GitHub\light-game\light-game-unity-project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d8740000
-    m_LastClickedID: 29912
+    m_SelectedIDs: da740000
+    m_LastClickedID: 29914
     m_ExpandedIDs: 00000000b274000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1090,9 +1090,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 9e720000
-    m_LastClickedInstanceID: 29342
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300008e700000c66c0000bc6c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1202,7 +1202,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: UnityBuildWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -1211,15 +1211,15 @@ MonoBehaviour:
     y: 0
     width: 605
     height: 1307
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1323,7 +1323,7 @@ MonoBehaviour:
     - cat: 0
       title: 'Building (5/5): '
       details: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
-        Binary,Auto,Auto,Disabled)/IL2CPP
+        Binary,Auto,Auto,Disabled)/Mono
       clearable: 1
     - cat: 0
       title: Build Complete.
