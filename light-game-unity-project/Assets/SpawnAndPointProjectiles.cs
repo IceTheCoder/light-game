@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SpawnAndPointProjectiles : MonoBehaviour
@@ -12,9 +13,10 @@ public class SpawnAndPointProjectiles : MonoBehaviour
     private GameObject currentProjectile;
     private Transform circleTransform;
     private TriangleCollision triangleCollision;
-    
-    void Start()
+    private EnemySpawner enemySpawner;
+    private void Start()
     {
+        enemySpawner = EnemySpawner.Instance;
         circleTransform = GameObject.Find("Circle")?.transform;
         triangleCollision = GameObject.Find("Light").GetComponent<TriangleCollision>();
         if (circleTransform == null)
@@ -29,31 +31,27 @@ public class SpawnAndPointProjectiles : MonoBehaviour
         timer += Time.deltaTime;
 
         // Update the rotation of the spawner to match the negative of triangleRotation.rotation
-        //transform.rotation = Quaternion.Inverse(triangleRotation.rotation);
 
-        if (triangleCollision.hasCollided == true)
+        if (triangleCollision.hasCollided == true && currentProjectile == null && enemySpawner.currentEnemyCount >= 4)
         {
-            if (currentProjectile == null)
+            // Spawn a projectile at the position of the spawner
+            currentProjectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+
+            if (circleTransform != null)
             {
-                // Spawn a projectile at the position of the spawner
-                currentProjectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+                // Calculate the direction towards the 'Circle' gameObject
+                Vector3 direction = circleTransform.position - currentProjectile.transform.position;
 
-                if (circleTransform != null)
-                {
-                    // Calculate the direction towards the 'Circle' gameObject
-                    Vector3 direction = circleTransform.position - currentProjectile.transform.position;
-
-                    // Rotate the projectile to point towards the calculated direction
-                    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                    currentProjectile.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-                }
-
-                // Destroy the projectile after a set time
-                Destroy(currentProjectile, 1.0f);
-
-                // Reset the timer
-                timer = 0.0f;
+                // Rotate the projectile to point towards the calculated direction
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                currentProjectile.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             }
+
+            // Destroy the projectile after a set time
+            Destroy(currentProjectile, 1.0f);
+
+            // Reset the timer
+            timer = 0.0f;
         }
     }
 }
