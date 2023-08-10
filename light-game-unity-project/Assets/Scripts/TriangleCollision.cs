@@ -105,14 +105,18 @@ public class TriangleCollision : MonoBehaviour
             if (collision.CompareTag("Triangle"))
             {
                 hasCollided = true;
-                float newHealth = Mathf.Max(health - healthChange, 0f);
-                health = newHealth;
+                health = Mathf.Max(health - healthChange, 0f); ;
                 UpdateText(false);
                 UpdatePlaceholderPosition();
             }
             else if (collision.CompareTag("StrongerTriangle"))
             {
                 health = 0f;
+                UpdateText(false);
+            }
+            else if (collision.CompareTag("Projectile"))
+            {
+                health = Mathf.Max(health - healthChange, 0f);
                 UpdateText(false);
             }
         }

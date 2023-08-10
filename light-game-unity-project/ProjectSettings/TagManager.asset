@@ -9,6 +9,7 @@ TagManager:
   - WinCondition
   - Health
   - StrongerTriangle
+  - Projectile
   layers:
   - Default
   - TransparentFX
