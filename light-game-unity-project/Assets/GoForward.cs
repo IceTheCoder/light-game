@@ -24,7 +24,7 @@ public class GoForward : MonoBehaviour
         {
             triangleCollision.health = Mathf.Max(triangleCollision.health - triangleCollision.healthChange, 0f);
             triangleCollision.UpdateText(false);
-            this.enabled = false;
+            Destroy(gameObject);
         }
     }
 

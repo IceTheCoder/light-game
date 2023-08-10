@@ -14,11 +14,13 @@ public class SpawnAndPointProjectiles : MonoBehaviour
     private Transform circleTransform;
     private TriangleCollision triangleCollision;
     private EnemySpawner enemySpawner;
+    private LightCalculator lightCalculator;
     private void Start()
     {
         enemySpawner = EnemySpawner.Instance;
         circleTransform = GameObject.Find("Circle")?.transform;
         triangleCollision = GameObject.Find("Light").GetComponent<TriangleCollision>();
+        lightCalculator = GameObject.Find("Light").GetComponent<LightCalculator>();
         if (circleTransform == null)
         {
             Debug.LogError("Could not find 'Circle' gameObject's transform.");
@@ -32,7 +34,8 @@ public class SpawnAndPointProjectiles : MonoBehaviour
 
         // Update the rotation of the spawner to match the negative of triangleRotation.rotation
 
-        if (triangleCollision.hasCollided == true && currentProjectile == null && enemySpawner.currentEnemyCount >= 4)
+        if (triangleCollision.hasCollided == true && currentProjectile == null && enemySpawner.currentEnemyCount >= 4
+            && lightCalculator.won == false)
         {
             // Spawn a projectile at the position of the spawner
             currentProjectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
