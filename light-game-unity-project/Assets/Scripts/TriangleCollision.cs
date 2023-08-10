@@ -44,7 +44,7 @@ public class TriangleCollision : MonoBehaviour
     {
         hasCollided = false;
         dead = false;
-        health = 1f;
+        health = 1.5f;
         StartCoroutine(CollisionDelay());
         theLight = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
         placeholderPos = placeholder.position;

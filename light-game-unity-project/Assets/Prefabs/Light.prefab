@@ -196,7 +196,9 @@ MonoBehaviour:
   equippedSword: {fileID: 7320576637351078401}
   textBox: {fileID: 0}
   showText: {fileID: 0}
+  hasCollided: 0
   swordCooldown: 0
+  placeholder: {fileID: 0}
 --- !u!114 &3275313659899705764
 MonoBehaviour:
   m_ObjectHideFlags: 0
