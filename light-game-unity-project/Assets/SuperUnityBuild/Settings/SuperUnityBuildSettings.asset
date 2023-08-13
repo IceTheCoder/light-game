@@ -55,8 +55,8 @@ MonoBehaviour:
     - {fileID: 3621955379953864799}
   _projectConfigurations:
     configSet:
-      _Buckets: ffffffffffffffff060000000e000000ffffffff0a000000ffffffffffffffff0c000000ffffffff080000000d000000020000000f000000090000000b000000ffffffff
-      _HashCodes: 0bd5b82c8b5eac510d6e7c149302dd446ba49d65564b5e059e0c1f16d118b30a81f6ab4cade21018c1f8ab7ce1e5124654b85919e246381099bbd054110fe44c00000000
+      _Buckets: ffffffffffffffff060000000e000000ffffffff0a000000ffffffffffffffffffffffffffffffff080000000d000000020000000f000000090000000b0000000c000000
+      _HashCodes: 0bd5b82c8b5eac510d6e7c149302dd446ba49d65564b5e059e0c1f16d118b30a81f6ab4cade21018c1f8ab7ce1e51246d9e28149e246381099bbd054110fe44c00000000
       _Next: ffffffff00000000ffffffffffffffffffffffffffffffff04000000ffffffff010000000700000005000000ffffffffffffffffffffffffffffffff0300000000000000
       _Count: 16
       _Version: 16
@@ -76,7 +76,7 @@ MonoBehaviour:
       - light-game/macOS/macOS (Intelx64,App)
       - light-game/macOS
       - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
-        Binary,Auto,Auto,Disabled)/Mono
+        Binary,Auto,Auto,Disabled)/IL2CPP
       - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
         Binary,Auto,Auto,Disabled)
       - light-game/Android
@@ -120,7 +120,7 @@ MonoBehaviour:
       - enabled: 1
         childKeys:
         - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
-          Binary,Auto,Auto,Disabled)/Mono
+          Binary,Auto,Auto,Disabled)/IL2CPP
       - enabled: 1
         childKeys:
         - light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
@@ -395,10 +395,10 @@ MonoBehaviour:
   scriptingBackends:
   - scriptingImplementation: 0
     name: Mono
-    enabled: 1
+    enabled: 0
   - scriptingImplementation: 1
     name: IL2CPP
-    enabled: 0
+    enabled: 1
   platformName: Android
   dataDirNameFormat: '{0}_Data'
   targetGroup: 7

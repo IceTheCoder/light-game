@@ -27,21 +27,27 @@ public class TriangleCollision : MonoBehaviour
 
     bool dead;
     bool canCollide = false;
+    public bool hasCollided = false;
 
     [Tooltip("Only for stronger triangles.")]
     public bool swordCooldown = false;
     private UnityEngine.Rendering.Universal.Light2D theLight;
 
+    public Transform placeholder;
+    private Vector3 placeholderPos;
+
     /// <summary>
-    /// Called when the script first runs, this method sets dead to false, health to 1 and starts
+    /// Called when the script first runs, this method sets dead to false, health to 1, starts
     /// the CollisionDelay coroutine.
     /// </summary>
     void Start()
     {
+        hasCollided = false;
         dead = false;
-        health = 1f;
+        health = 1.5f;
         StartCoroutine(CollisionDelay());
         theLight = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
+        placeholderPos = placeholder.position;
     }
 
     /// <summary>
@@ -84,55 +90,79 @@ public class TriangleCollision : MonoBehaviour
     }
 
     /// <summary>
-    /// Called once per frame, this method checks if the object
-    /// is touching the triangle and canCollide, and changes the
-    /// health to 0 or to health - healthChange (so the health decreases when colliding with a triangle
-    /// and it can't go below 0) and updates the text box displaying the health value accordingly.
-    /// If the triangle is stronger, the health is set to 0, unless the player has a sword equipped,
-    /// in which case hitSrtongerTriangle in the Crawl scripts of the StrongerTriangles is set to true,
-    /// making them start to crawl.
+    /// Handles collision interactions with triangles and stronger triangles. 
+    /// Adjusts the player's health and position accordingly. 
+    /// Initiates crawling for stronger triangles if the player is equipped with a sword.
     /// </summary>
-    /// <param name="collision"></param>
+    /// <param name="collision">Collider2D object representing the collision.</param>
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (equippedSword.activeSelf == false || (equippedSword.activeSelf && swordCooldown == true))
+        bool isEquippedSwordActive = equippedSword.activeSelf;
+        bool isSwordCooldown = swordCooldown;
+
+        if (!isEquippedSwordActive || (isEquippedSwordActive && isSwordCooldown))
         {
-            if (collision.CompareTag("Triangle") && canCollide)
+            if (collision.CompareTag("Triangle"))
             {
-                float[] health0 = new float[] { health - healthChange, 0f };
-                health = health0.Max();
+                hasCollided = true;
+                health = Mathf.Max(health - healthChange, 0f);
                 UpdateText(false);
+                UpdatePlaceholderPosition();
             }
-            if (collision.CompareTag("StrongerTriangle") && canCollide)
+            else if (collision.CompareTag("StrongerTriangle"))
             {
                 health = 0f;
                 UpdateText(false);
             }
-        } else if (collision.CompareTag("StrongerTriangle") && canCollide && swordCooldown == false)
-        {
-            Crawl[] crawl = FindObjectsOfType<Crawl>();
-            foreach (Crawl script in crawl)
+            else if (collision.CompareTag("Projectile"))
             {
-                script.hitStrongerTriangle = true;
+                UpdateText(false);
             }
+        }
+        else if (collision.CompareTag("StrongerTriangle") && canCollide && !isSwordCooldown)
+        {
+            ActivateCrawlingForStrongerTriangles();
             showText.Show();
-
-            // Find the only child game object of the object that the script sits on
-            GameObject otherObject = transform.GetChild(0).gameObject;
-
-            // Calculate the angle between the otherObject and the triangle
-            Vector3 direction = collision.transform.position - otherObject.transform.position;
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-            angle += 180;
-
-            // Rotate only the Z-axis of the otherObject towards the triangle
-            otherObject.transform.rotation = Quaternion.Euler(0, 0, angle);
-
+            RotateObjectTowardsTriangle(collision);
             StartCoroutine(WaitBeforeSwordCooldown());
         }
-
     }
+
+    /// <summary>
+    /// Updates the position of the placeholder object to match the player's position.
+    /// </summary>
+    private void UpdatePlaceholderPosition()
+    {
+        Vector3 placeholderPos = transform.position;
+        placeholderPos.z = -0.1f;
+        placeholder.position = placeholderPos;
+    }
+
+    /// <summary>
+    /// Activates crawling for all StrongerTriangle objects and sets hitStrongerTriangle to true.
+    /// </summary>
+    private void ActivateCrawlingForStrongerTriangles()
+    {
+        Crawl[] crawlScripts = FindObjectsOfType<Crawl>();
+        foreach (Crawl script in crawlScripts)
+        {
+            script.hitStrongerTriangle = true;
+        }
+    }
+
+    /// <summary>
+    /// Rotates the player's child object towards the collided triangle.
+    /// </summary>
+    /// <param name="triangleCollider">Collider2D object representing the collided triangle.</param>
+    private void RotateObjectTowardsTriangle(Collider2D triangleCollider)
+    {
+        GameObject childObject = transform.GetChild(0).gameObject;
+        Vector3 direction = triangleCollider.transform.position - childObject.transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        angle += 180;
+        childObject.transform.rotation = Quaternion.Euler(0, 0, angle);
+    }
+
 
     IEnumerator WaitBeforeSwordCooldown()
     {
