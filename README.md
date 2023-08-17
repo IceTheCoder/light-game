@@ -7,7 +7,7 @@ Find the green square to win.
 
 **Download (Windows, Mac, Linux, and Android) and browser: https://icethegamedev.itch.io/light-game.**
 
-**Browser-only: https://icethegamedev.github.io/light-game/WebGL/.**
+**Browser-only: https://icethegamedev.github.io/light-game-webgl/.**
 
 ## Screenshots
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53094636519/in/dateposted-public/" title="202"><img src="https://live.staticflickr.com/65535/53094636519_7a346d6cc6_o.png"/></a>
