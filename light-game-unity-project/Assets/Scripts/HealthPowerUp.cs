@@ -19,7 +19,7 @@ public class HealthPowerUp : MonoBehaviour
     {
         if (collision.CompareTag("Light") && lightCalculator.won == false)
         {
-            triangleCollision.health = 1f;
+            triangleCollision.health = 1.5f;
             triangleCollision.UpdateText(true);
             Destroy(gameObject, destroyDelay);
         }
