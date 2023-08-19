@@ -8,6 +8,7 @@ public class SpawnAndPointProjectiles : MonoBehaviour
     public GameObject projectilePrefab; // Reference to the projectile prefab to be spawned
     public Transform triangleRotation;
     public float spawnInterval = 1.0f;   // Time interval between spawning projectiles
+    public float pointsToSpawnProjectiles = 4;
 
     private float lastSpawnTime = 0.0f;
     private GameObject currentProjectile;
@@ -32,7 +33,7 @@ public class SpawnAndPointProjectiles : MonoBehaviour
     void Update()
     {
         if (Time.time - lastSpawnTime >= spawnInterval &&
-            triangleCollision.hasCollided == true && enemySpawner.currentEnemyCount >= 4 &&
+            triangleCollision.hasCollided == true && enemySpawner.currentEnemyCount >= pointsToSpawnProjectiles &&
             lightCalculator.won == false)
         {
             // Spawn a projectile at the position of the spawner
