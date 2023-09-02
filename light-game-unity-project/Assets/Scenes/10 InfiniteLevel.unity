@@ -957,6 +957,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2360893899511397221, guid: b18b0ebed75f6b549a8a65fba424df38, type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 4660029137281977076}
     - target: {fileID: 3296990597806685345, guid: b18b0ebed75f6b549a8a65fba424df38, type: 3}
       propertyPath: lightCalculator
       value: 
@@ -1529,6 +1533,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc1c382220684e0194d894faf410832, type: 3}
+--- !u!114 &4660029137281977076 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4660029136773146600, guid: edc1c382220684e0194d894faf410832, type: 3}
+  m_PrefabInstance: {fileID: 4660029137281977075}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5394f90e0f00445fb94806e56455a0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5810375602115766713
 PrefabInstance:
   m_ObjectHideFlags: 0
