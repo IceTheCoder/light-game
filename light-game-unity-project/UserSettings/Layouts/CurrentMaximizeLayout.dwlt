@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 9508
+  controlID: 9628
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
-  m_TargetSize: {x: 2560, y: 1440}
+  m_TargetSize: {x: 3040, y: 1440}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -83,11 +83,11 @@ MonoBehaviour:
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
     pluginStates:
     - '{}'
-    scale: 31
+    scale: 30
     fitToScreenEnabled: 1
     rotationDegree: 90
     highlightSafeAreaEnabled: 0
-    friendlyName: Google Pixel XL
+    friendlyName: Samsung Galaxy S10 5G
     screenIndex: 0
     networkReachability: 1
     systemLanguage: 10
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 9509
+  controlID: 9629
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 9510
+  controlID: 9630
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,7 +207,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d2b1feff1a24ffff4aa9ffff7cb6ffff5ef5ffffd2faffffe0fafffff4ffffff8471000086710000a4c50000e6c500002ac6000046c60000
+      m_ExpandedIDs: fa17feffbe18feff661cfeff6e1cfeff781cfeffe41cfeff2a1ffeff1620fefff020feffca21feff7422fefffa22feff7a23feffdc23fefff223feff2224feff2443feffe843feff9047feff9847feffa247feff0e48feff544afeff404bfeff1a4cfefff44cfeff9e4dfeff244efeffa44efeff064ffeff1c4ffeff4c4ffeff3058fefff458feff805cfeff885cfeff925cfefffe5cfeff445ffeff3060feff0a61feffe461feff8e62feff1463feff9463fefff663feff0c64feff3c64feff166dfeffda6dfeff6671feff6e71feff7871feffe471feff2a74feff1675fefff075feffca76feff7477fefffa77feff7a78feffdc78fefff278feff2279fefffc81feffbe82feff4a86feff5286feff5c86feffc886feff0e89fefffa89feffd48afeffae8bfeff588cfeffde8cfeff5e8dfeffc08dfeffd68dfeff068efeffe096feffa497feff4c9bfeff549bfeff5e9bfeffca9bfeff109efefffc9efeffd69ffeffb0a0feff5aa1feffe0a1feff60a2feffc2a2feffdaa2feff0aa3feffd2b1feff1a24ffff4aa9ffff7cb6ffff5ef5ffffd2faffffe0fafffff4ffffff8471000086710000a4c50000e6c500002ac6000046c60000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: UnityBuildWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -1177,15 +1177,15 @@ MonoBehaviour:
     y: 0
     width: 605
     height: 1307
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1289,7 +1289,7 @@ MonoBehaviour:
     - cat: 0
       title: 'Building (5/5): '
       details: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
-        Binary,Auto,Auto,Disabled)/IL2CPP
+        Binary,Auto,Auto,Disabled)/Mono
       clearable: 1
     - cat: 0
       title: Build Complete.
