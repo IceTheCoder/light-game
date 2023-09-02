@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3296990597806685345}
   - component: {fileID: 8713614175029963767}
   - component: {fileID: 6158760880329053389}
+  - component: {fileID: 5992097893890939452}
   m_Layer: 0
   m_Name: Health Power-Up
   m_TagString: Health
@@ -221,3 +222,17 @@ PolygonCollider2D:
       - {x: 0.11999999, y: -0.060000002}
       - {x: 0.14999999, y: -0.060000002}
   m_UseDelaunayMesh: 0
+--- !u!114 &5992097893890939452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938345861627456285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97052b71212d1d45b60dfb295aaaf2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 8
+  spawner: {fileID: 0}

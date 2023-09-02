@@ -788,7 +788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 511.58994, y: -75}
+  m_AnchoredPosition: {x: 500, y: -50}
   m_SizeDelta: {x: 897.18, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &627887723
@@ -969,12 +969,16 @@ PrefabInstance:
       propertyPath: triangleCollision
       value: 
       objectReference: {fileID: 1359693637}
+    - target: {fileID: 5992097893890939452, guid: b18b0ebed75f6b549a8a65fba424df38, type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 4660029137281977076}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1938345861627456285, guid: b18b0ebed75f6b549a8a65fba424df38, type: 3}
-      insertIndex: -1
+      insertIndex: 6
       addedObject: {fileID: 2068005884}
   m_SourcePrefab: {fileID: 100100000, guid: b18b0ebed75f6b549a8a65fba424df38, type: 3}
 --- !u!114 &1359693637 stripped
@@ -1453,7 +1457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497580048321225807, guid: 9679916696fb4494fad230dd6d908aae, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -75
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 4497580048321225807, guid: 9679916696fb4494fad230dd6d908aae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
