@@ -10,11 +10,17 @@ Find the green square to win.
 **Browser version: https://icethegamedev.github.io/light-game-webgl/.**
 
 ## Screenshots
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53094636519/in/dateposted-public/" title="202"><img src="https://live.staticflickr.com/65535/53094636519_7a346d6cc6_o.png"/></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53162607212/in/dateposted-public/" title="274"><img src="https://live.staticflickr.com/65535/53162607212_e57f68e7fe_o.png"/></a>
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53094859435/in/dateposted-public/" title="206"><img src="https://live.staticflickr.com/65535/53094859435_27782e2265_o.png"/></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53163683803/in/dateposted-public/" title="275"><img src="https://live.staticflickr.com/65535/53163683803_82b550b9e0_o.png"/></a>
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53093895907/in/dateposted-public/" title="205"><img src="https://live.staticflickr.com/65535/53093895907_dbcbf67f21_o.png"/></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53162607197/in/dateposted-public/" title="276"><img src="https://live.staticflickr.com/65535/53162607197_14d2328f42_o.png"/></a>
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53163196176/in/dateposted-public/" title="277"><img src="https://live.staticflickr.com/65535/53163196176_fda0819bcb_o.png"/></a>
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53163399644/in/dateposted-public/" title="278"><img src="https://live.staticflickr.com/65535/53163399644_9ced36e1c7_o.png"/></a>
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53163683798/in/dateposted-public/" title="279"><img src="https://live.staticflickr.com/65535/53163683798_41f37a6965_o.png"/></a>
 
 ## Notices
 - If you encounter issues with the light's size and intensity (such as a gradual increase in size and intensity without moving the cursor), try plugging in your device.
