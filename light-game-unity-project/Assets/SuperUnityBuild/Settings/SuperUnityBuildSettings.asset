@@ -15,11 +15,11 @@ MonoBehaviour:
   _basicSettings:
     baseBuildFolder: C:\Users\Cristi\Desktop\light-game
     buildPath: $PLATFORM
-    openFolderPostBuild: 1
+    openFolderPostBuild: 0
   _productParameters:
     buildCounter: 0
-    buildVersion: beta-4.6
-    versionTemplate: beta-4.6
+    buildVersion: beta-7.1
+    versionTemplate: beta-7.1
     autoGenerate: 0
     syncWithPlayerSettings: 1
   _releaseTypeList:
