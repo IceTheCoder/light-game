@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 3}
-  - {fileID: 15}
+  - {fileID: 16}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 9628
+  controlID: 57
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -33,15 +33,15 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13974, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Simulator
-    m_Image: {fileID: 8720083202187608617, guid: 0000000000000000d000000000000000, type: 0}
+    m_Text: Game
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -60,37 +60,71 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_SerializedViewNames:
-  - UnityEditor.GameView
+  - UnityEditor.DeviceSimulation.SimulatorWindow
   m_SerializedViewValues:
-  - C:\Users\Cristi\Documents\GitHub\light-game\light-game-unity-project\Library\PlayModeViewStates\c0a5bb5ad6ded8845b31d5f254b1f670
-  m_PlayModeViewName: Device Simulator
+  - C:\Users\Cristi\Documents\GitHub\light-game\light-game-unity-project\Library\PlayModeViewStates\ff8957eddc13dcd4291a933f31a951db
+  m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
-  m_TargetSize: {x: 3040, y: 1440}
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 988, y: 494}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 2
+  m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
-  m_SimulatorState:
-    controlPanelVisible: 0
-    controlPanelWidth: 0
-    controlPanelFoldoutKeys:
-    - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
-    controlPanelFoldoutValues: 00
-    pluginNames:
-    - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
-    pluginStates:
-    - '{}'
-    scale: 30
-    fitToScreenEnabled: 1
-    rotationDegree: 90
-    highlightSafeAreaEnabled: 0
-    friendlyName: Samsung Galaxy S10 5G
-    screenIndex: 0
-    networkReachability: 1
-    systemLanguage: 10
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 07000000000000000000000010000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -494
+    m_HBaseRangeMax: 494
+    m_VBaseRangeMin: -247
+    m_VBaseRangeMax: 247
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 988
+      height: 783
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 494, y: 391.5}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -494
+      y: -391.5
+      width: 988
+      height: 783
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 988, y: 804}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000001000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -105,7 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 4}
-  - {fileID: 11}
+  - {fileID: 12}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -115,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 9629
+  controlID: 58
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -131,7 +165,7 @@ MonoBehaviour:
   m_Children:
   - {fileID: 5}
   - {fileID: 7}
-  - {fileID: 10}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -141,7 +175,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 9630
+  controlID: 59
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -205,9 +239,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: fa17feffbe18feff661cfeff6e1cfeff781cfeffe41cfeff2a1ffeff1620fefff020feffca21feff7422fefffa22feff7a23feffdc23fefff223feff2224feff2443feffe843feff9047feff9847feffa247feff0e48feff544afeff404bfeff1a4cfefff44cfeff9e4dfeff244efeffa44efeff064ffeff1c4ffeff4c4ffeff3058fefff458feff805cfeff885cfeff925cfefffe5cfeff445ffeff3060feff0a61feffe461feff8e62feff1463feff9463fefff663feff0c64feff3c64feff166dfeffda6dfeff6671feff6e71feff7871feffe471feff2a74feff1675fefff075feffca76feff7477fefffa77feff7a78feffdc78fefff278feff2279fefffc81feffbe82feff4a86feff5286feff5c86feffc886feff0e89fefffa89feffd48afeffae8bfeff588cfeffde8cfeff5e8dfeffc08dfeffd68dfeff068efeffe096feffa497feff4c9bfeff549bfeff5e9bfeffca9bfeff109efefffc9efeffd69ffeffb0a0feff5aa1feffe0a1feff60a2feffc2a2feffdaa2feff0aa3feffd2b1feff1a24ffff4aa9ffff7cb6ffff5ef5ffffd2faffffe0fafffff4ffffff8471000086710000a4c50000e6c500002ac6000046c60000
+      m_SelectedIDs: e0d10000
+      m_LastClickedID: 53728
+      m_ExpandedIDs: b29dffff709efffffca1ffff04a2ffff0ea2ffff7aa2ffffc0a4ffffaca5ffff86a6ffff60a7ffff0aa8ffff90a8ffff10a9ffff72a9ffff88a9ffffb8a9ffffacb2ffff6ab3fffff6b6fffffeb6ffff08b7ffff74b7ffffbab9ffffa6baffff80bbffff5abcffff04bdffff8abdffff0abeffff6cbeffff82beffffb2beffffa6c7ffff64c8fffff0cbfffff8cbffff02ccffff6eccffffb4ceffffa0cfffff7ad0ffff54d1fffffed1ffff84d2ffff04d3ffff66d3ffff7cd3ffffacd3ffffa0dcffff5eddffff0ce1ffff1ae1ffff2ae1ffff9ce1ffffe8e3ffffdae4ffffbae5ffff9ae6ffff4ae7ffffd6e7ffff5ce8ffffc4e8ffffe2e8ffff18e9ffffe0faffff5ec10000a0c1000000c2000082d10000c4d1000024d20000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -250,14 +284,15 @@ MonoBehaviour:
     y: 0
     width: 765
     height: 825
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
   - {fileID: 9}
+  - {fileID: 10}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -653,9 +688,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1026.1543, y: 213.7787, z: -18.989737}
+    m_Target: {x: 577.95807, y: 213.14229, z: 3.8601608}
     speed: 2
-    m_Value: {x: 1026.1543, y: 213.7787, z: -18.989737}
+    m_Value: {x: 577.95807, y: 213.14229, z: 3.8601608}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -705,9 +740,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1165.8207
+    m_Target: 404.30515
     speed: 2
-    m_Value: 1165.8207
+    m_Value: 404.30515
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -896,8 +931,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 455, y: 354}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Asset Store
+    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 200
+    y: 73
+    width: 763
+    height: 804
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SimulatorWindow
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -913,7 +982,7 @@ MonoBehaviour:
   - {fileID: 2}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &11
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -923,7 +992,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: AnimationWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -932,16 +1001,16 @@ MonoBehaviour:
     y: 825
     width: 1955
     height: 482
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 12}
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &12
+  - {fileID: 15}
+  m_Selected: 2
+  m_LastSelected: 0
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1001,9 +1070,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 08750000
-    m_LastClickedID: 29960
-    m_ExpandedIDs: 00000000e274000000ca9a3b
+    m_SelectedIDs: c4740000
+    m_LastClickedID: 29892
+    m_ExpandedIDs: 00000000a874000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1019,7 +1088,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 12}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1031,7 +1100,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e274000000ca9a3b
+    m_ExpandedIDs: 00000000a8740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1075,7 +1144,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 12}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1087,7 +1156,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &13
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1121,7 +1190,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1142,9 +1211,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 1065
+    y: 898
     width: 1954
-    height: 294
+    height: 461
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1157,8 +1226,8 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -1334
---- !u!114 &15
+  m_LastSelectedObjectID: 53728
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1168,7 +1237,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: UnityBuildWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -1177,16 +1246,16 @@ MonoBehaviour:
     y: 0
     width: 605
     height: 1307
-  m_MinSize: {x: 101, y: 121}
+  m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &16
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1233,7 +1302,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1275,21 +1344,168 @@ MonoBehaviour:
       details: light-game/PC/Windows x86 (App)/Mono
       clearable: 1
     - cat: 0
+      title: 'Performing Post-Build Action (1/7):'
+      details: 'FolderOperation: light-game/PC/Windows x86 (App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (2/7):'
+      details: 'FolderOperation: light-game/PC/Windows x86 (App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (3/7):'
+      details: 'FolderOperation: light-game/PC/Windows x86 (App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (4/7):'
+      details: 'FolderOperation: light-game/PC/Windows x86 (App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (5/7):'
+      details: 'ZipFileOperation: light-game/PC/Windows x86 (App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (6/7):'
+      details: 'FileOperation: light-game/PC/Windows x86 (App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (7/7):'
+      details: 'UploadItch: light-game/PC/Windows x86 (App)/Mono'
+      clearable: 1
+    - cat: 0
       title: 'Building (2/5): '
       details: light-game/Linux/Linux x64/Mono
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (1/7):'
+      details: 'FolderOperation: light-game/Linux/Linux x64/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (2/7):'
+      details: 'FolderOperation: light-game/Linux/Linux x64/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (3/7):'
+      details: 'FolderOperation: light-game/Linux/Linux x64/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (4/7):'
+      details: 'FolderOperation: light-game/Linux/Linux x64/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (5/7):'
+      details: 'ZipFileOperation: light-game/Linux/Linux x64/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (6/7):'
+      details: 'FileOperation: light-game/Linux/Linux x64/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (7/7):'
+      details: 'UploadItch: light-game/Linux/Linux x64/Mono'
       clearable: 1
     - cat: 0
       title: 'Building (3/5): '
       details: light-game/WebGL/WebGL/IL2CPP
       clearable: 1
     - cat: 0
+      title: 'Performing Post-Build Action (1/7):'
+      details: 'FolderOperation: light-game/WebGL/WebGL/IL2CPP'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (2/7):'
+      details: 'FolderOperation: light-game/WebGL/WebGL/IL2CPP'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (3/7):'
+      details: 'FolderOperation: light-game/WebGL/WebGL/IL2CPP'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (4/7):'
+      details: 'FolderOperation: light-game/WebGL/WebGL/IL2CPP'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (5/7):'
+      details: 'ZipFileOperation: light-game/WebGL/WebGL/IL2CPP'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (6/7):'
+      details: 'FileOperation: light-game/WebGL/WebGL/IL2CPP'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (7/7):'
+      details: 'UploadItch: light-game/WebGL/WebGL/IL2CPP'
+      clearable: 1
+    - cat: 0
       title: 'Building (4/5): '
       details: light-game/macOS/macOS (Intelx64,App)/Mono
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (1/7):'
+      details: 'FolderOperation: light-game/macOS/macOS (Intelx64,App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (2/7):'
+      details: 'FolderOperation: light-game/macOS/macOS (Intelx64,App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (3/7):'
+      details: 'FolderOperation: light-game/macOS/macOS (Intelx64,App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (4/7):'
+      details: 'FolderOperation: light-game/macOS/macOS (Intelx64,App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (5/7):'
+      details: 'ZipFileOperation: light-game/macOS/macOS (Intelx64,App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (6/7):'
+      details: 'FileOperation: light-game/macOS/macOS (Intelx64,App)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (7/7):'
+      details: 'UploadItch: light-game/macOS/macOS (Intelx64,App)/Mono'
       clearable: 1
     - cat: 0
       title: 'Building (5/5): '
       details: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
         Binary,Auto,Auto,Disabled)/Mono
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (1/7):'
+      details: 'FolderOperation: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (2/7):'
+      details: 'FolderOperation: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (3/7):'
+      details: 'FolderOperation: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (4/7):'
+      details: 'FolderOperation: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (5/7):'
+      details: 'ZipFileOperation: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (6/7):'
+      details: 'FileOperation: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)/Mono'
+      clearable: 1
+    - cat: 0
+      title: 'Performing Post-Build Action (7/7):'
+      details: 'UploadItch: light-game/Android/Android (ARMv7+ARM64+X86+X86_64,Generic,App,APK,Single
+        Binary,Auto,Auto,Disabled)/Mono'
       clearable: 1
     - cat: 0
       title: Build Complete.
@@ -1316,7 +1532,39 @@ MonoBehaviour:
       details: One or more Distribution names is invalid. They may not be empty or
         'None'.
       clearable: 0
---- !u!114 &18
+    - cat: 2
+      title: Folder Delete Failed.
+      details: Input path "C:\Users\Cristi\Desktop\light-game\Linux\light-game_BurstDebugInformation_DoNotShip"
+        does not exist.
+      clearable: 1
+    - cat: 2
+      title: Folder Delete Failed.
+      details: Input path "C:\Users\Cristi\Desktop\light-game\macOS\light-game_BurstDebugInformation_DoNotShip"
+        does not exist.
+      clearable: 1
+    - cat: 2
+      title: Folder Delete Failed.
+      details: Input path "C:\Users\Cristi\Desktop\light-game\Android\light-game_BurstDebugInformation_DoNotShip"
+        does not exist.
+      clearable: 1
+    - cat: 2
+      title: File Delete Failed.
+      details: Input path "C:\Users\Cristi\Desktop\light-game\Android\light_game-Android.zip"
+        does not exist.
+      clearable: 1
+    - cat: 2
+      title: Itch Upload Failed.
+      details: 'Exit code: 1
+
+        Run w/ ShowUploadProgress disabled to capture
+        debug output to console.'
+      clearable: 1
+    - cat: 2
+      title: Folder Delete Failed.
+      details: Input path "C:\Users\Cristi\Desktop\light-game\PC\light-game_BurstDebugInformation_DoNotShip"
+        does not exist.
+      clearable: 1
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
