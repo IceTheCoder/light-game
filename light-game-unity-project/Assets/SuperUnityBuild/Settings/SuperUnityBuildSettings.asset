@@ -1,5 +1,97 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8742056802274645528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54626104f6c7de94f9976e1672abc45b, type: 3}
+  m_Name: FolderOperation
+  m_EditorClassIdentifier: 
+  actionType: 1
+  actionName: FolderOperation
+  note: 
+  actionEnabled: 1
+  configureEditor: 0
+  filter:
+    condition: 0
+    clauses: []
+  inputPath: C:\Users\Cristi\Desktop\light-game\PC\light-game_BurstDebugInformation_DoNotShip
+  outputPath: 
+  operation: 2
+--- !u!114 &-5939225417894978484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54626104f6c7de94f9976e1672abc45b, type: 3}
+  m_Name: FolderOperation
+  m_EditorClassIdentifier: 
+  actionType: 1
+  actionName: FolderOperation
+  note: 
+  actionEnabled: 1
+  configureEditor: 0
+  filter:
+    condition: 0
+    clauses: []
+  inputPath: C:\Users\Cristi\Desktop\light-game\Linux\light-game_BurstDebugInformation_DoNotShip
+  outputPath: 
+  operation: 2
+--- !u!114 &-4993153628443791856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54626104f6c7de94f9976e1672abc45b, type: 3}
+  m_Name: FolderOperation
+  m_EditorClassIdentifier: 
+  actionType: 1
+  actionName: FolderOperation
+  note: 
+  actionEnabled: 1
+  configureEditor: 0
+  filter:
+    condition: 0
+    clauses: []
+  inputPath: C:\Users\Cristi\Desktop\light-game\Android\light-game_BurstDebugInformation_DoNotShip
+  outputPath: 
+  operation: 2
+--- !u!114 &-2780298311679662401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de0f7a04940394844a505e73c3eb8cec, type: 3}
+  m_Name: ZipFileOperation
+  m_EditorClassIdentifier: 
+  actionType: 1
+  actionName: ZipFileOperation
+  note: 
+  actionEnabled: 1
+  configureEditor: 0
+  filter:
+    condition: 0
+    clauses: []
+  inputPath: $BUILDPATH
+  outputPath: $BUILDPATH
+  outputFileName: light_game-$PLATFORM
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +107,11 @@ MonoBehaviour:
   _basicSettings:
     baseBuildFolder: C:\Users\Cristi\Desktop\light-game
     buildPath: $PLATFORM
-    openFolderPostBuild: 1
+    openFolderPostBuild: 0
   _productParameters:
     buildCounter: 0
-    buildVersion: beta-4.6
-    versionTemplate: beta-4.6
+    buildVersion: beta-7.1
+    versionTemplate: beta-7.1
     autoGenerate: 0
     syncWithPlayerSettings: 1
   _releaseTypeList:
@@ -143,7 +235,13 @@ MonoBehaviour:
   _preBuildActions:
     buildActions: []
   _postBuildActions:
-    buildActions: []
+    buildActions:
+    - {fileID: -8742056802274645528}
+    - {fileID: -5939225417894978484}
+    - {fileID: 6676513336102474389}
+    - {fileID: -4993153628443791856}
+    - {fileID: -2780298311679662401}
+    - {fileID: 357234614114918058}
 --- !u!114 &192692556792337220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,6 +314,30 @@ MonoBehaviour:
   platformName: PC
   dataDirNameFormat: '{0}_Data'
   targetGroup: 1
+--- !u!114 &357234614114918058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e19aa5315bf4a409c07e84ca8c4248, type: 3}
+  m_Name: FileOperation
+  m_EditorClassIdentifier: 
+  actionType: 1
+  actionName: FileOperation
+  note: 
+  actionEnabled: 1
+  configureEditor: 0
+  filter:
+    condition: 0
+    clauses: []
+  inputPath: C:\Users\Cristi\Desktop\light-game\Android\light_game-Android.zip
+  outputPath: 
+  recursiveSearch: 1
+  operation: 2
 --- !u!114 &896075656118238620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,6 +593,29 @@ MonoBehaviour:
   platformName: PC
   dataDirNameFormat: '{0}_Data'
   targetGroup: 1
+--- !u!114 &6676513336102474389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54626104f6c7de94f9976e1672abc45b, type: 3}
+  m_Name: FolderOperation
+  m_EditorClassIdentifier: 
+  actionType: 1
+  actionName: FolderOperation
+  note: 
+  actionEnabled: 1
+  configureEditor: 0
+  filter:
+    condition: 0
+    clauses: []
+  inputPath: C:\Users\Cristi\Desktop\light-game\macOS\light-game_BurstDebugInformation_DoNotShip
+  outputPath: 
+  operation: 2
 --- !u!114 &6713187719833946719
 MonoBehaviour:
   m_ObjectHideFlags: 0
