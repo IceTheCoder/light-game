@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.github.superunitybuild.buildactions": "https://github.com/superunitybuild/buildactions.git",
     "com.github.superunitybuild.buildtool": "6.0.1",
     "com.unity.ai.navigation": "1.1.4",
     "com.unity.collab-proxy": "2.0.5",
