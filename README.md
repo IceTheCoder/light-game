@@ -1,4 +1,6 @@
 # light-game
+Discontinued
+
 You have been cursed to one of the simplest forms: light. The faster you move, the larger you grow.
 
 Avoid triangles. They are your enemies.
